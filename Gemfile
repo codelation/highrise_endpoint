@@ -3,11 +3,13 @@ source 'https://www.rubygems.org'
 ruby "2.1.1"
 
 gem "awesome_print"
-gem "endpoint_base", :github => "spree/endpoint_base"
+gem "endpoint_base"
 gem "foreman"
 gem "puma"
 gem "rake"
 gem "sinatra"
+gem 'tilt', '~> 1.4.1'
+gem 'tilt-jbuilder', require: 'sinatra/jbuilder'
 
 group :test do
   gem "capybara"
