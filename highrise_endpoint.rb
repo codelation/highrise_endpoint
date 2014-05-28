@@ -3,57 +3,35 @@ require "endpoint_base/sinatra/base"
 class HighriseEndpoint < EndpointBase::Sinatra::Base
   set :logging, true
   
-  # post '/add_product' do
-#     code, summary = QBIntegration::Product.new(@payload, @config).import
-#     result code, summary
-#   end
-# 
-#   post '/update_product' do
-#     code, summary = QBIntegration::Product.new(@payload, @config).import
-#     result code, summary
-#   end
-# 
-#   post '/add_order' do
-#     begin
-#       code, summary = QBIntegration::Order.new(@payload, @config).create
-#       result code, summary
-#     rescue QBIntegration::AlreadyPersistedOrderException => e
-#       result 500, e.message
-#     end
-#   end
-# 
-#   post '/update_order' do
-#     code, summary = QBIntegration::Order.new(@payload, @config).update
-#     result code, summary
-#   end
-# 
-#   post '/cancel_order' do
-#     code, summary = QBIntegration::Order.new(@payload, @config).cancel
-#     result code, summary
-#   end
-# 
-#   post '/add_return' do
-#     code, summary = QBIntegration::ReturnAuthorization.new(@payload, @config).create
-#     result code, summary
-#   end
-# 
-#   post '/update_return' do
-#     code, summary = QBIntegration::ReturnAuthorization.new(@payload, @config).update
-#     result code, summary
-#   end
-# 
-#   post '/get_inventory' do
-#     stock = QBIntegration::Stock.new(@payload, @config)
-# 
-#     if stock.name.present? && stock.item
-#       add_object :inventory, stock.inventory
-#       result 200
-#     elsif stock.items.present?
-#       stock.inventories.each { |item| add_object :inventory, item }
-#       add_parameter 'quickbooks_poll_stock_timestamp', stock.last_modified_date
-#       result 200
-#     else
-#       result 200
-#     end
-#   end
+  post '/add_customer' do
+     
+  end
+
+  post '/update_customer' do
+   
+  end
+
+  post '/add_order' do
+    
+  end
+
+  post '/update_order' do
+    
+  end
+
+  post '/add_product' do
+    
+  end
+
+  post '/update_product' do
+    
+  end
+
+  post '/add_shipment' do
+    
+  end
+
+  post '/update_shipment' do
+   
+  end
 end
