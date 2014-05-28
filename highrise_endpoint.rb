@@ -5,96 +5,57 @@ require 'active_support/core_ext/hash/indifferent_access'
 class HighriseEndpoint < EndpointBase::Sinatra::Base
   set :logging, true
   
-  # attr_reader :payload
-# 
-#   before do
-#     @payload = JSON.parse(request.body.read).with_indifferent_access
+  # post '/add_product' do
+#     code, summary = QBIntegration::Product.new(@payload, @config).import
+#     result code, summary
 #   end
 # 
-#   post "/get_shipments" do
-#     content_type :json
-#     request_id = payload[:request_id]
-# 
-#     shipments = Service.new(payload).shipments_since
-#     { request_id: request_id, shipments: shipments }.to_json
+#   post '/update_product' do
+#     code, summary = QBIntegration::Product.new(@payload, @config).import
+#     result code, summary
 #   end
 # 
-#   post "/add_shipment" do
-#     content_type :json
-#     request_id = payload[:request_id]
-# 
-#     shipment = Service.new(payload).create
-#     { request_id: request_id, summary: "Shipment #{shipment} was added" }.to_json
+#   post '/add_order' do
+#     begin
+#       code, summary = QBIntegration::Order.new(@payload, @config).create
+#       result code, summary
+#     rescue QBIntegration::AlreadyPersistedOrderException => e
+#       result 500, e.message
+#     end
 #   end
 # 
-#   post "/update_shipment" do
-#     content_type :json
-#     request_id = payload[:request_id]
-# 
-#     shipment = Service.new(payload).update
-#     { request_id: request_id, summary: "Shipment #{shipment} was updated" }.to_json
-#   end
-#   
-#   post "/get_picked_up" do
-#     content_type :json
-#     request_id = payload[:request_id]
-# 
-#     shipments = Service.new(payload).picked_up
-#     { request_id: request_id, shipments: shipments }.to_json
+#   post '/update_order' do
+#     code, summary = QBIntegration::Order.new(@payload, @config).update
+#     result code, summary
 #   end
 # 
-#   # Custom webhook
-#   post "/cancel_shipment" do
-#     content_type :json
-#     request_id = payload[:request_id]
-# 
-#     shipment = Service.new(payload).cancel
-#     { request_id: request_id, summary: "Shipment #{shipment} was canceled" }.to_json
-#   end
-end
-
-class Service
-  # attr_reader :payload
-# 
-#   def initialize(payload = {})
-#     @payload = payload
+#   post '/cancel_order' do
+#     code, summary = QBIntegration::Order.new(@payload, @config).cancel
+#     result code, summary
 #   end
 # 
-#   # Search for shipments after a given timestamp, e.g. payload[:created_after]
-#   def shipments_since
-#     [
-#       {
-#         "id" => "12836",
-#         "status" => "shipped",
-#         "tracking" => "12345678"
-#       }
-#     ]
+#   post '/add_return' do
+#     code, summary = QBIntegration::ReturnAuthorization.new(@payload, @config).create
+#     result code, summary
 #   end
 # 
-#   # Talk to your shipment api, e.g.
-#   #   FedEx.get_picked_up payload
-#   def picked_up
-#     [
-#       { "id" => "12836", "status" => "picked_up", "picked_up_at" => "2014-02-03T17:29:15.219Z" },
-#       { "id" => "13243", "status" => "picked_up", "picked_up_at" => "2014-02-03T17:03:15.219Z" }
-#     ]
+#   post '/update_return' do
+#     code, summary = QBIntegration::ReturnAuthorization.new(@payload, @config).update
+#     result code, summary
 #   end
 # 
-#   # Talk to your shipment api, e.g.
-#   #   FedEx.create_shipment payload
-#   def create
-#     payload[:shipment][:id]
-#   end
+#   post '/get_inventory' do
+#     stock = QBIntegration::Stock.new(@payload, @config)
 # 
-#   # Talk to your shipment api, e.g.
-#   #   FedEx.create_shipment payload
-#   def update
-#     payload[:shipment][:id]
-#   end
-# 
-#   # Talk to your shipment api, e.g.
-#   #   FedEx.cancel_shipment payload
-#   def cancel
-#     payload[:shipment][:id]
+#     if stock.name.present? && stock.item
+#       add_object :inventory, stock.inventory
+#       result 200
+#     elsif stock.items.present?
+#       stock.inventories.each { |item| add_object :inventory, item }
+#       add_parameter 'quickbooks_poll_stock_timestamp', stock.last_modified_date
+#       result 200
+#     else
+#       result 200
+#     end
 #   end
 end
