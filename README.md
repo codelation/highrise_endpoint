@@ -1,0 +1,1 @@
+This is an example Sinatra application that shows how you can build and host your own integration for the [Spree Commerce hub](http://spreecommerce.com/hub).
