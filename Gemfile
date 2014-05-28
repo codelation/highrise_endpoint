@@ -13,13 +13,11 @@ gem "tilt", "~> 1.4.1"
 gem "tilt-jbuilder", require: "sinatra/jbuilder"
 
 group :test do
-  gem "capybara"
   gem "database_cleaner"
   gem "faker"
   gem "guard"
   gem "guard-rspec"
   gem "rack-test"
-  gem "rb-fsevent"
   gem "rspec"
   gem "terminal-notifier-guard"
   gem "vcr"
