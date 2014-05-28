@@ -1,8 +1,8 @@
 ##Overview
 This integration is designed to integrate spree hub with Highrise CRM. All transactions related to the spree storefront will be available for view in Highrise. This is a one-way integration. Data on Highrise will not sync back to the storefront.
 
-## Running Locally
-Start server locally with
+## Running server
+Start server with
 
 ```bash
 $ rake start RACK_ENV=environment
@@ -42,16 +42,3 @@ $ rake test
 - [terminal-notifier-guard](https://github.com/Springest/terminal-notifier-guard)
 - [vcr](https://github.com/vcr/vcr)
 - [webmock](https://github.com/bblimke/webmock)
-
-## Webhooks
-
-| Name | Value | Example |
-| :----| :-----| :------ |
-| add_customer | Inventory Account (required) | Inventory Asset |
-| update_customer | Cost of Goods Sold Account | Cost Of Goods Sold |
-| add_order | Income Account | Sales of Product Income |
-| update_order | Track inventory | false |
-| add_product | Track inventory | false |
-| update_product | Track inventory | false |
-| add_shipment | Track inventory | false |
-| update_shipment | Track inventory | false |
