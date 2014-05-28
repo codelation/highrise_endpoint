@@ -20,8 +20,6 @@ end
 
 desc "Test the application"
 task :test => :environment do
-  Bundler.require(:test)
-  
   exec 'RACK_ENV=test bundle exec rspec'
 end
 

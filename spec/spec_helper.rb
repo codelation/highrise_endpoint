@@ -1,6 +1,5 @@
 require "rubygems"
 require "bundler"
-require "pstore"
 
 # require 'spree/testing_support/controllers'
 
@@ -25,5 +24,4 @@ end
 
 RSpec.configure do |config|
   config.include Rack::Test::Methods
-  # config.include Spree::TestingSupport::Controllers
 end
