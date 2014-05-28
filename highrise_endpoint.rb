@@ -3,35 +3,35 @@ require "endpoint_base/sinatra/base"
 class HighriseEndpoint < EndpointBase::Sinatra::Base
   set :logging, true
   
-  post '/add_customer' do
+  post "/add_customer" do
      
   end
 
-  post '/update_customer' do
+  post "/update_customer" do
    
   end
 
-  post '/add_order' do
+  post "/add_order" do
     
   end
 
-  post '/update_order' do
+  post "/update_order" do
     
   end
 
-  post '/add_product' do
+  post "/add_product" do
     
   end
 
-  post '/update_product' do
+  post "/update_product" do
     
   end
 
-  post '/add_shipment' do
+  post "/add_shipment" do
     
   end
 
-  post '/update_shipment' do
+  post "/update_shipment" do
    
   end
 end
