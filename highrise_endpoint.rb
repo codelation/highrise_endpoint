@@ -1,5 +1,4 @@
 require "endpoint_base/sinatra/base"
-require "highrise"
 
 class HighriseEndpoint < EndpointBase::Sinatra::Base
   set :logging, true
