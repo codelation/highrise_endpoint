@@ -1,6 +1,4 @@
-require 'sinatra'
-require 'json'
-require 'active_support/core_ext/hash/indifferent_access'
+require "endpoint_base/sinatra/base"
 
 class HighriseEndpoint < EndpointBase::Sinatra::Base
   set :logging, true
