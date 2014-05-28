@@ -2,7 +2,9 @@ require 'sinatra'
 require 'json'
 require 'active_support/core_ext/hash/indifferent_access'
 
-class HighriseEndpoint < Sinatra::Base
+class HighriseEndpoint < EndpointBase::Sinatra::Base
+  set :logging, true
+  
   # attr_reader :payload
 # 
 #   before do
