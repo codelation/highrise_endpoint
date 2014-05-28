@@ -1,4 +1,4 @@
-source 'https://www.rubygems.org'
+source "https://www.rubygems.org"
 
 ruby "2.1.1"
 
@@ -8,8 +8,8 @@ gem "foreman"
 gem "puma"
 gem "rake"
 gem "sinatra"
-gem 'tilt', '~> 1.4.1'
-gem 'tilt-jbuilder', require: 'sinatra/jbuilder'
+gem "tilt", "~> 1.4.1"
+gem "tilt-jbuilder", require: "sinatra/jbuilder"
 
 group :test do
   gem "capybara"
