@@ -8,10 +8,10 @@ Bundler.require(:default, :test)
 
 # ENV['ENDPOINT_KEY'] = 'x123'
 
-require File.join(File.dirname(__FILE__), '..', 'highrise_endpoint')
+require File.join(File.dirname(__FILE__), '..', "highrise_endpoint")
 Dir["./spec/support/**/*.rb"].each {|f| require f}
 
-Sinatra::Base.environment = 'test'
+Sinatra::Base.environment = "test"
 
 def app
   HighriseEndpoint
