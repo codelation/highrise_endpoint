@@ -3,8 +3,15 @@ require "endpoint_base/sinatra/base"
 class HighriseEndpoint < EndpointBase::Sinatra::Base
   set :logging, true
   
+  Highrise::Base.site = ENV["HIGHRISE_SITE_URL"]
+  Highrise::Base.user = ENV["HIGHRISE_API_TOKEN"]
+  Highrise::Base.format = :xml
+  
   post "/add_customer" do
-     
+    person = Highrise::Person.new(name: "#{@payload[:customer][:firstname]} #{@payload[:customer][:lastname]}", contact_data: { email_addresses: [ { address: @payload[:customer][:email], location: 'Work' } ] })
+    ap person.save
+    
+    jbuilder :add_customer_success
   end
 
   post "/update_customer" do

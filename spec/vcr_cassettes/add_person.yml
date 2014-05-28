@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_URL/people.xml
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <person>
+          <first-name>Brian</first-name>
+          <last-name>Smith</last-name>
+        </person>
+    headers:
+      Content-Type:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 28 May 2014 23:11:24 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '1'
+      Connection:
+      - keep-alive
+      Status:
+      - 404 Not Found
+      X-Throttle-Horizon:
+      - '2014-05-28T23:11:30Z'
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 69a228737eaec286a1c948f59bd357ab
+      X-Throttle-Max:
+      - '500'
+      X-Runtime:
+      - '2'
+      X-Throttle-Count:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: " "
+    http_version: 
+  recorded_at: Wed, 28 May 2014 23:11:24 GMT
+recorded_with: VCR 2.9.2
