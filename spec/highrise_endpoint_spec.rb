@@ -18,10 +18,20 @@ describe HighriseEndpoint do
 
     it "should add information to Highrise" do
       VCR.use_cassette(:retrieve_person) do
+        customer        = add_customer[:customer]
+        billing_address = customer[:billing_address]
+
         customers = Highrise::Person.search(
-          email: add_customer[:customer][:email],
-          firstname: add_customer[:customer][:firstname],
-          lastname: add_customer[:customer][:lastname]
+
+          email:     customer[:email],
+          firstname: customer[:firstname],
+          lastname:  customer[:lastname],
+          number:    billing_address[:phone],
+          street:    billing_address[:address1],
+          city:      billing_address[:city],
+          state:     billing_address[:state],
+          zip:       billing_address[:zipcode],
+          country:   billing_address[:country]
         )
         customers.length.should eql 1
       end
