@@ -1,0 +1,109 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people.xml
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <person>
+          <name>Brian Smith</name>
+          <contact-data>
+            <email-addresses type="array">
+              <email-address>
+                <address>spree@example.com</address>
+                <location>Work</location>
+              </email-address>
+            </email-addresses>
+          </contact-data>
+        </person>
+    headers:
+      Content-Type:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 28 May 2014 23:54:26 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '524'
+      Connection:
+      - Keep-Alive
+      Status:
+      - 201 Created
+      X-Request-Id:
+      - 4d968ee88b0af7b2fe4468bdec271b5b
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Max:
+      - '500'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Location:
+      - https://HIGHRISE_SITE_HOST/people/208393365-brian-smith
+      X-Throttle-Horizon:
+      - '2014-05-28T23:54:30Z'
+      Cache-Control:
+      - no-cache
+      X-Throttle-Count:
+      - '1'
+      X-Runtime:
+      - '35'
+      Set-Cookie:
+      - _sunrise_session=BAh7BzoPc2Vzc2lvbl9pZCIlYjU3Zjg3YWRjMDg2Y2FhOWIyODkyOGVmYTgyYTE4ZDEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoPbmV3X3BlcnNvblQGOgpAdXNlZHsGOwdG--d91b251e3f17d03651bc2bca1b55eafeb1296c7d;
+        path=/; HttpOnly; secure
+      Timing-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <person>
+          <author-id type="integer">807595</author-id>
+          <background nil="true"></background>
+          <company-id type="integer" nil="true"></company-id>
+          <created-at type="datetime">2014-05-28T23:54:26Z</created-at>
+          <first-name>Brian</first-name>
+          <group-id type="integer" nil="true"></group-id>
+          <id type="integer">208393365</id>
+          <last-name>Smith</last-name>
+          <owner-id type="integer" nil="true"></owner-id>
+          <title nil="true"></title>
+          <updated-at type="datetime">2014-05-28T23:54:26Z</updated-at>
+          <visible-to>Everyone</visible-to>
+          <company-name nil="true"></company-name>
+          <linkedin-url nil="true"></linkedin-url>
+          <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+        <contact-data>
+          <phone-numbers type="array"/>
+          <web-addresses type="array"/>
+          <instant-messengers type="array"/>
+          <twitter-accounts type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>spree@example.com</address>
+              <id type="integer">106658698</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <addresses type="array"/>
+        </contact-data>
+        </person>
+    http_version: 
+  recorded_at: Wed, 28 May 2014 23:54:26 GMT
+recorded_with: VCR 2.9.2
