@@ -8,10 +8,23 @@ class HighriseEndpoint < EndpointBase::Sinatra::Base
   Highrise::Base.format = :xml
   
   post "/add_customer" do
-    person = Highrise::Person.new(name: "#{@payload[:customer][:firstname]} #{@payload[:customer][:lastname]}", contact_data: { email_addresses: [ { address: @payload[:customer][:email], location: 'Work' } ] })
-    ap person.save
+    @person = Highrise::Person.new(
+      name: "#{@payload[:customer][:firstname]} #{@payload[:customer][:lastname]}",
+      contact_data: {
+        email_addresses: [
+          {
+            address: @payload[:customer][:email],
+            location: 'Work'
+          }
+        ]
+      }
+    )
     
-    jbuilder :add_customer_success
+    if @person.save
+      jbuilder :add_customer_success
+    else
+      jbuilder :add_customer_failure
+    end
   end
 
   post "/update_customer" do
