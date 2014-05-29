@@ -65,12 +65,20 @@ describe HighriseEndpoint do
         shipment = add_shipment[:shipment]
         item = add_shipment[:item]
         shipping_address = add_shipment[:shipping_address]
+        
+        # Retrieving the deal with the spree-order id because that is what's
+        # held within the shipment. 
+        # Uncertain when the deal that has this order-id will be created.
         deal = Highrise::Deal.search(
-          value: shipment[:order_id] #retrieving the deal's spree-order id
+          value: shipment[:order_id] 
         )
 
+        # Need to think about what fields to test for and what to inclue in the implementation.
+        # Also need to figure out whether the 'subject-id' field is what is needed to look up
+        # the deal that this note is associated with.
+        # Even though the body of the field is (probably) temporary, it still lets us test a couple of fields
         shipments = Highrise::Note.search(
-          subject_id: deal[:id],
+          subject_id: deal[:id], 
           subject_type: 'Deal',
           created_at: deal[:shipped_at],
           body: "#{item[:quantity]} #{pluralize(item[:quantity], "item")} shipped to 
