@@ -64,11 +64,11 @@ describe HighriseEndpoint do
         order = add_order[:order]
 
         deals = Highrise::Deal.search(
-          value:     order[:id]
-          created_at: order[:placed_on]
-          currency:  order[:currency]
-          firstname: order[:billing_address][:firstname]
-          lastname:  order[:billing_address][:lastname]
+          value:     order[:id],
+          created_at: order[:placed_on],
+          currency:  order[:currency],
+          firstname: order[:billing_address][:firstname],
+          lastname:  order[:billing_address][:lastname],
           price:     order[:totals][:order]
         )
 
