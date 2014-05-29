@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 29 May 2014 16:24:37 GMT
+      - Thu, 29 May 2014 20:43:52 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
@@ -32,22 +32,22 @@ http_interactions:
       - 200 OK
       Etag:
       - '"304246700dd9732895ecf4e138caeb37"'
-      X-Throttle-Horizon:
-      - '2014-05-29T16:24:40Z'
       X-Frame-Options:
       - SAMEORIGIN
-      X-Request-Id:
-      - aa9386c0ccc5c13081fcf0ddca50c012
-      X-Throttle-Max:
-      - '500'
-      X-Runtime:
-      - '11'
+      X-Throttle-Horizon:
+      - '2014-05-29T20:44:00Z'
       Strict-Transport-Security:
       - max-age=31536000
       Cache-Control:
       - private, max-age=0, must-revalidate
+      X-Runtime:
+      - '177'
+      X-Throttle-Max:
+      - '500'
       X-Throttle-Count:
       - '2'
+      X-Request-Id:
+      - a39bca4f2d74486c78079a429f4638f6
       Timing-Allow-Origin:
       - "*"
     body:
@@ -56,5 +56,5 @@ http_interactions:
         <?xml version="1.0" encoding="UTF-8"?>
         <people type="array"/>
     http_version: 
-  recorded_at: Thu, 29 May 2014 16:24:37 GMT
+  recorded_at: Thu, 29 May 2014 20:43:52 GMT
 recorded_with: VCR 2.9.2

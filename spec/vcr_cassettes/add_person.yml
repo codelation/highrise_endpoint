@@ -35,7 +35,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 29 May 2014 16:24:37 GMT
+      - Thu, 29 May 2014 20:43:52 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
@@ -44,27 +44,27 @@ http_interactions:
       - Keep-Alive
       Status:
       - 201 Created
-      X-Request-Id:
-      - 1ed0e26af03430971a48cf3f6d8e157d
+      Location:
+      - https://HIGHRISE_SITE_HOST/people/208485166-brian-smith
+      X-Throttle-Horizon:
+      - '2014-05-29T20:44:00Z'
       Strict-Transport-Security:
       - max-age=31536000
-      X-Throttle-Horizon:
-      - '2014-05-29T16:24:40Z'
-      X-Frame-Options:
-      - SAMEORIGIN
-      Cache-Control:
-      - no-cache
-      Location:
-      - https://HIGHRISE_SITE_HOST/people/208453119-brian-smith
-      X-Runtime:
-      - '35'
       X-Throttle-Count:
       - '1'
+      X-Frame-Options:
+      - SAMEORIGIN
       Set-Cookie:
-      - _sunrise_session=BAh7BzoPc2Vzc2lvbl9pZCIlODI3YTY3ZWZmZDFkNDU3NTUxOTQ2M2JmMzRkZTRmNTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoPbmV3X3BlcnNvblQGOgpAdXNlZHsGOwdG--8ba2f638705a742f8681bf685586553a13b6ebe6;
+      - _sunrise_session=BAh7BzoPc2Vzc2lvbl9pZCIlYzYxZmUyMzY5NjU1NzBlMWRhNDZhYjI4NTZjMjEwMjIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoPbmV3X3BlcnNvblQGOgpAdXNlZHsGOwdG--400a3c324c6141318f3bf0f49c18512c815e31dd;
         path=/; HttpOnly; secure
       X-Throttle-Max:
       - '500'
+      Cache-Control:
+      - no-cache
+      X-Runtime:
+      - '33'
+      X-Request-Id:
+      - bacb72921c86f2395e9f353ab20d59b6
       Timing-Allow-Origin:
       - "*"
       Vary:
@@ -77,14 +77,14 @@ http_interactions:
           <author-id type="integer">807595</author-id>
           <background nil="true"></background>
           <company-id type="integer" nil="true"></company-id>
-          <created-at type="datetime">2014-05-29T16:24:37Z</created-at>
+          <created-at type="datetime">2014-05-29T20:43:52Z</created-at>
           <first-name>Brian</first-name>
           <group-id type="integer" nil="true"></group-id>
-          <id type="integer">208453119</id>
+          <id type="integer">208485166</id>
           <last-name>Smith</last-name>
           <owner-id type="integer" nil="true"></owner-id>
           <title nil="true"></title>
-          <updated-at type="datetime">2014-05-29T16:24:37Z</updated-at>
+          <updated-at type="datetime">2014-05-29T20:43:52Z</updated-at>
           <visible-to>Everyone</visible-to>
           <company-name nil="true"></company-name>
           <linkedin-url nil="true"></linkedin-url>
@@ -92,18 +92,18 @@ http_interactions:
         <contact-data>
           <phone-numbers type="array"/>
           <web-addresses type="array"/>
-          <instant-messengers type="array"/>
-          <twitter-accounts type="array"/>
           <email-addresses type="array">
             <email-address>
               <address>spree@example.com</address>
-              <id type="integer">106697092</id>
+              <id type="integer">106717172</id>
               <location>Work</location>
             </email-address>
           </email-addresses>
+          <instant-messengers type="array"/>
           <addresses type="array"/>
+          <twitter-accounts type="array"/>
         </contact-data>
         </person>
     http_version: 
-  recorded_at: Thu, 29 May 2014 16:24:37 GMT
+  recorded_at: Thu, 29 May 2014 20:43:52 GMT
 recorded_with: VCR 2.9.2
