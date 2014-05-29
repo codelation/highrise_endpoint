@@ -22,5 +22,3 @@ desc "Test the application"
 task :test => :environment do
   exec 'RACK_ENV=test bundle exec rspec'
 end
-
-
