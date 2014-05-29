@@ -4,4 +4,3 @@ rvm:
 script: bundle exec rake test
 notifications:
   email: false
- 
