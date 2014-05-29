@@ -32,12 +32,15 @@ class HighriseEndpoint < EndpointBase::Sinatra::Base
         ],
         addresses: [
           {
-            street:  billing_address[:address1],
-            city:    billing_address[:city],
-            state:   billing_address[:state],
-            zip:     billing_address[:zipcode],
-            country: billing_address[:country],
-            location: 'Work'
+            # Need to figure out what all of the information is to be added in the address
+            address: {
+              street:  billing_address[:address1],
+              city:    billing_address[:city],
+              state:   billing_address[:state],
+              zip:     billing_address[:zipcode],
+              country: billing_address[:country],
+              location: 'Work'
+            }
           }
         ],
         phone_numbers: [
@@ -45,10 +48,16 @@ class HighriseEndpoint < EndpointBase::Sinatra::Base
             number:   billing_address[:phone],
             location: 'Work'
           }
+        ],
+        # Adding custom field for spree-id
+        subject_fields: [
+          subject_field: {
+            value:               @payload[:customer][:id],
+            subject_field_label: 'Spree-id'
+          }
         ]
       }
     )
-
     if @person.save
       jbuilder :add_customer_success
     else
