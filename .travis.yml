@@ -1,7 +1,6 @@
 language: ruby
 rvm:
   - 2.1.1
-script:
-  - bundle exec rake test
+script: bundle exec rake test
 notifications:
   email: false
