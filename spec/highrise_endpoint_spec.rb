@@ -2,6 +2,7 @@ require 'spec_helper'
 
 describe HighriseEndpoint do
   let(:add_customer) { JSON.parse(IO.read("#{File.dirname(__FILE__)}/support/requests/add_customer.json")).with_indifferent_access }
+  let(:add_product) { JSON.parse(IO.read("#{File.dirname(__FILE__)}/support/requests/add_product.json")).with_indifferent_access }
 
   describe "| POST -> '/add_customer'" do
     before(:each) do
@@ -44,4 +45,42 @@ describe HighriseEndpoint do
       @response_body[:request_id].should eql add_customer[:request_id]
     end
   end
+
+  describe "| POST -> '/add_product'" do
+    before(:each) do
+      VCR.use_cassette(:add_product) do
+        post '/add_product', add_product.to_json, auth
+      end
+
+      @response_body = JSON.parse(last_response.body).with_indifferent_access
+    end
+
+    it "should return 200" do
+      last_response.status.should eql 200
+    end
+
+    it "should add information to Highrise" do
+      VCR.use_cassette(:retrieve_product) do
+        product = add_product[:product]
+
+        Products = Highrise::Note.search(
+        productid:  product[:id],
+        name:       product[:name],
+        productsku: product[:sku],
+        price:      product[:price]
+        )
+
+        products.length.should eql 1
+      end
+    end
+
+    it "should return a nice summary" do
+      @response_body[:summary].should eql "Product was added to Highrise deal note."
+    end
+
+    it "should return the webhook request_id" do
+      @response_body[:request_id].should eql add_customer[:request_id]
+    end
+  end
+
 end
