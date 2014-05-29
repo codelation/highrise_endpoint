@@ -125,6 +125,6 @@ describe HighriseEndpoint do
       end
     end
   end
-  
+
 end
 
