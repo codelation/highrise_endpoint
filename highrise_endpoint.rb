@@ -20,6 +20,7 @@ class HighriseEndpoint < EndpointBase::Sinatra::Base
   #  |
 
   post "/add_customer" do
+    billing_address = @payload[:customer][:billing_address]
     @person = Highrise::Person.new(
       name: "#{@payload[:customer][:firstname]} #{@payload[:customer][:lastname]}",
       contact_data: {
@@ -28,8 +29,23 @@ class HighriseEndpoint < EndpointBase::Sinatra::Base
             address: @payload[:customer][:email],
             location: 'Work'
           }
+        ],
+        addresses: [
+          {
+            street:  billing_address[:address1],
+            city:    billing_address[:city],
+            state:   billing_address[:state],
+            zip:     billing_address[:zipcode],
+            country: billing_address[:country],
+            location: 'Work'
+          }
+        ],
+        phone_numbers: [
+          phone_number: {
+            number:   billing_address[:phone],
+            location: 'Work'
+          }
         ]
-
       }
     )
 

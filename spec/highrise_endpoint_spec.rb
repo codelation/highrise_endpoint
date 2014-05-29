@@ -22,7 +22,6 @@ describe HighriseEndpoint do
         billing_address = customer[:billing_address]
 
         customers = Highrise::Person.search(
-
           email:     customer[:email],
           firstname: customer[:firstname],
           lastname:  customer[:lastname],
