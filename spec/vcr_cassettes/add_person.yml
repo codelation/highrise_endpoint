@@ -16,6 +16,28 @@ http_interactions:
                 <location>Work</location>
               </email-address>
             </email-addresses>
+            <addresses type="array">
+              <address>
+                <street>1234 Awesome Street</street>
+                <city>Hollywood</city>
+                <state>California</state>
+                <zip>90210</zip>
+                <country>US</country>
+                <location>Work</location>
+              </address>
+            </addresses>
+            <phone-numbers type="array">
+              <phone-number>
+                <number>0000000000</number>
+                <location>Work</location>
+              </phone-number>
+            </phone-numbers>
+            <subject-fields type="array">
+              <subject-field>
+                <value>a123</value>
+                <subject-field-label>Spree-id</subject-field-label>
+              </subject-field>
+            </subject-fields>
           </contact-data>
         </person>
     headers:
@@ -35,19 +57,19 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 29 May 2014 20:43:52 GMT
+      - Thu, 29 May 2014 20:54:49 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
-      - '522'
+      - '803'
       Connection:
       - Keep-Alive
       Status:
       - 201 Created
       Location:
-      - https://HIGHRISE_SITE_HOST/people/208485166-brian-smith
+      - https://HIGHRISE_SITE_HOST/people/208487836-brian-smith
       X-Throttle-Horizon:
-      - '2014-05-29T20:44:00Z'
+      - '2014-05-29T20:54:50Z'
       Strict-Transport-Security:
       - max-age=31536000
       X-Throttle-Count:
@@ -55,16 +77,16 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Set-Cookie:
-      - _sunrise_session=BAh7BzoPc2Vzc2lvbl9pZCIlYzYxZmUyMzY5NjU1NzBlMWRhNDZhYjI4NTZjMjEwMjIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoPbmV3X3BlcnNvblQGOgpAdXNlZHsGOwdG--400a3c324c6141318f3bf0f49c18512c815e31dd;
+      - _sunrise_session=BAh7BzoPc2Vzc2lvbl9pZCIlMzc0OWFiMmUwODdiNjUxMjI4YTAxYzBiMzJhMmRlMTMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoPbmV3X3BlcnNvblQGOgpAdXNlZHsGOwdG--62e5ff047f50a042c578e9ba4f5ce426c9aa3e8f;
         path=/; HttpOnly; secure
       X-Throttle-Max:
       - '500'
       Cache-Control:
       - no-cache
       X-Runtime:
-      - '33'
+      - '47'
       X-Request-Id:
-      - bacb72921c86f2395e9f353ab20d59b6
+      - e02f89e38aa5dd4e90bd128d897ac1b2
       Timing-Allow-Origin:
       - "*"
       Vary:
@@ -77,33 +99,57 @@ http_interactions:
           <author-id type="integer">807595</author-id>
           <background nil="true"></background>
           <company-id type="integer" nil="true"></company-id>
-          <created-at type="datetime">2014-05-29T20:43:52Z</created-at>
+          <created-at type="datetime">2014-05-29T20:54:49Z</created-at>
           <first-name>Brian</first-name>
           <group-id type="integer" nil="true"></group-id>
-          <id type="integer">208485166</id>
+          <id type="integer">208487836</id>
           <last-name>Smith</last-name>
           <owner-id type="integer" nil="true"></owner-id>
           <title nil="true"></title>
-          <updated-at type="datetime">2014-05-29T20:43:52Z</updated-at>
+          <updated-at type="datetime">2014-05-29T20:54:49Z</updated-at>
           <visible-to>Everyone</visible-to>
           <company-name nil="true"></company-name>
           <linkedin-url nil="true"></linkedin-url>
           <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
         <contact-data>
-          <phone-numbers type="array"/>
+          <phone-numbers type="array">
+            <phone-number>
+              <id type="integer">168196964</id>
+              <location>Work</location>
+              <number>0000000000</number>
+            </phone-number>
+          </phone-numbers>
           <web-addresses type="array"/>
           <email-addresses type="array">
             <email-address>
               <address>spree@example.com</address>
-              <id type="integer">106717172</id>
+              <id type="integer">106718425</id>
               <location>Work</location>
             </email-address>
           </email-addresses>
           <instant-messengers type="array"/>
-          <addresses type="array"/>
+          <addresses type="array">
+            <address>
+              <city>Hollywood</city>
+              <country>US</country>
+              <id type="integer">99972474</id>
+              <location>Work</location>
+              <state>California</state>
+              <street>1234 Awesome Street</street>
+              <zip>90210</zip>
+            </address>
+          </addresses>
           <twitter-accounts type="array"/>
         </contact-data>
+        <subject_datas type="array">
+          <subject_data>
+            <id type="integer">125724161</id>
+            <subject_field_id type="integer">898973</subject_field_id>
+            <subject_field_label>Subject Fields</subject_field_label>
+            <value>a123</value>
+          </subject_data>
+        </subject_datas>
         </person>
     http_version: 
-  recorded_at: Thu, 29 May 2014 20:43:52 GMT
+  recorded_at: Thu, 29 May 2014 20:54:49 GMT
 recorded_with: VCR 2.9.2

@@ -33,7 +33,8 @@ describe HighriseEndpoint do
           city:      billing_address[:city],
           state:     billing_address[:state],
           zip:       billing_address[:zipcode],
-          country:   billing_address[:country]
+          country:   billing_address[:country],
+          value:     customer[:id]
         )
         customers.length.should eql 1
       end
