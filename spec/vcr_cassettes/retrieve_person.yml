@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Bemail%5D=spree@example.com&criteria%5Bfirstname%5D=Brian&criteria%5Blastname%5D=Smith&n=0
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Bcity%5D=Hollywood&criteria%5Bcountry%5D=US&criteria%5Bemail%5D=spree@example.com&criteria%5Bfirstname%5D=Brian&criteria%5Blastname%5D=Smith&criteria%5Bnumber%5D=0000000000&criteria%5Bstate%5D=California&criteria%5Bstreet%5D=1234%20Awesome%20Street&criteria%5Bzip%5D=90210&n=0
     body:
       encoding: US-ASCII
       string: ''
@@ -21,98 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 28 May 2014 23:54:26 GMT
-      Content-Type:
-      - application/xml; charset=utf-8
-      Content-Length:
-      - '548'
-      Connection:
-      - Keep-Alive
-      Status:
-      - 200 OK
-      Etag:
-      - '"17224466d568ff50ae49a4f4c3c3bb7c"'
-      X-Request-Id:
-      - 789fb56e25ea08a3e5d284918c008518
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Throttle-Max:
-      - '500'
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Throttle-Horizon:
-      - '2014-05-28T23:54:30Z'
-      Cache-Control:
-      - private, max-age=0, must-revalidate
-      X-Throttle-Count:
-      - '2'
-      X-Runtime:
-      - '20'
-      Timing-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-    body:
-      encoding: UTF-8
-      string: |
-        <?xml version="1.0" encoding="UTF-8"?>
-        <people type="array">
-          <person>
-            <author-id type="integer">807595</author-id>
-            <background nil="true"></background>
-            <company-id type="integer" nil="true"></company-id>
-            <created-at type="datetime">2014-05-28T23:54:26Z</created-at>
-            <first-name>Brian</first-name>
-            <group-id type="integer" nil="true"></group-id>
-            <id type="integer">208393365</id>
-            <last-name>Smith</last-name>
-            <owner-id type="integer" nil="true"></owner-id>
-            <title nil="true"></title>
-            <updated-at type="datetime">2014-05-28T23:54:26Z</updated-at>
-            <visible-to>Everyone</visible-to>
-            <company-name nil="true"></company-name>
-            <linkedin-url nil="true"></linkedin-url>
-            <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
-        <contact-data>
-          <phone-numbers type="array"/>
-          <web-addresses type="array"/>
-          <instant-messengers type="array"/>
-          <twitter-accounts type="array"/>
-          <email-addresses type="array">
-            <email-address>
-              <address>spree@example.com</address>
-              <id type="integer">106658698</id>
-              <location>Work</location>
-            </email-address>
-          </email-addresses>
-          <addresses type="array"/>
-        </contact-data>
-          </person>
-        </people>
-    http_version: 
-  recorded_at: Wed, 28 May 2014 23:54:26 GMT
-- request:
-    method: get
-    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Bemail%5D=spree@example.com&criteria%5Bfirstname%5D=Brian&criteria%5Blastname%5D=Smith&n=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/xml
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 28 May 2014 23:54:26 GMT
+      - Thu, 29 May 2014 17:25:20 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
@@ -121,24 +30,24 @@ http_interactions:
       - keep-alive
       Status:
       - 200 OK
+      X-Throttle-Horizon:
+      - '2014-05-29T17:25:30Z'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Throttle-Count:
+      - '1'
       Etag:
       - '"304246700dd9732895ecf4e138caeb37"'
-      X-Request-Id:
-      - 4aedb0808e89fea626750ed0e9fbf2a2
       X-Frame-Options:
       - SAMEORIGIN
       X-Throttle-Max:
       - '500'
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Throttle-Horizon:
-      - '2014-05-28T23:54:30Z'
-      Cache-Control:
-      - private, max-age=0, must-revalidate
-      X-Throttle-Count:
-      - '3'
       X-Runtime:
       - '9'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      X-Request-Id:
+      - c9dbad18580984a7db4c452dcea5751c
       Timing-Allow-Origin:
       - "*"
     body:
@@ -147,5 +56,5 @@ http_interactions:
         <?xml version="1.0" encoding="UTF-8"?>
         <people type="array"/>
     http_version: 
-  recorded_at: Wed, 28 May 2014 23:54:26 GMT
+  recorded_at: Thu, 29 May 2014 17:25:22 GMT
 recorded_with: VCR 2.9.2
