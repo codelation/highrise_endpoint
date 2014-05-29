@@ -2,7 +2,7 @@ require "rubygems"
 require "bundler"
 
 Bundler.require(:default, :test)
-# Dotenv.load
+Dotenv.load
 
 require File.join(File.dirname(__FILE__), '..', "highrise_endpoint")
 Dir["./spec/support/**/*.rb"].each {|f| require f}
