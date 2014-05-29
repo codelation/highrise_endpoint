@@ -4,6 +4,7 @@ describe HighriseEndpoint do
   let(:add_customer) { JSON.parse(IO.read("#{File.dirname(__FILE__)}/support/requests/add_customer.json")).with_indifferent_access }
   let(:add_order) { JSON.parse(IO.read("#{File.dirname(__FILE__)}/support/requests/add_order.json")).with_indifferent_access }
   let(:add_product) { JSON.parse(IO.read("#{File.dirname(__FILE__)}/support/requests/add_product.json")).with_indifferent_access }
+  let(:add_shipment) { JSON.parse(IO.read("#{File.dirname(__FILE__)}/support/requests/add_customer.json")).with_indifferent_access }
 
   # Note: Should we be using context here to check if a customer exists already before adding a new one?  This might take care of our issue where we keep getting the same customer created repeatedly.
   describe "| POST -> '/add_customer'" do
@@ -127,5 +128,48 @@ describe HighriseEndpoint do
     end
   end
 
+  describe "| POST -> '/add_shipment" do
+    before(:each) do
+      VCR.use_cassette(:add_person) do
+        post "/add_shipment", add_shipment.to_json, auth
+      end
+    end
+
+    it "should add information to Highrise" do
+      VCR.use_cassette(:retrieve_person) do
+        shipment         = add_shipment[:shipment]
+        item             = add_shipment[:item]
+        shipping_address = add_shipment[:shipping_address]
+
+        # Retrieving the deal with the spree-order id because that is what's
+        # held within the shipment.
+        # Uncertain when the deal that has this order-id will be created.
+        deal             = Highrise::Deal.search(
+          value: shipment[:order_id]
+        )
+
+        # Need to think about what fields to test for and what to inclue in the implementation.
+        # Also need to figure out whether the 'subject-id' field is what is needed to look up
+        # the deal that this note is associated with.
+        # Even though the body of the field is (probably) temporary, it still lets us test a couple of fields
+        shipments        = Highrise::Note.search(
+          subject_id:   deal[:id],
+          subject_type: 'Deal',
+          created_at:   deal[:shipped_at],
+          body:         "#{item[:quantity]} #{pluralize(item[:quantity], "item")} shipped to
+          #{shipping_address[:firstname]} #{shipping_address[:lastname]}"
+        )
+        shipments.length.should eql 1
+      end
+    end
+
+    it "should return a nice summary" do
+      @response_body[:summary].should eql "Shipment was added to Highrise"
+    end
+
+    it "should return the webhook request_id" do
+      @response_body[:request_id].should eql add_shipment[:request_id]
+    end
+  end
 end
 
