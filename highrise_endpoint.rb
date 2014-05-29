@@ -3,8 +3,8 @@ require "endpoint_base/sinatra/base"
 class HighriseEndpoint < EndpointBase::Sinatra::Base
   set :logging, true
 
-  Highrise::Base.site = ENV["HIGHRISE_SITE_URL"]
-  Highrise::Base.user = ENV["HIGHRISE_API_TOKEN"]
+  Highrise::Base.site = ENV["HIGHRISE_SITE_URL"].blank? ? "http://www.example.com" : ENV["HIGHRISE_SITE_URL"]
+  Highrise::Base.user = ENV["HIGHRISE_API_TOKEN"].blank? ? "thisIsAFakeKey123" : ENV["HIGHRISE_API_TOKEN"]
   Highrise::Base.format = :xml
 
   # Adds new customer to Highrise from spree hub.
