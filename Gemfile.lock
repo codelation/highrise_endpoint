@@ -110,6 +110,7 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
+  dotenv
   endpoint_base
   faker
   foreman
