@@ -8,17 +8,6 @@ class HighriseEndpoint < EndpointBase::Sinatra::Base
   Highrise::Base.format = :xml
 
   # Adds new customer to Highrise from spree hub.
-  #
-  # Spree Hub ==> Highrise
-  #  firstname | firstname
-  #  lastname  | lastname
-  #  |
-  #  |
-  #  |
-  #  |
-  #  |
-  #  |
-
   post "/add_customer" do
     @person = Highrise::Person.new(
       name: "#{@payload[:customer][:firstname]} #{@payload[:customer][:lastname]}",
@@ -40,6 +29,8 @@ class HighriseEndpoint < EndpointBase::Sinatra::Base
     end
   end
 
+  #checks to see if customer exists.  If does not exist, adds customer.
+  # If does exist, updates the necessary data.
   post "/update_customer" do
 
   end

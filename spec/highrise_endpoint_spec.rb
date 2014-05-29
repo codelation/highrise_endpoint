@@ -4,6 +4,7 @@ describe HighriseEndpoint do
   let(:add_customer) { JSON.parse(IO.read("#{File.dirname(__FILE__)}/support/requests/add_customer.json")).with_indifferent_access }
   let(:add_product) { JSON.parse(IO.read("#{File.dirname(__FILE__)}/support/requests/add_product.json")).with_indifferent_access }
 
+  # Note: Should we be using context here to check if a customer exists already before adding a new one?  This might take care of our issue where we keep getting the same customer created repeatedly.
   describe "| POST -> '/add_customer'" do
     before(:each) do
       VCR.use_cassette(:add_person) do
@@ -46,6 +47,10 @@ describe HighriseEndpoint do
     end
   end
 
+  # test for /add_product webhook
+  #
+  # TODO: determine what values should be added to highrise and what
+  # values need to be tested to verify the change is accurate.
   describe "| POST -> '/add_product'" do
     before(:each) do
       VCR.use_cassette(:add_product) do
@@ -59,6 +64,11 @@ describe HighriseEndpoint do
       last_response.status.should eql 200
     end
 
+    # verifies product was added to highrise.
+    #
+    # Note: I don't really like this part.  We've been trying to decide what needs to be kept of the massive data in the
+    # add_product json file, but I'm not sure if this is what they're going to need.  The product will need to be linked with a
+    # deal (known as an order in spree hub), but this doesn't test for whether the product is linked to the deal.
     it "should add information to Highrise" do
       VCR.use_cassette(:retrieve_product) do
         product = add_product[:product]
@@ -79,8 +89,7 @@ describe HighriseEndpoint do
     end
 
     it "should return the webhook request_id" do
-      @response_body[:request_id].should eql add_customer[:request_id]
+      @response_body[:request_id].should eql add_product[:request_id]
     end
   end
-
 end
