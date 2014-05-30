@@ -77,9 +77,10 @@ describe HighriseEndpoint do
         VCR.use_cassette(:add_existing_person) do
           # change something to make sure it's updating it :)
           @add_customer[:customer][:firstname] = "Matthew"
+
           # we need to reassign these variables since we updated stuff
-          @new_customer = @add_customer[:customer]
-          @billing_address = @new_customer[:billing_address]
+          @customer = @add_customer[:customer]
+          @billing_address = @customer[:billing_address]
 
           post '/add_customer', @add_customer.to_json, auth
         end
