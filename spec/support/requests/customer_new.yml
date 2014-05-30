@@ -1,0 +1,23 @@
+--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+request_id: '5082043577627787690768112'
+customer: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  id: '1845942533'
+  firstname: Arlene
+  lastname: Considine
+  email: brandon.gleichner@quitzon.info
+  shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    address1: 32694 Kaylie Underpass
+    address2: Apt. 321
+    zipcode: '96346'
+    city: Boyleberg
+    state: Montana
+    country: Mexico
+    phone: '7152529757214277562359858'
+  billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    address1: 1852 Heller Stravenue
+    address2: Suite 122
+    zipcode: '31819'
+    city: Huelview
+    state: Arizona
+    country: Sweden
+    phone: '2236582754388094437375721'

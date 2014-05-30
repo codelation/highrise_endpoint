@@ -1,143 +1,67 @@
 Bundler.require(:default)
 require "endpoint_base/sinatra/base"
+Dotenv.load
 
-class Hash
-  # Returns a hash that removes any matches with the other hash
-  #
-  # {a: {b:"c"}} - {:a=>{:b=>"c"}}                   # => {}
-  # {a: [{c:"d"},{b:"c"}]} - {:a => [{c:"d"}, {b:"d"}]} # => {:a=>[{:b=>"c"}]}
-  #
-  def delete_merge!(other_hash)
-    other_hash.each_pair do |k,v|
-      tv = self[k]
-      if tv.is_a?(Hash) && v.is_a?(Hash) && v.present? && tv.present?
-        tv.delete_merge!(v)
-      elsif v.is_a?(Array) && tv.is_a?(Array) && v.present? && tv.present?
-        v.each_with_index do |x, i|
-          tv[i].delete_merge!(x)
+module HighriseEndpoint
+  class Application < EndpointBase::Sinatra::Base
+    set :logging, true
+
+    Highrise::Base.site = ENV["HIGHRISE_SITE_URL"].blank? ? "http://www.example.com" : ENV["HIGHRISE_SITE_URL"]
+    Highrise::Base.user = ENV["HIGHRISE_API_TOKEN"].blank? ? "thisIsAFakeKey123" : ENV["HIGHRISE_API_TOKEN"]
+
+    # Adds new customer to Highrise from spree hub.
+    post "/add_customer" do
+      people = Highrise::Person.search(customer_id: @payload[:customer][:id])
+
+      if people.length > 0
+        @person = people.first
+        structure = HighriseEndpoint::PersonBlueprint.new(payload: @payload, person: JSON.parse(@person.to_json)).build
+
+        if @person.field("Customer ID") == @payload[:customer][:id]
+          @person.load(structure)
+        else
+          @person = Highrise::Person.new(structure)
         end
-        self[k] = tv - [{}]
       else
-        self.delete(k) if self.has_key?(k) && tv == v
+        structure = HighriseEndpoint::PersonBlueprint.new(payload: @payload).build
+        @person = Highrise::Person.new(structure)
       end
-      self.delete(k) if self.has_key?(k) && self[k].blank?
-    end
-    self
-  end
 
-  def delete_merge(other_hash)
-    dup.delete_merge!(other_hash)
-  end
-
-  def -(other_hash)
-    self.delete_merge(other_hash)
-  end
-
-  def deep_reject_key!(key)
-    keys.each {|k| delete(k) if k == key || self[k] == self[key] }
-
-    values.each {|v| v.deep_reject_key!(key) if v.is_a? Hash }
-    self
-  end
-end
-
-class HighriseEndpoint < EndpointBase::Sinatra::Base
-  set :logging, true
-
-  Highrise::Base.site = ENV["HIGHRISE_SITE_URL"].blank? ? "http://www.example.com" : ENV["HIGHRISE_SITE_URL"]
-  Highrise::Base.user = ENV["HIGHRISE_API_TOKEN"].blank? ? "thisIsAFakeKey123" : ENV["HIGHRISE_API_TOKEN"]
-
-  def customer_attribute_hash(payload: payload, person: nil)
-    billing_address = payload[:customer][:billing_address]
-
-    attributes = {
-      first_name: payload[:customer][:firstname],
-      last_name:  payload[:customer][:lastname],
-      contact_data: {
-        email_addresses: [
-          {
-            address: payload[:customer][:email],
-            location: 'Work'
-          }
-        ],
-        addresses: [
-          {
-            # Need to figure out what all of the information is to be added in the address
-            city:     billing_address[:city],
-            country:  billing_address[:country],
-            location: 'Work',
-            state:    billing_address[:state],
-            street:   billing_address[:address1],
-            zip:      billing_address[:zipcode]
-          }
-        ],
-        phone_numbers: [
-          {
-            location: 'Work',
-            number:   billing_address[:phone]
-          }
-        ],
-        customer_id: payload[:customer][:id]
-      }
-    }.with_indifferent_access
-
-    if person
-      person = JSON.parse(person.to_json).with_indifferent_access
-      attributes = attributes - person
-    end
-
-    attributes
-  end
-
-  # Adds new customer to Highrise from spree hub.
-  post "/add_customer" do
-    people = Highrise::Person.search(customer_id: @payload[:customer][:id])
-    @person = people.first
-
-    if @person
-      if @person.field("Customer ID") == @payload[:customer][:id]
-        @person.load(customer_attribute_hash(payload: @payload, person: @person))
+      if @person.save
+        jbuilder :add_customer_success
       else
-        @person = Highrise::Person.new(customer_attribute_hash(payload: @payload))
+        jbuilder :add_customer_failure
       end
-    else
-      @person = Highrise::Person.new(customer_attribute_hash(payload: @payload))
     end
 
-    if @person.save
-      jbuilder :add_customer_success
-    else
-      jbuilder :add_customer_failure
+    #checks to see if customer exists.  If does not exist, adds customer.
+    # If does exist, updates the necessary data.
+    post "/update_customer" do
+
     end
-  end
 
-  #checks to see if customer exists.  If does not exist, adds customer.
-  # If does exist, updates the necessary data.
-  post "/update_customer" do
+    post "/add_order" do
 
-  end
+    end
 
-  post "/add_order" do
+    post "/update_order" do
 
-  end
+    end
 
-  post "/update_order" do
+    post "/add_product" do
 
-  end
+    end
 
-  post "/add_product" do
+    post "/update_product" do
 
-  end
+    end
 
-  post "/update_product" do
+    post "/add_shipment" do
 
-  end
+    end
 
-  post "/add_shipment" do
+    post "/update_shipment" do
 
-  end
-
-  post "/update_shipment" do
-
+    end
   end
 end

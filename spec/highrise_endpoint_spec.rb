@@ -1,88 +1,24 @@
-require 'spec_helper'
+require "spec_helper"
+require "yaml"
 
-describe HighriseEndpoint do
-  def add_customer
-    {
-      request_id: Faker::Number.number(25),
-      customer: {
-        id:        Faker::Number.number(10),
-        firstname: Faker::Name.first_name,
-        lastname:  Faker::Name.last_name,
-        email:     Faker::Internet.email,
-        shipping_address: {
-          address1: Faker::Address.street_address,
-          address2: Faker::Address.secondary_address,
-          zipcode:  Faker::Address.zip_code,
-          city:     Faker::Address.city,
-          state:    Faker::Address.state,
-          country:  Faker::Address.country,
-          phone:    Faker::Number.number(25)
-        },
-        billing_address: {
-          address1: Faker::Address.street_address,
-          address2: Faker::Address.secondary_address,
-          zipcode:  Faker::Address.zip_code,
-          city:     Faker::Address.city,
-          state:    Faker::Address.state,
-          country:  Faker::Address.country,
-          phone:    Faker::Number.number(25)
-        }
-      }
-    }
-  end
-
-
-  # Note: Should we be using context here to check if a customer exists already before adding a new one?  This might take care of our issue where we keep getting the same customer created repeatedly.
+describe HighriseEndpoint::Application do
   describe "| POST -> '/add_customer'" do
     context "with an existing person" do
-      before(:all) do
-        @add_customer    = add_customer
-        @customer        = @add_customer[:customer]
-        @billing_address = @customer[:billing_address]
-
-        Highrise::Person.new(
-          name: "#{@customer[:firstname]} #{@customer[:lastname]}",
-          contact_data: {
-            email_addresses: [
-              {
-                address: @customer[:email],
-                location: 'Work'
-              }
-            ],
-            addresses: [
-              {
-                # Need to figure out what all of the information is to be added in the address
-                address: {
-                  city:     @billing_address[:city],
-                  country:  @billing_address[:country],
-                  location: 'Work',
-                  state:    @billing_address[:state],
-                  street:   @billing_address[:address1],
-                  zip:      @billing_address[:zipcode]
-                }
-              }
-            ],
-            phone_numbers: [
-              phone_number: {
-                location: 'Work',
-                number:   @billing_address[:phone]
-              }
-            ],
-            customer_id: @customer[:id]
-          }
-        ).save
-      end
-
       before(:each) do
         VCR.use_cassette(:add_existing_person) do
+          @existing_customer = HighriseEndpoint::Requests.new(:customer, "existing").to_hash
+          @structure    = HighriseEndpoint::PersonBlueprint.new(payload: @existing_customer).build
+
+          Highrise::Person.new(@structure).save
+
           # change something to make sure it's updating it :)
-          @add_customer[:customer][:firstname] = "Matthew"
+          @existing_customer[:customer][:firstname] = "Matthew"
 
           # we need to reassign these variables since we updated stuff
-          @customer = @add_customer[:customer]
+          @customer = @existing_customer[:customer]
           @billing_address = @customer[:billing_address]
 
-          post '/add_customer', @add_customer.to_json, auth
+          post '/add_customer', @existing_customer.to_json, auth
         end
 
         @response_body = JSON.parse(last_response.body).with_indifferent_access
@@ -113,22 +49,22 @@ describe HighriseEndpoint do
       end
 
       it "should return a nice summary" do
-        @response_body[:summary].should eql "Customer was added to Highrise."
+        @response_body[:summary].should eql "Person was added to Highrise."
       end
 
       it "should return the webhook request_id" do
-        @response_body[:request_id].should eql @add_customer[:request_id]
+        @response_body[:request_id].should eql @existing_customer[:request_id]
       end
     end
 
     context "without an existing person" do
       before(:all) do
         VCR.use_cassette(:add_new_person) do
-          @add_customer    = add_customer
-          @customer        = @add_customer[:customer]
+          @new_customer    = HighriseEndpoint::Requests.new(:customer, "new").to_hash
+          @customer        = @new_customer[:customer]
           @billing_address = @customer[:billing_address]
 
-          post '/add_customer', @add_customer.to_json, auth
+          post '/add_customer', @new_customer.to_json, auth
         end
 
         @response_body = JSON.parse(last_response.body).with_indifferent_access
@@ -138,7 +74,7 @@ describe HighriseEndpoint do
         last_response.status.should eql 200
       end
 
-      it "should add information to Highrise" do
+      it "should add person to Highrise" do
         VCR.use_cassette(:retrieve_created_person) do
 
           customers = Highrise::Person.search(
@@ -159,11 +95,11 @@ describe HighriseEndpoint do
       end
 
       it "should return a nice summary" do
-        @response_body[:summary].should eql "Customer was added to Highrise."
+        @response_body[:summary].should eql "Person was added to Highrise."
       end
 
       it "should return the webhook request_id" do
-        @response_body[:request_id].should eql @add_customer[:request_id]
+        @response_body[:request_id].should eql @new_customer[:request_id]
       end
     end
   end

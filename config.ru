@@ -3,4 +3,4 @@ require 'bundler'
 
 Bundler.require(:default)
 require "./highrise_endpoint"
-run HighriseEndpoint
+run HighriseEndpoint::Application

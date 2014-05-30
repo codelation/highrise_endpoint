@@ -1,0 +1,23 @@
+--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+request_id: '1354472140192108788346619'
+customer: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  id: '5025928496'
+  firstname: Whitney
+  lastname: Schiller
+  email: lavinia@cartwright.com
+  shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    address1: 8095 Candace Glens
+    address2: Apt. 875
+    zipcode: '21525'
+    city: New D'angeloview
+    state: South Dakota
+    country: Nauru
+    phone: '5485063311438189254587764'
+  billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    address1: 27620 Richard Parkway
+    address2: Suite 349
+    zipcode: 11663-3195
+    city: East Avery
+    state: Texas
+    country: Tanzania
+    phone: '1938234243780931530159911'
