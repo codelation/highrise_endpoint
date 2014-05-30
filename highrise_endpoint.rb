@@ -33,6 +33,7 @@ class Hash
     self.delete_merge(other_hash)
   end
 
+  # deletes recursively
   def deep_reject_key!(key)
     keys.each {|k| delete(k) if k == key || self[k] == self[key] }
 
@@ -47,7 +48,8 @@ class HighriseEndpoint < EndpointBase::Sinatra::Base
   Highrise::Base.site = ENV["HIGHRISE_SITE_URL"].blank? ? "http://www.example.com" : ENV["HIGHRISE_SITE_URL"]
   Highrise::Base.user = ENV["HIGHRISE_API_TOKEN"].blank? ? "thisIsAFakeKey123" : ENV["HIGHRISE_API_TOKEN"]
 
-  def customer_attribute_hash(payload: payload, person: nil)
+  # Payload should always be supplied
+  def customer_attribute_hash(payload: nil, person: nil)
     billing_address = payload[:customer][:billing_address]
 
     attributes = {

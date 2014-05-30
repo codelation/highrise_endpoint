@@ -35,6 +35,8 @@ describe HighriseEndpoint do
   # Note: Should we be using context here to check if a customer exists already before adding a new one?  This might take care of our issue where we keep getting the same customer created repeatedly.
   describe "| POST -> '/add_customer'" do
     context "with an existing person" do
+
+      # generate the random customer and assign to the '@add_customer' so we can work with it below
       before(:all) do
         @add_customer    = add_customer
         @customer        = @add_customer[:customer]
@@ -92,7 +94,8 @@ describe HighriseEndpoint do
         last_response.status.should eql 200
       end
 
-      it "should update information on Highrise" do
+      # checking that the information is actually updated.
+      it "should update person on Highrise" do
         VCR.use_cassette(:retrieve_updated_person) do
 
           customers = Highrise::Person.search(
@@ -113,7 +116,7 @@ describe HighriseEndpoint do
       end
 
       it "should return a nice summary" do
-        @response_body[:summary].should eql "Customer was added to Highrise."
+        @response_body[:summary].should eql "Person was added to Highrise."
       end
 
       it "should return the webhook request_id" do
@@ -138,7 +141,7 @@ describe HighriseEndpoint do
         last_response.status.should eql 200
       end
 
-      it "should add information to Highrise" do
+      it "should add person to Highrise" do
         VCR.use_cassette(:retrieve_created_person) do
 
           customers = Highrise::Person.search(
@@ -159,7 +162,7 @@ describe HighriseEndpoint do
       end
 
       it "should return a nice summary" do
-        @response_body[:summary].should eql "Customer was added to Highrise."
+        @response_body[:summary].should eql "Person was added to Highrise."
       end
 
       it "should return the webhook request_id" do
