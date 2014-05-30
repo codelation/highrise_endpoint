@@ -13,9 +13,9 @@ def app
 end
 
 VCR.configure do |config|
-  # config.allow_http_connections_when_no_cassette = true
+  config.allow_http_connections_when_no_cassette = true
   config.cassette_library_dir = 'spec/vcr_cassettes'
-  config.default_cassette_options = { :match_requests_on => [:method, :path, :query] }
+  config.default_cassette_options = { :match_requests_on => [:method, :path] }
   config.hook_into :webmock
   config.filter_sensitive_data("HIGHRISE_SITE_HOST") {
     URI(ENV["HIGHRISE_SITE_URL"].blank? ? "http://www.example.com" : ENV["HIGHRISE_SITE_URL"]).host

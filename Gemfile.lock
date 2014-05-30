@@ -117,6 +117,7 @@ DEPENDENCIES
   guard
   guard-rspec
   highrise
+  pry
   puma
   rack-test
   rake

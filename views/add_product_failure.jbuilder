@@ -1,2 +1,2 @@
 json.request_id @payload[:request_id]
-json.summary    @person.errors
+json.summary    @person.errors[:base].first
