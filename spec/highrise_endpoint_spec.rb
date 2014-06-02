@@ -199,7 +199,7 @@ describe HighriseEndpoint::Application do
       end
 
       it "should return a nice summary" do
-        @response_body[:summary].should eql "Person was added to Highrise."
+        @response_body[:summary].should eql "Person was updated in Highrise."
       end
 
       it "should return the webhook request_id" do
