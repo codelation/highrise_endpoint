@@ -1,0 +1,23 @@
+--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+request_id: '1653712892891583247692986'
+customer: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  id: '4067963401'
+  firstname: Ryann
+  lastname: Adams
+  email: wayne_fisher@hoeger.org
+  shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    address1: 3659 Kling Unions
+    address2: Apt. 285
+    zipcode: '41143'
+    city: New Charlene
+    state: Nevada
+    country: Faroe Islands
+    phone: '6116520773739280087634718'
+  billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    address1: 957 Jaydon Village
+    address2: Suite 405
+    zipcode: 42007-1173
+    city: West Joanmouth
+    state: Alabama
+    country: Algeria
+    phone: 0521693743670196714835145
