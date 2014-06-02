@@ -22,3 +22,8 @@ desc "Test the application"
 task :test => :environment do
   exec 'RACK_ENV=test bundle exec rspec'
 end
+
+desc "Delete all VCR cassettes and saved request data"
+task :clean => :environment do
+  exec 'rm -rf ./spec/support/requests/*; rm -rf ./spec/vcr_cassettes/*'
+end
