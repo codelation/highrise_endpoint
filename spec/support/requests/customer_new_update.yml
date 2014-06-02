@@ -1,0 +1,23 @@
+--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+request_id: '8810382889257442147706862'
+customer: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  id: '3864753420'
+  firstname: Anthony
+  lastname: O'Hara
+  email: antonette@mantekilback.info
+  shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    address1: 2468 Berge Pike
+    address2: Suite 363
+    zipcode: 10323-2569
+    city: Alexysburgh
+    state: Florida
+    country: Saint Kitts and Nevis
+    phone: '1429489060319097394738737'
+  billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    address1: 31518 Geo Ports
+    address2: Apt. 574
+    zipcode: '54365'
+    city: Rickiefurt
+    state: Hawaii
+    country: Guatemala
+    phone: '8601578797360589665057104'

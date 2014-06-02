@@ -1,0 +1,23 @@
+--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+request_id: '3126114805325631667881922'
+customer: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  id: '6564672749'
+  firstname: Shaina
+  lastname: Stark
+  email: ryleigh_ward@friesen.com
+  shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    address1: 303 Keshawn Mews
+    address2: Apt. 179
+    zipcode: '30605'
+    city: North Korbinview
+    state: Pennsylvania
+    country: Somalia
+    phone: '1625368738875094828301847'
+  billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    address1: 6727 Helen Square
+    address2: Suite 772
+    zipcode: 53900-2186
+    city: Wintheiserberg
+    state: Maine
+    country: Gabon
+    phone: '7066221916287523546469531'

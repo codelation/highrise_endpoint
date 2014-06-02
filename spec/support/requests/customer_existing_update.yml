@@ -1,0 +1,23 @@
+--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+request_id: '5624997269649384744680938'
+customer: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  id: '2451018084'
+  firstname: Megane
+  lastname: McGlynn
+  email: demarco.williamson@mohr.name
+  shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    address1: 296 Swift Isle
+    address2: Apt. 138
+    zipcode: 91857-6049
+    city: Cummeratashire
+    state: Idaho
+    country: United States of America
+    phone: 0748004433085736915156590
+  billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    address1: 258 Wisoky Mews
+    address2: Apt. 497
+    zipcode: '69626'
+    city: East Blakeview
+    state: Georgia
+    country: Andorra
+    phone: '5043125321202519401791066'
