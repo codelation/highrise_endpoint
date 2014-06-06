@@ -135,7 +135,8 @@ module HighriseEndpoint
 #       </deal>
 
       {
-        name: order[:firstname]
+        name:   order[:id],
+        status: order[:status]
       }.with_indifferent_access
     end
 

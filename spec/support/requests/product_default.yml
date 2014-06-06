@@ -1,14 +1,14 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '6208978056040436541769811'
+request_id: '8651235158596955353986827'
 product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: rustic-plastic-gloves
-  name: Rustic Plastic Gloves
-  sku: rustic-plastic-gloves
-  description: Molestiae nisi ex nemo odit aut.
-  price: 64.0
-  cost_price: 1.962178144744564
-  available_on: 2014-06-06 11:05:28.190707000 -05:00
-  permalink: rustic-plastic-gloves
+  id: practical-rubber-hat
+  name: Practical Rubber Hat
+  sku: practical-rubber-hat
+  description: Ullam quia nisi nesciunt voluptas rerum.
+  price: 4982.0
+  cost_price: 1443.4668758236567
+  available_on: 2014-06-06 11:08:15.834848000 -05:00
+  permalink: practical-rubber-hat
   meta_description: 
   meta_keywords: 
   shipping_category: Default
@@ -28,28 +28,28 @@ product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     fit: smart fit
   images:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    url: http://dummyimage.com/600x400/000/fff.jpg&text=Rustic Plastic Gloves
+    url: http://dummyimage.com/600x400/000/fff.jpg&text=Practical Rubber Hat
     position: 1
-    title: Rustic Plastic Gloves
+    title: Practical Rubber Hat
     type: thumbnail
     dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       height: 220
       width: 100
   variants:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    sku: rustic-plastic-gloves-Super-Special-Edition
-    price: 69.0
-    cost_price: 69.0
-    quantity: 0230162889475711969917876
+    sku: practical-rubber-hat-Super-Special-Edition
+    price: 4987.0
+    cost_price: 4987.0
+    quantity: '6619197452010855449753965'
     options: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       color: GREY
       size: S
     images:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      url: http://dummyimage.com/600x400/000/fff.jpg&text=Rustic Plastic Gloves Super
+      url: http://dummyimage.com/600x400/000/fff.jpg&text=Practical Rubber Hat Super
         Special Edition
       position: 1
-      title: Rustic Plastic Gloves Super Special Edition
+      title: Practical Rubber Hat Super Special Edition
       type: thumbnail
       dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
         height: 220

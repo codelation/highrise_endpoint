@@ -1,55 +1,55 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '9522419615159622288617348'
+request_id: '2651100586643998502519484'
 order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '1874356176'
+  id: '5346891710'
   status: :in_progress
   channel: :spree
-  email: aubrey@whitedubuque.name
+  email: cleora_collier@beattybraun.biz
   currency: USD
-  placed_on: 2014-06-06 11:05:28.195108000 -05:00
+  placed_on: 2014-06-06 11:08:15.837532000 -05:00
   totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    item: 192.0
-    adjustment: 5.0
-    tax: 124.80000000000001
-    shipping: 5.0
-    payment: 321.8
-    order: 321.8
+    item: 4982.0
+    adjustment: 1.0
+    tax: 3238.3
+    shipping: 1.0
+    payment: 8221.3
+    order: 8221.3
   line_items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: rustic-plastic-gloves
-    name: Rustic Plastic Gloves
-    quantity: '3'
-    price: 64.0
+    product_id: practical-rubber-hat
+    name: Practical Rubber Hat
+    quantity: '1'
+    price: 4982.0
   adjustments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Tax
-    value: 124.80000000000001
+    value: 3238.3
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Shipping
-    value: 5.0
+    value: 1.0
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Layla
-    lastname: Conroy
-    address1: 6432 Kemmer Islands
-    address2: Apt. 676
-    zipcode: 85288-1330
-    city: West Isadoreton
-    state: Michigan
-    country: Lithuania
-    phone: '1653991058840048616330810'
-  billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Marlon
-    lastname: Kirlin
-    address1: 617 Toy Spurs
-    address2: Suite 843
-    zipcode: 80492-5440
-    city: Lillianburgh
+    firstname: Armani
+    lastname: Davis
+    address1: 45143 Abshire Well
+    address2: Apt. 775
+    zipcode: '16446'
+    city: New Luther
     state: Nebraska
-    country: Turkmenistan
-    phone: '3149805788436834868314214'
+    country: China
+    phone: '4823595488363149589626088'
+  billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    firstname: Jade
+    lastname: Fadel
+    address1: 181 Adah Crescent
+    address2: Suite 911
+    zipcode: '40253'
+    city: South Elissamouth
+    state: Massachusetts
+    country: Virgin Islands, U.S.
+    phone: '3145980755180151148602036'
   payments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     number: 63
     status: :complete
-    amount: 321.8
+    amount: 8221.3
     payment_method: Credit Card
