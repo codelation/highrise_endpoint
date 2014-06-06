@@ -146,7 +146,7 @@ http_interactions:
           </subject_data>
         </subject_datas>
         </person>
-    http_version: 
+    http_version:
   recorded_at: Fri, 06 Jun 2014 15:03:18 GMT
 - request:
     method: get
@@ -261,7 +261,7 @@ http_interactions:
         </subject_datas>
           </person>
         </people>
-    http_version: 
+    http_version:
   recorded_at: Fri, 06 Jun 2014 15:03:19 GMT
 - request:
     method: get
@@ -318,7 +318,7 @@ http_interactions:
       string: |
         <?xml version="1.0" encoding="UTF-8"?>
         <people type="array"/>
-    http_version: 
+    http_version:
   recorded_at: Fri, 06 Jun 2014 15:03:19 GMT
 - request:
     method: put
@@ -402,6 +402,6 @@ http_interactions:
     body:
       encoding: UTF-8
       string: " "
-    http_version: 
+    http_version:
   recorded_at: Fri, 06 Jun 2014 15:03:19 GMT
 recorded_with: VCR 2.9.2

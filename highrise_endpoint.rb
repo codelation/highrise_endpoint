@@ -59,7 +59,7 @@ module HighriseEndpoint
       else
         structure = HighriseEndpoint::PersonBlueprint.new(payload: @payload).build
         @person = Highrise::Person.new(structure)
-        
+
         if @person.save
           jbuilder :add_customer_success
         else
