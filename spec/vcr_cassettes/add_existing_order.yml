@@ -8,7 +8,7 @@ http_interactions:
       string: |
         <?xml version="1.0" encoding="UTF-8"?>
         <deal>
-          <name>5346891710</name>
+          <name>1592240344</name>
           <status type="symbol">in_progress</status>
         </deal>
     headers:
@@ -113,5 +113,5 @@ http_interactions:
         </body>
         </html>
     http_version: 
-  recorded_at: Fri, 06 Jun 2014 16:08:15 GMT
+  recorded_at: Fri, 06 Jun 2014 16:36:25 GMT
 recorded_with: VCR 2.9.2
