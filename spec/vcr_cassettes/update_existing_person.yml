@@ -53,36 +53,36 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 02 Jun 2014 15:05:38 GMT
+      - Fri, 06 Jun 2014 15:03:18 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
-      - '841'
+      - '843'
       Connection:
       - Keep-Alive
       Status:
       - 201 Created
-      X-Request-Id:
-      - a1063ae2d7345b7cde1b6f487d5390c7
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Throttle-Count:
-      - '11'
-      Location:
-      - https://HIGHRISE_SITE_HOST/people/208693562-megane-mcglynn
-      X-Throttle-Horizon:
-      - '2014-06-02T15:05:40Z'
-      X-Runtime:
-      - '47'
-      Set-Cookie:
-      - _sunrise_session=BAh7BzoPc2Vzc2lvbl9pZCIlZDBkZDA0NjNjNDY2NmYyMWYyYmUxNzYyOTVjYTlmNmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoPbmV3X3BlcnNvblQGOgpAdXNlZHsGOwdG--2ebb4ad46ecf24535694e46cba015c5dde647126;
-        path=/; HttpOnly; secure
-      X-Throttle-Max:
-      - '500'
       Cache-Control:
       - no-cache
+      X-Runtime:
+      - '44'
+      X-Throttle-Horizon:
+      - '2014-06-06T15:03:20Z'
+      Location:
+      - https://HIGHRISE_SITE_HOST/people/209112960-megane-mcglynn
+      X-Throttle-Count:
+      - '1'
+      Set-Cookie:
+      - _sunrise_session=BAh7BzoPc2Vzc2lvbl9pZCIlYzg5ODQ0YzdlZDA4Yjk1ZTNmNjk0Mzg3NzNmMjA4ZGQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoPbmV3X3BlcnNvblQGOgpAdXNlZHsGOwdG--31c5663670c0cec99e8558fdcb6f1538eeb4d1a3;
+        path=/; HttpOnly; secure
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Max:
+      - '500'
       Strict-Transport-Security:
       - max-age=31536000
+      X-Request-Id:
+      - 94fc9ca5552389b26ef40667ebfcadf0
       Timing-Allow-Origin:
       - "*"
       Vary:
@@ -92,17 +92,17 @@ http_interactions:
       string: |
         <?xml version="1.0" encoding="UTF-8"?>
         <person>
-          <author-id type="integer">1039339</author-id>
+          <author-id type="integer">1041663</author-id>
           <background nil="true"></background>
           <company-id type="integer" nil="true"></company-id>
-          <created-at type="datetime">2014-06-02T15:05:38Z</created-at>
+          <created-at type="datetime">2014-06-06T15:03:18Z</created-at>
           <first-name>Megane</first-name>
           <group-id type="integer" nil="true"></group-id>
-          <id type="integer">208693562</id>
+          <id type="integer">209112960</id>
           <last-name>McGlynn</last-name>
           <owner-id type="integer" nil="true"></owner-id>
           <title nil="true"></title>
-          <updated-at type="datetime">2014-06-02T15:05:38Z</updated-at>
+          <updated-at type="datetime">2014-06-06T15:03:18Z</updated-at>
           <visible-to>Everyone</visible-to>
           <company-name nil="true"></company-name>
           <linkedin-url nil="true"></linkedin-url>
@@ -110,7 +110,7 @@ http_interactions:
         <contact-data>
           <phone-numbers type="array">
             <phone-number>
-              <id type="integer">168376310</id>
+              <id type="integer">168705796</id>
               <location>Work</location>
               <number>5043125321202519401791066</number>
             </phone-number>
@@ -119,7 +119,7 @@ http_interactions:
           <email-addresses type="array">
             <email-address>
               <address>demarco.williamson@mohr.name</address>
-              <id type="integer">106840621</id>
+              <id type="integer">107092083</id>
               <location>Work</location>
             </email-address>
           </email-addresses>
@@ -128,7 +128,7 @@ http_interactions:
             <address>
               <city>East Blakeview</city>
               <country>Andorra</country>
-              <id type="integer">100059474</id>
+              <id type="integer">100239222</id>
               <location>Work</location>
               <state>Georgia</state>
               <street>258 Wisoky Mews</street>
@@ -139,13 +139,269 @@ http_interactions:
         </contact-data>
         <subject_datas type="array">
           <subject_data>
-            <id type="integer">125962098</id>
-            <subject_field_id type="integer">899028</subject_field_id>
+            <id type="integer">126390164</id>
+            <subject_field_id type="integer">900955</subject_field_id>
             <subject_field_label>Customer ID</subject_field_label>
             <value>2451018084</value>
           </subject_data>
         </subject_datas>
         </person>
     http_version: 
-  recorded_at: Mon, 02 Jun 2014 15:05:38 GMT
+  recorded_at: Fri, 06 Jun 2014 15:03:18 GMT
+- request:
+    method: get
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Bcustomer_id%5D=2451018084&n=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 06 Jun 2014 15:03:19 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '865'
+      Connection:
+      - Keep-Alive
+      Status:
+      - 200 OK
+      X-Throttle-Max:
+      - '500'
+      X-Throttle-Count:
+      - '2'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Horizon:
+      - '2014-06-06T15:03:20Z'
+      X-Runtime:
+      - '32'
+      X-Request-Id:
+      - eced8d425607a6c61363e8383cacc9a9
+      Etag:
+      - '"686017d55014f659c591d0bf6f0b5c44"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Timing-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <people type="array">
+          <person>
+            <author-id type="integer">1041663</author-id>
+            <background nil="true"></background>
+            <company-id type="integer" nil="true"></company-id>
+            <created-at type="datetime">2014-06-06T15:03:18Z</created-at>
+            <first-name>Megane</first-name>
+            <group-id type="integer" nil="true"></group-id>
+            <id type="integer">209112960</id>
+            <last-name>McGlynn</last-name>
+            <owner-id type="integer" nil="true"></owner-id>
+            <title nil="true"></title>
+            <updated-at type="datetime">2014-06-06T15:03:18Z</updated-at>
+            <visible-to>Everyone</visible-to>
+            <company-name nil="true"></company-name>
+            <linkedin-url nil="true"></linkedin-url>
+            <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+        <contact-data>
+          <phone-numbers type="array">
+            <phone-number>
+              <id type="integer">168705796</id>
+              <location>Work</location>
+              <number>5043125321202519401791066</number>
+            </phone-number>
+          </phone-numbers>
+          <web-addresses type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>demarco.williamson@mohr.name</address>
+              <id type="integer">107092083</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <instant-messengers type="array"/>
+          <addresses type="array">
+            <address>
+              <city>East Blakeview</city>
+              <country>Andorra</country>
+              <id type="integer">100239222</id>
+              <location>Work</location>
+              <state>Georgia</state>
+              <street>258 Wisoky Mews</street>
+              <zip>69626</zip>
+            </address>
+          </addresses>
+          <twitter-accounts type="array"/>
+        </contact-data>
+        <subject_datas type="array">
+          <subject_data>
+            <id type="integer">126390164</id>
+            <subject_field_id type="integer">900955</subject_field_id>
+            <subject_field_label>Customer ID</subject_field_label>
+            <value>2451018084</value>
+          </subject_data>
+        </subject_datas>
+          </person>
+        </people>
+    http_version: 
+  recorded_at: Fri, 06 Jun 2014 15:03:19 GMT
+- request:
+    method: get
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Bcustomer_id%5D=2451018084&n=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 06 Jun 2014 15:03:19 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '62'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Throttle-Max:
+      - '500'
+      X-Throttle-Count:
+      - '3'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Horizon:
+      - '2014-06-06T15:03:20Z'
+      X-Runtime:
+      - '13'
+      X-Request-Id:
+      - f1b590f6e19a2e5d283ebf5e21f891d0
+      Etag:
+      - '"304246700dd9732895ecf4e138caeb37"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <people type="array"/>
+    http_version: 
+  recorded_at: Fri, 06 Jun 2014 15:03:19 GMT
+- request:
+    method: put
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/209112960.xml
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <person>
+          <author-id type="integer">1041663</author-id>
+          <background nil="true"/>
+          <company-id nil="true"/>
+          <created-at type="dateTime">2014-06-06T15:03:18Z</created-at>
+          <first-name>Matthew</first-name>
+          <group-id nil="true"/>
+          <id type="integer">209112960</id>
+          <last-name>McGlynn</last-name>
+          <owner-id nil="true"/>
+          <title nil="true"/>
+          <updated-at type="dateTime">2014-06-06T15:03:18Z</updated-at>
+          <visible-to>Everyone</visible-to>
+          <company-name nil="true"/>
+          <linkedin-url nil="true"/>
+          <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+          <contact-data>
+            <customer-id>2451018084</customer-id>
+          </contact-data>
+          <subject-datas type="array">
+            <subject-data>
+              <id type="integer">126390164</id>
+              <subject-field-id type="integer">900955</subject-field-id>
+              <subject-field-label>Customer ID</subject-field-label>
+              <value>2451018084</value>
+            </subject-data>
+          </subject-datas>
+        </person>
+    headers:
+      Content-Type:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 06 Jun 2014 15:03:19 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '1'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Throttle-Max:
+      - '500'
+      X-Throttle-Count:
+      - '4'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Horizon:
+      - '2014-06-06T15:03:20Z'
+      X-Runtime:
+      - '35'
+      X-Request-Id:
+      - 394ca76071e1552638435963d3f563d8
+      Strict-Transport-Security:
+      - max-age=31536000
+      Cache-Control:
+      - no-cache
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: " "
+    http_version: 
+  recorded_at: Fri, 06 Jun 2014 15:03:19 GMT
 recorded_with: VCR 2.9.2

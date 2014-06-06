@@ -1,0 +1,175 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Bcity%5D=East%20Imeldamouth&criteria%5Bcountry%5D=Afghanistan&criteria%5Bcustomer_id%5D=6774835688&criteria%5Bemail%5D=tania_friesen@swaniawskigrant.biz&criteria%5Bfirstname%5D=Solon&criteria%5Blastname%5D=Kozey&criteria%5Bnumber%5D=9797608273788868739998226&criteria%5Bstate%5D=Rhode%20Island&criteria%5Bstreet%5D=2636%20Rosenbaum%20Lock&criteria%5Bzip%5D=39028-1313&n=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 06 Jun 2014 14:52:14 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '890'
+      Connection:
+      - Keep-Alive
+      Status:
+      - 200 OK
+      X-Throttle-Max:
+      - '500'
+      X-Throttle-Count:
+      - '13'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Horizon:
+      - '2014-06-06T14:52:20Z'
+      X-Runtime:
+      - '24'
+      X-Request-Id:
+      - 933a6caa5c9c844f855c044791525e73
+      Etag:
+      - '"ad64ec1f53dfd60ab9c5e98ff49c29e6"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Timing-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <people type="array">
+          <person>
+            <author-id type="integer">1041663</author-id>
+            <background nil="true"></background>
+            <company-id type="integer" nil="true"></company-id>
+            <created-at type="datetime">2014-06-06T14:52:14Z</created-at>
+            <first-name>Solon</first-name>
+            <group-id type="integer" nil="true"></group-id>
+            <id type="integer">209111823</id>
+            <last-name>Kozey</last-name>
+            <owner-id type="integer" nil="true"></owner-id>
+            <title nil="true"></title>
+            <updated-at type="datetime">2014-06-06T14:52:14Z</updated-at>
+            <visible-to>Everyone</visible-to>
+            <company-name nil="true"></company-name>
+            <linkedin-url nil="true"></linkedin-url>
+            <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+        <contact-data>
+          <phone-numbers type="array">
+            <phone-number>
+              <id type="integer">168705242</id>
+              <location>Work</location>
+              <number>9797608273788868739998226</number>
+            </phone-number>
+          </phone-numbers>
+          <web-addresses type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>tania_friesen@swaniawskigrant.biz</address>
+              <id type="integer">107091312</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <instant-messengers type="array"/>
+          <addresses type="array">
+            <address>
+              <city>East Imeldamouth</city>
+              <country>Afghanistan</country>
+              <id type="integer">100239013</id>
+              <location>Work</location>
+              <state>Rhode Island</state>
+              <street>2636 Rosenbaum Lock</street>
+              <zip>39028-1313</zip>
+            </address>
+          </addresses>
+          <twitter-accounts type="array"/>
+        </contact-data>
+        <subject_datas type="array">
+          <subject_data>
+            <id type="integer">126389839</id>
+            <subject_field_id type="integer">900955</subject_field_id>
+            <subject_field_label>Customer ID</subject_field_label>
+            <value>6774835688</value>
+          </subject_data>
+        </subject_datas>
+          </person>
+        </people>
+    http_version: 
+  recorded_at: Fri, 06 Jun 2014 14:52:14 GMT
+- request:
+    method: get
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Bcity%5D=East%20Imeldamouth&criteria%5Bcountry%5D=Afghanistan&criteria%5Bcustomer_id%5D=6774835688&criteria%5Bemail%5D=tania_friesen@swaniawskigrant.biz&criteria%5Bfirstname%5D=Solon&criteria%5Blastname%5D=Kozey&criteria%5Bnumber%5D=9797608273788868739998226&criteria%5Bstate%5D=Rhode%20Island&criteria%5Bstreet%5D=2636%20Rosenbaum%20Lock&criteria%5Bzip%5D=39028-1313&n=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 06 Jun 2014 14:52:14 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '62'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Throttle-Max:
+      - '500'
+      X-Throttle-Count:
+      - '14'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Horizon:
+      - '2014-06-06T14:52:20Z'
+      X-Runtime:
+      - '11'
+      X-Request-Id:
+      - 43f3591aecbad5fe77b9b777ce5dc0dd
+      Etag:
+      - '"304246700dd9732895ecf4e138caeb37"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <people type="array"/>
+    http_version: 
+  recorded_at: Fri, 06 Jun 2014 14:52:14 GMT
+recorded_with: VCR 2.9.2
