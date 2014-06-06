@@ -1,0 +1,27 @@
+--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+request_id: '7845808789250735640194858'
+customer: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  id: 0616370977
+  firstname: Marlon
+  lastname: Kirlin
+  email: marcel@willms.info
+  shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    firstname: Layla
+    lastname: Conroy
+    address1: 6432 Kemmer Islands
+    address2: Apt. 676
+    zipcode: 85288-1330
+    city: West Isadoreton
+    state: Michigan
+    country: Lithuania
+    phone: '1653991058840048616330810'
+  billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    firstname: Marlon
+    lastname: Kirlin
+    address1: 617 Toy Spurs
+    address2: Suite 843
+    zipcode: 80492-5440
+    city: Lillianburgh
+    state: Nebraska
+    country: Turkmenistan
+    phone: '3149805788436834868314214'

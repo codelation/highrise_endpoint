@@ -1,14 +1,14 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '5836476596633826198438883'
+request_id: '6208978056040436541769811'
 product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: small-plastic-car
-  name: Small Plastic Car
-  sku: small-plastic-car
-  description: Quibusdam sapiente in tempore quia illo quia eum cum.
-  price: 2053.0
-  cost_price: 262.6361334100865
-  available_on: 2014-06-06 10:58:17.713724000 -05:00
-  permalink: small-plastic-car
+  id: rustic-plastic-gloves
+  name: Rustic Plastic Gloves
+  sku: rustic-plastic-gloves
+  description: Molestiae nisi ex nemo odit aut.
+  price: 64.0
+  cost_price: 1.962178144744564
+  available_on: 2014-06-06 11:05:28.190707000 -05:00
+  permalink: rustic-plastic-gloves
   meta_description: 
   meta_keywords: 
   shipping_category: Default
@@ -28,28 +28,28 @@ product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     fit: smart fit
   images:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    url: http://dummyimage.com/600x400/000/fff.jpg&text=Small Plastic Car
+    url: http://dummyimage.com/600x400/000/fff.jpg&text=Rustic Plastic Gloves
     position: 1
-    title: Small Plastic Car
+    title: Rustic Plastic Gloves
     type: thumbnail
     dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       height: 220
       width: 100
   variants:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    sku: small-plastic-car-Super-Special-Edition
-    price: 2058.0
-    cost_price: 2058.0
-    quantity: '8861452820069343148008735'
+    sku: rustic-plastic-gloves-Super-Special-Edition
+    price: 69.0
+    cost_price: 69.0
+    quantity: 0230162889475711969917876
     options: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       color: GREY
       size: S
     images:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      url: http://dummyimage.com/600x400/000/fff.jpg&text=Small Plastic Car Super
+      url: http://dummyimage.com/600x400/000/fff.jpg&text=Rustic Plastic Gloves Super
         Special Edition
       position: 1
-      title: Small Plastic Car Super Special Edition
+      title: Rustic Plastic Gloves Super Special Edition
       type: thumbnail
       dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
         height: 220

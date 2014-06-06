@@ -7,7 +7,7 @@ describe HighriseEndpoint::Application do
     context "with an existing person" do
       before(:each) do
         VCR.use_cassette(:add_existing_person) do
-          @existing_customer = HighriseEndpoint::Requests.new(:customer, "existing").to_hash
+          @existing_customer = HighriseEndpoint::Requests.new(:customer, "existing_add").to_hash
           @structure    = HighriseEndpoint::PersonBlueprint.new(payload: @existing_customer).build
 
           Highrise::Person.new(@structure).save
@@ -61,7 +61,7 @@ describe HighriseEndpoint::Application do
     context "without an existing person" do
       before(:all) do
         VCR.use_cassette(:add_new_person) do
-          @new_customer    = HighriseEndpoint::Requests.new(:customer, "new").to_hash
+          @new_customer    = HighriseEndpoint::Requests.new(:customer, "new_add").to_hash
           @customer        = @new_customer[:customer]
           @billing_address = @customer[:billing_address]
 
@@ -109,7 +109,7 @@ describe HighriseEndpoint::Application do
     context "with an existing person" do
       before(:each) do
         VCR.use_cassette(:update_existing_person) do
-          @existing_customer = HighriseEndpoint::Requests.new(:customer, "existing").to_hash
+          @existing_customer = HighriseEndpoint::Requests.new(:customer, "existing_update").to_hash
           @structure    = HighriseEndpoint::PersonBlueprint.new(payload: @existing_customer).build
 
           Highrise::Person.new(@structure).save
@@ -164,7 +164,7 @@ describe HighriseEndpoint::Application do
     context "without an existing person" do
       before(:all) do
         VCR.use_cassette(:update_new_person) do
-          @new_customer    = HighriseEndpoint::Requests.new(:customer, "new").to_hash
+          @new_customer    = HighriseEndpoint::Requests.new(:customer, "new_update").to_hash
           @customer        = @new_customer[:customer]
           @billing_address = @customer[:billing_address]
 
