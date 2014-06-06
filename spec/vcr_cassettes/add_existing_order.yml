@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/deals.xml
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <deal>
+          <name nil="true"/>
+        </deal>
+    headers:
+      Content-Type:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 06 Jun 2014 15:58:17 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '95'
+      Connection:
+      - keep-alive
+      Status:
+      - 422 Unprocessable Entity
+      Cache-Control:
+      - no-cache
+      X-Throttle-Horizon:
+      - '2014-06-06T15:58:20Z'
+      X-Throttle-Count:
+      - '12'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Max:
+      - '500'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - e9055f3dddc9d866438678404bfb3b52
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <errors>
+          <error>Name can't be blank</error>
+        </errors>
+    http_version: 
+  recorded_at: Fri, 06 Jun 2014 15:58:17 GMT
+recorded_with: VCR 2.9.2

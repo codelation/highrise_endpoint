@@ -40,15 +40,21 @@ end
 
 module HighriseEndpoint
   class Blueprint
-    attr_accessor :payload, :person
+    attr_accessor :payload
 
-    def initialize(payload: nil, person: nil)
-      @person = person.with_indifferent_access if person
+    def initialize(payload: nil)
       @payload = payload
     end
   end
 
   class PersonBlueprint < Blueprint
+    attr_accessor :person
+
+    def initialize(payload: nil, person: nil)
+      super(payload: payload)
+      @person = person.with_indifferent_access if person
+    end
+
     def attributes
       customer        = @payload[:customer]
       billing_address = customer[:billing_address]
@@ -88,6 +94,54 @@ module HighriseEndpoint
     def build
       if @person
         attributes - @person
+      else
+        attributes
+      end
+    end
+  end
+
+  class DealBlueprint < Blueprint
+    attr_accessor :deal
+
+    def initialize(payload: nil, deal: nil)
+      super(payload: payload)
+      @deal = deal.with_indifferent_access if deal
+    end
+
+    def attributes
+      order = @payload[:order]
+
+      # <deal>
+#         <account-id type="integer"></account-id>
+#         <author-id type="integer"></author-id>
+#         <background></background>
+#         <category-id type="integer"></category-id>
+#         <created-at type="datetime"></created-at>
+#         <currency></currency>
+#         <duration type="integer"></duration>
+#         <group-id type="integer"></group-id>
+#         <name></name>
+#         <owner-id type="integer"></owner-id>
+#         <party-id type="integer"></party-id>
+#         <price type="integer"></price>
+#         <price-type></price-type>
+#         <responsible-party-id type="integer"></responsible-party-id>
+#         <status></status>
+#         <status-changed-on type="date"></status-changed-on>
+#         <parties type="array">
+#           <party>...</party>
+#         </parties>
+#         <party>...</party>
+#       </deal>
+
+      {
+        name: order[:firstname]
+      }.with_indifferent_access
+    end
+
+    def build
+      if @deal
+        attributes - @deal
       else
         attributes
       end

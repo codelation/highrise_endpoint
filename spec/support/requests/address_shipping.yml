@@ -1,0 +1,12 @@
+--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+request_id: '7710010489158005174074303'
+address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  firstname: Maxie
+  lastname: Upton
+  address1: 227 Will Light
+  address2: Apt. 922
+  zipcode: 12070-6638
+  city: Stantonmouth
+  state: South Carolina
+  country: Brazil
+  phone: '3562107049819177767838203'

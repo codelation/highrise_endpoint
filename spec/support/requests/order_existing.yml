@@ -1,0 +1,55 @@
+--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+request_id: 0806737992671173317722464
+order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  id: '5404126521'
+  status: :complete
+  channel: :spree
+  email: kieran@rowe.info
+  currency: USD
+  placed_on: 2014-06-06 10:58:17.716415000 -05:00
+  totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    item: 6159.0
+    adjustment: 3.0
+    tax: 4003.3500000000004
+    shipping: 3.0
+    payment: 10165.35
+    order: 10165.35
+  line_items:
+  - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    product_id: small-plastic-car
+    name: Small Plastic Car
+    quantity: '3'
+    price: 2053.0
+  adjustments:
+  - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    name: Tax
+    value: 4003.3500000000004
+  - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    name: Shipping
+    value: 3.0
+  shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    firstname: Maxie
+    lastname: Upton
+    address1: 227 Will Light
+    address2: Apt. 922
+    zipcode: 12070-6638
+    city: Stantonmouth
+    state: South Carolina
+    country: Brazil
+    phone: '3562107049819177767838203'
+  billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    firstname: Mariah
+    lastname: Hintz
+    address1: 616 Xander Curve
+    address2: Apt. 830
+    zipcode: 33203-5354
+    city: North Vincentburgh
+    state: South Dakota
+    country: Bulgaria
+    phone: '7199651845877538097431838'
+  payments:
+  - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    number: 63
+    status: :in_progress
+    amount: 10165.35
+    payment_method: Credit Card
