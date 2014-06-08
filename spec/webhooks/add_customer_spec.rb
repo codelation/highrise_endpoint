@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe HighriseEndpoint::Application do
-  describe "| POST -> '/add_customer'", HighriseEndpoint::Application do
+  describe "| POST -> '/add_customer'" do
     context "with an existing person" do
       before(:each) do
         VCR.use_cassette(:add_existing_person) do

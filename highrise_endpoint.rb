@@ -22,6 +22,7 @@ module HighriseEndpoint
         else
           @person = Highrise::Person.new(structure)
         end
+
         if @person.save
           jbuilder :update_customer_success
         else
