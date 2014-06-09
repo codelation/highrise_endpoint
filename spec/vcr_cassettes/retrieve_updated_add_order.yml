@@ -1,0 +1,222 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/deals.xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 09 Jun 2014 02:01:15 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '1506'
+      Connection:
+      - Keep-Alive
+      Status:
+      - 200 OK
+      X-Runtime:
+      - '34'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      X-Throttle-Horizon:
+      - '2014-06-09T02:01:20Z'
+      X-Throttle-Count:
+      - '18'
+      Set-Cookie:
+      - _sunrise_session=BAh7BjoPc2Vzc2lvbl9pZCIlYjNhZGY5NGQyMTJmZjA0NWE5ZjBhMGQ0NzgwZDU1OTI%3D--929be78a08ce08b2b8657400c2199769397fae95;
+        path=/; HttpOnly; secure
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Max:
+      - '500'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 49d8b623aace177aab641739b5ed5f96
+      Etag:
+      - '"6f4654dc4d34d7613d3a18df866a97ff"'
+      Timing-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <deals type="array">
+          <deal>
+            <account-id type="integer">318224</account-id>
+            <author-id type="integer">1041927</author-id>
+            <background nil="true"></background>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-06-09T01:59:14Z</created-at>
+            <currency>USD</currency>
+            <duration type="integer">1</duration>
+            <group-id type="integer" nil="true"></group-id>
+            <id type="integer">3734394</id>
+            <name>0888905734</name>
+            <owner-id type="integer" nil="true"></owner-id>
+            <party-id type="integer">209175807</party-id>
+            <price type="integer">141</price>
+            <price-type>fixed</price-type>
+            <responsible-party-id type="integer" nil="true"></responsible-party-id>
+            <status>won</status>
+            <status-changed-on type="date" nil="true"></status-changed-on>
+            <updated-at type="datetime">2014-06-09T01:59:14Z</updated-at>
+            <visible-to>Everyone</visible-to>
+            <party>
+              <author-id type="integer">1041927</author-id>
+              <background nil="true"></background>
+              <company-id type="integer" nil="true"></company-id>
+              <created-at type="datetime">2014-06-09T01:59:12Z</created-at>
+              <first-name>Matthew</first-name>
+              <group-id type="integer" nil="true"></group-id>
+              <id type="integer">209175807</id>
+              <last-name>Price</last-name>
+              <owner-id type="integer" nil="true"></owner-id>
+              <title nil="true"></title>
+              <type>Person</type>
+              <updated-at type="datetime">2014-06-09T01:59:12Z</updated-at>
+              <visible-to>Everyone</visible-to>
+              <company-name nil="true"></company-name>
+              <linkedin-url nil="true"></linkedin-url>
+              <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+        <contact-data>
+          <phone-numbers type="array">
+            <phone-number>
+              <id type="integer">168746969</id>
+              <location>Work</location>
+              <number>1411338374303052618763190</number>
+            </phone-number>
+          </phone-numbers>
+          <web-addresses type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>aylin.boehm@torphydaniel.name</address>
+              <id type="integer">107131590</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <instant-messengers type="array"/>
+          <addresses type="array">
+            <address>
+              <city>Dulceborough</city>
+              <country>British Indian Ocean Territory (Chagos Archipelago)</country>
+              <id type="integer">100261193</id>
+              <location>Work</location>
+              <state>Montana</state>
+              <street>4085 Christop Light</street>
+              <zip>17437</zip>
+            </address>
+          </addresses>
+          <twitter-accounts type="array"/>
+        </contact-data>
+        <subject_datas type="array">
+          <subject_data>
+            <id type="integer">126425881</id>
+            <subject_field_id type="integer">901228</subject_field_id>
+            <subject_field_label>Customer ID</subject_field_label>
+            <value>0183072940</value>
+          </subject_data>
+        </subject_datas>
+            </party>
+            <parties type="array"/>
+          </deal>
+          <deal>
+            <account-id type="integer">318224</account-id>
+            <author-id type="integer">1041927</author-id>
+            <background nil="true"></background>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-06-09T02:01:14Z</created-at>
+            <currency>USD</currency>
+            <duration type="integer">1</duration>
+            <group-id type="integer" nil="true"></group-id>
+            <id type="integer">3734399</id>
+            <name>7904947850</name>
+            <owner-id type="integer" nil="true"></owner-id>
+            <party-id type="integer">209175900</party-id>
+            <price type="integer">81</price>
+            <price-type>fixed</price-type>
+            <responsible-party-id type="integer" nil="true"></responsible-party-id>
+            <status>won</status>
+            <status-changed-on type="date" nil="true"></status-changed-on>
+            <updated-at type="datetime">2014-06-09T02:01:14Z</updated-at>
+            <visible-to>Everyone</visible-to>
+            <party>
+              <author-id type="integer">1041927</author-id>
+              <background nil="true"></background>
+              <company-id type="integer" nil="true"></company-id>
+              <created-at type="datetime">2014-06-09T02:01:11Z</created-at>
+              <first-name>Matthew</first-name>
+              <group-id type="integer" nil="true"></group-id>
+              <id type="integer">209175900</id>
+              <last-name>Crona</last-name>
+              <owner-id type="integer" nil="true"></owner-id>
+              <title nil="true"></title>
+              <type>Person</type>
+              <updated-at type="datetime">2014-06-09T02:01:11Z</updated-at>
+              <visible-to>Everyone</visible-to>
+              <company-name nil="true"></company-name>
+              <linkedin-url nil="true"></linkedin-url>
+              <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+        <contact-data>
+          <phone-numbers type="array">
+            <phone-number>
+              <id type="integer">168746997</id>
+              <location>Work</location>
+              <number>8342138159064726297600894</number>
+            </phone-number>
+          </phone-numbers>
+          <web-addresses type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>lee.hauck@grimeswatsica.name</address>
+              <id type="integer">107131615</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <instant-messengers type="array"/>
+          <addresses type="array">
+            <address>
+              <city>Zemlakfurt</city>
+              <country>Libyan Arab Jamahiriya</country>
+              <id type="integer">100261244</id>
+              <location>Work</location>
+              <state>New York</state>
+              <street>89581 Doyle Run</street>
+              <zip>84774-0072</zip>
+            </address>
+          </addresses>
+          <twitter-accounts type="array"/>
+        </contact-data>
+        <subject_datas type="array">
+          <subject_data>
+            <id type="integer">126425987</id>
+            <subject_field_id type="integer">901228</subject_field_id>
+            <subject_field_label>Customer ID</subject_field_label>
+            <value>1562705770</value>
+          </subject_data>
+        </subject_datas>
+            </party>
+            <parties type="array"/>
+          </deal>
+        </deals>
+    http_version: 
+  recorded_at: Mon, 09 Jun 2014 02:01:15 GMT
+recorded_with: VCR 2.9.2

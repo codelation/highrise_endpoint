@@ -1,14 +1,14 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '9406938984834131649448714'
+request_id: '5354056509517452682739031'
 product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: intelligent-granite-computer
-  name: Intelligent Granite Computer
-  sku: intelligent-granite-computer
-  description: Est suscipit rem sapiente illum enim cumque vel.
-  price: 6327.0
-  cost_price: 4551.357680835489
-  available_on: 2014-06-08 19:00:04.888924000 -05:00
-  permalink: intelligent-granite-computer
+  id: intelligent-plastic-shirt
+  name: Intelligent Plastic Shirt
+  sku: intelligent-plastic-shirt
+  description: Ipsa rem ea autem dolores vel facere eum.
+  price: 1233
+  cost_price: 11
+  available_on: 2014-06-08 21:01:13.413118000 -05:00
+  permalink: intelligent-plastic-shirt
   meta_description: 
   meta_keywords: 
   shipping_category: Default
@@ -28,28 +28,28 @@ product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     fit: smart fit
   images:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    url: http://dummyimage.com/600x400/000/fff.jpg&text=Intelligent Granite Computer
+    url: http://dummyimage.com/600x400/000/fff.jpg&text=Intelligent Plastic Shirt
     position: 1
-    title: Intelligent Granite Computer
+    title: Intelligent Plastic Shirt
     type: thumbnail
     dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       height: 220
       width: 100
   variants:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    sku: intelligent-granite-computer-Super-Special-Edition
-    price: 6332.0
-    cost_price: 6332.0
-    quantity: '3510082303940909075414858'
+    sku: intelligent-plastic-shirt-Super-Special-Edition
+    price: 1238
+    cost_price: 1238
+    quantity: '3543701490575562296206390'
     options: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       color: GREY
       size: S
     images:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      url: http://dummyimage.com/600x400/000/fff.jpg&text=Intelligent Granite Computer
+      url: http://dummyimage.com/600x400/000/fff.jpg&text=Intelligent Plastic Shirt
         Super Special Edition
       position: 1
-      title: Intelligent Granite Computer Super Special Edition
+      title: Intelligent Plastic Shirt Super Special Edition
       type: thumbnail
       dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
         height: 220

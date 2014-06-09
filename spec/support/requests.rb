@@ -49,9 +49,9 @@ module HighriseEndpoint
           product             = HighriseEndpoint::Requests.new(:product).to_hash[:product]
 
           quantity = Faker::Number.digit
-          order_subtotal = product[:price] * quantity.to_f
-          order_tax = order_subtotal * 0.65
-          order_shipping = Faker::Number.digit.to_f
+          order_subtotal = product[:price] * quantity.to_i
+          order_tax = order_subtotal.to_i * 0.65
+          order_shipping = Faker::Number.digit.to_i
           order_total = order_subtotal + order_tax + order_shipping
 
           {
@@ -108,8 +108,8 @@ module HighriseEndpoint
         when :product
           product_name = Faker::Commerce.product_name
           product_id   = product_name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-          product_price = Faker::Number.number(4).to_f
-          cost_price    = rand(1 .. product_price).to_f
+          product_price = Faker::Number.number(4).to_i
+          cost_price    = rand(1 .. product_price)
 
           {
             request_id: Faker::Number.number(25),

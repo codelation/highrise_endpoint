@@ -6,8 +6,7 @@ describe HighriseEndpoint::Application do
       before(:each) do
         VCR.use_cassette(:update_existing_person) do
           @existing_customer = HighriseEndpoint::Requests.new(:customer, "existing_update").to_hash
-          @existing_customer[:parameters]["highrise.api_token"] = ENV["HIGHRISE_API_TOKEN"]
-          @existing_customer[:parameters]["highrise.site_url"] = ENV["HIGHRISE_SITE_URL"]
+          set_highrise_parameters(@existing_customer)
 
           @structure    = HighriseEndpoint::PersonBlueprint.new(payload: @existing_customer).build
 
@@ -20,7 +19,7 @@ describe HighriseEndpoint::Application do
           @customer = @existing_customer[:customer]
           @billing_address = @customer[:billing_address]
 
-          post '/update_customer', @existing_customer.to_json, auth
+          post "/update_customer", @existing_customer.to_json, auth
         end
 
         @response_body = JSON.parse(last_response.body).with_indifferent_access
@@ -63,13 +62,12 @@ describe HighriseEndpoint::Application do
       before(:all) do
         VCR.use_cassette(:update_new_person) do
           @new_customer    = HighriseEndpoint::Requests.new(:customer, "new_update").to_hash
-          @new_customer[:parameters]["highrise.api_token"] = ENV["HIGHRISE_API_TOKEN"]
-          @new_customer[:parameters]["highrise.site_url"] = ENV["HIGHRISE_SITE_URL"]
+          set_highrise_parameters(@new_customer)
 
           @customer        = @new_customer[:customer]
           @billing_address = @customer[:billing_address]
 
-          post '/update_customer', @new_customer.to_json, auth
+          post "/update_customer", @new_customer.to_json, auth
         end
 
         @response_body = JSON.parse(last_response.body).with_indifferent_access

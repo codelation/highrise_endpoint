@@ -1,57 +1,57 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '9467128840326816299075876'
+request_id: '1668298369705379753032945'
 order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '4037842034'
-  status: :pending
+  id: '7904947850'
+  status: :in_progress
   channel: :spree
-  email: alayna.cruickshank@gislason.biz
+  email: celine@sauer.com
   currency: USD
-  placed_on: 2014-06-08 19:00:04.892579000 -05:00
+  placed_on: 2014-06-08 21:01:13.417078000 -05:00
   totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    item: 31635.0
-    adjustment: 3.0
-    tax: 20562.75
-    shipping: 3.0
-    payment: 52200.75
-    order: 52200.75
+    item: 4932
+    adjustment: 8
+    tax: 3205.8
+    shipping: 8
+    payment: 8145.8
+    order: 8145.8
   line_items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: intelligent-granite-computer
-    name: Intelligent Granite Computer
-    quantity: '5'
-    price: 6327.0
+    product_id: intelligent-plastic-shirt
+    name: Intelligent Plastic Shirt
+    quantity: '4'
+    price: 1233
   adjustments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Tax
-    value: 20562.75
+    value: 3205.8
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Shipping
-    value: 3.0
+    value: 8
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Maryse
-    lastname: Schulist
-    address1: 6876 Alfonzo Freeway
-    address2: Suite 362
-    zipcode: 76162-2899
-    city: Jonathanville
-    state: Ohio
-    country: Costa Rica
-    phone: '3209970668850502966686188'
+    firstname: Millie
+    lastname: Bruen
+    address1: 108 Ellen Divide
+    address2: Apt. 303
+    zipcode: '99124'
+    city: East Sydniburgh
+    state: California
+    country: Spain
+    phone: '4892014903567748301903629'
   billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Estella
-    lastname: Corwin
-    address1: 462 Balistreri Mountains
-    address2: Apt. 371
-    zipcode: 44245-5099
-    city: Lake Carlie
-    state: Maryland
-    country: Ireland
-    phone: '6829683613466761122856293'
+    firstname: Rupert
+    lastname: Crona
+    address1: 89581 Doyle Run
+    address2: Apt. 319
+    zipcode: 84774-0072
+    city: Zemlakfurt
+    state: New York
+    country: Libyan Arab Jamahiriya
+    phone: '8342138159064726297600894'
   payments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     number: 63
     status: :complete
-    amount: 52200.75
+    amount: 8145.8
     payment_method: Credit Card
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123
