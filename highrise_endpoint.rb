@@ -2,15 +2,19 @@ Bundler.require(:default)
 require "endpoint_base/sinatra/base"
 Dotenv.load
 
+def set_highrise_configs(payload)
+  Highrise::Base.site = payload[:parameters]["highrise.site_url"]
+  Highrise::Base.user = payload[:parameters]["highrise.api_token"]
+end
+
 module HighriseEndpoint
   class Application < EndpointBase::Sinatra::Base
     set :logging, true
 
-    Highrise::Base.site = ENV["HIGHRISE_SITE_URL"].blank? ? "http://www.example.com" : ENV["HIGHRISE_SITE_URL"]
-    Highrise::Base.user = ENV["HIGHRISE_API_TOKEN"].blank? ? "thisIsAFakeKey123" : ENV["HIGHRISE_API_TOKEN"]
-
     # Adds new customer to Highrise from spree hub.
     post "/add_customer" do
+      set_highrise_configs(@payload)
+
       people = Highrise::Person.search(customer_id: @payload[:customer][:id])
 
       if people.length > 0
@@ -41,6 +45,8 @@ module HighriseEndpoint
     end
 
     post "/update_customer" do
+      set_highrise_configs(@payload)
+
       people = Highrise::Person.search(customer_id: @payload[:customer][:id])
       if people.length > 0
         @person = people.first
@@ -70,26 +76,32 @@ module HighriseEndpoint
     end
 
     post "/add_order" do
+      set_highrise_configs(@payload)
 
     end
 
     post "/update_order" do
+      set_highrise_configs(@payload)
 
     end
 
     post "/add_product" do
+      set_highrise_configs(@payload)
 
     end
 
     post "/update_product" do
+      set_highrise_configs(@payload)
 
     end
 
     post "/add_shipment" do
+      set_highrise_configs(@payload)
 
     end
 
     post "/update_shipment" do
+      set_highrise_configs(@payload)
 
     end
   end

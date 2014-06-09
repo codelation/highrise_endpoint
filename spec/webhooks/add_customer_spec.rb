@@ -6,6 +6,9 @@ describe HighriseEndpoint::Application do
       before(:each) do
         VCR.use_cassette(:add_existing_person) do
           @existing_customer = HighriseEndpoint::Requests.new(:customer, "existing_add").to_hash
+          @existing_customer[:parameters]["highrise.api_token"] = ENV["HIGHRISE_API_TOKEN"]
+          @existing_customer[:parameters]["highrise.site_url"] = ENV["HIGHRISE_SITE_URL"]
+
           @structure    = HighriseEndpoint::PersonBlueprint.new(payload: @existing_customer).build
 
           Highrise::Person.new(@structure).save
@@ -60,6 +63,9 @@ describe HighriseEndpoint::Application do
       before(:all) do
         VCR.use_cassette(:add_new_person) do
           @new_customer    = HighriseEndpoint::Requests.new(:customer, "new_add").to_hash
+          @new_customer[:parameters]["highrise.api_token"] = ENV["HIGHRISE_API_TOKEN"]
+          @new_customer[:parameters]["highrise.site_url"] = ENV["HIGHRISE_SITE_URL"]
+
           @customer        = @new_customer[:customer]
           @billing_address = @customer[:billing_address]
 

@@ -1,14 +1,14 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '8810617736576713665077985'
+request_id: '9406938984834131649448714'
 product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: awesome-plastic-computer
-  name: Awesome Plastic Computer
-  sku: awesome-plastic-computer
-  description: Non praesentium amet cum nihil est dicta.
-  price: 4858.0
-  cost_price: 25.455084375495048
-  available_on: 2014-06-06 11:36:25.164425000 -05:00
-  permalink: awesome-plastic-computer
+  id: intelligent-granite-computer
+  name: Intelligent Granite Computer
+  sku: intelligent-granite-computer
+  description: Est suscipit rem sapiente illum enim cumque vel.
+  price: 6327.0
+  cost_price: 4551.357680835489
+  available_on: 2014-06-08 19:00:04.888924000 -05:00
+  permalink: intelligent-granite-computer
   meta_description: 
   meta_keywords: 
   shipping_category: Default
@@ -28,29 +28,32 @@ product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     fit: smart fit
   images:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    url: http://dummyimage.com/600x400/000/fff.jpg&text=Awesome Plastic Computer
+    url: http://dummyimage.com/600x400/000/fff.jpg&text=Intelligent Granite Computer
     position: 1
-    title: Awesome Plastic Computer
+    title: Intelligent Granite Computer
     type: thumbnail
     dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       height: 220
       width: 100
   variants:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    sku: awesome-plastic-computer-Super-Special-Edition
-    price: 4863.0
-    cost_price: 4863.0
-    quantity: '9794683465428161396807466'
+    sku: intelligent-granite-computer-Super-Special-Edition
+    price: 6332.0
+    cost_price: 6332.0
+    quantity: '3510082303940909075414858'
     options: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       color: GREY
       size: S
     images:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      url: http://dummyimage.com/600x400/000/fff.jpg&text=Awesome Plastic Computer
+      url: http://dummyimage.com/600x400/000/fff.jpg&text=Intelligent Granite Computer
         Super Special Edition
       position: 1
-      title: Awesome Plastic Computer Super Special Edition
+      title: Intelligent Granite Computer Super Special Edition
       type: thumbnail
       dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
         height: 220
         width: 100
+parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  highrise.api_token: thisIsAFakeKey123
+  highrise.site_url: http://www.example.com

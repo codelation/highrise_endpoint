@@ -1,55 +1,58 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '6561980671318570850674098'
+request_id: '9467128840326816299075876'
 order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '1592240344'
-  status: :in_progress
+  id: '4037842034'
+  status: :pending
   channel: :spree
-  email: krystal@schamberger.com
+  email: alayna.cruickshank@gislason.biz
   currency: USD
-  placed_on: 2014-06-06 11:36:25.168064000 -05:00
+  placed_on: 2014-06-08 19:00:04.892579000 -05:00
   totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    item: 19432.0
-    adjustment: 5.0
-    tax: 12630.800000000001
-    shipping: 5.0
-    payment: 32067.800000000003
-    order: 32067.800000000003
+    item: 31635.0
+    adjustment: 3.0
+    tax: 20562.75
+    shipping: 3.0
+    payment: 52200.75
+    order: 52200.75
   line_items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: awesome-plastic-computer
-    name: Awesome Plastic Computer
-    quantity: '4'
-    price: 4858.0
+    product_id: intelligent-granite-computer
+    name: Intelligent Granite Computer
+    quantity: '5'
+    price: 6327.0
   adjustments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Tax
-    value: 12630.800000000001
+    value: 20562.75
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Shipping
-    value: 5.0
+    value: 3.0
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Vada
-    lastname: Tromp
-    address1: 42432 Brennan Village
-    address2: Suite 845
-    zipcode: '70309'
-    city: New Kailee
-    state: Arkansas
-    country: France
-    phone: '5842587988496982870707681'
+    firstname: Maryse
+    lastname: Schulist
+    address1: 6876 Alfonzo Freeway
+    address2: Suite 362
+    zipcode: 76162-2899
+    city: Jonathanville
+    state: Ohio
+    country: Costa Rica
+    phone: '3209970668850502966686188'
   billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Chris
-    lastname: Strosin
-    address1: 47192 Abernathy Summit
-    address2: Apt. 498
-    zipcode: 90205-9826
-    city: Dashawnberg
-    state: Indiana
-    country: Philippines
-    phone: '8680797985266273566290157'
+    firstname: Estella
+    lastname: Corwin
+    address1: 462 Balistreri Mountains
+    address2: Apt. 371
+    zipcode: 44245-5099
+    city: Lake Carlie
+    state: Maryland
+    country: Ireland
+    phone: '6829683613466761122856293'
   payments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     number: 63
-    status: :in_progress
-    amount: 32067.800000000003
+    status: :complete
+    amount: 52200.75
     payment_method: Credit Card
+parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  highrise.api_token: thisIsAFakeKey123
+  highrise.site_url: http://www.example.com

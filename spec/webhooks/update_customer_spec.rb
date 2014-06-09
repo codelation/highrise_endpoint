@@ -6,6 +6,9 @@ describe HighriseEndpoint::Application do
       before(:each) do
         VCR.use_cassette(:update_existing_person) do
           @existing_customer = HighriseEndpoint::Requests.new(:customer, "existing_update").to_hash
+          @existing_customer[:parameters]["highrise.api_token"] = ENV["HIGHRISE_API_TOKEN"]
+          @existing_customer[:parameters]["highrise.site_url"] = ENV["HIGHRISE_SITE_URL"]
+
           @structure    = HighriseEndpoint::PersonBlueprint.new(payload: @existing_customer).build
 
           Highrise::Person.new(@structure).save
@@ -27,7 +30,6 @@ describe HighriseEndpoint::Application do
         last_response.status.should eql 200
       end
 
-      # How should I name ":retrieve_updated_person"?
       it "should update information on Highrise" do
         VCR.use_cassette(:retrieve_updated_update_person) do
 
@@ -61,6 +63,9 @@ describe HighriseEndpoint::Application do
       before(:all) do
         VCR.use_cassette(:update_new_person) do
           @new_customer    = HighriseEndpoint::Requests.new(:customer, "new_update").to_hash
+          @new_customer[:parameters]["highrise.api_token"] = ENV["HIGHRISE_API_TOKEN"]
+          @new_customer[:parameters]["highrise.site_url"] = ENV["HIGHRISE_SITE_URL"]
+
           @customer        = @new_customer[:customer]
           @billing_address = @customer[:billing_address]
 

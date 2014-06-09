@@ -6,6 +6,9 @@ describe HighriseEndpoint::Application do
       before(:each) do
         VCR.use_cassette(:add_existing_order) do
           @existing_order = HighriseEndpoint::Requests.new(:order, "existing").to_hash
+          @existing_order[:parameters]["highrise.api_token"] = ENV["HIGHRISE_API_TOKEN"]
+          @existing_order[:parameters]["highrise.site_url"] = ENV["HIGHRISE_SITE_URL"]
+
           @structure    = HighriseEndpoint::DealBlueprint.new(payload: @existing_order).build
 
           Highrise::Deal.new(@structure).save

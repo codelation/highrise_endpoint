@@ -37,6 +37,10 @@ module HighriseEndpoint
               email:     Faker::Internet.email,
               shipping_address: shipping_address,
               billing_address: billing_address
+            },
+            parameters: {
+              "highrise.api_token" => "thisIsAFakeKey123",
+              "highrise.site_url" =>  "http://www.example.com"
             }
           }
         when :order
@@ -95,6 +99,10 @@ module HighriseEndpoint
                   payment_method: "Credit Card"
                 }
               ]
+            },
+            parameters: {
+              "highrise.api_token" => "thisIsAFakeKey123",
+              "highrise.site_url" =>  "http://www.example.com"
             }
           }
         when :product
@@ -176,6 +184,10 @@ module HighriseEndpoint
                   ]
                 }
               ]
+            },
+            parameters: {
+              "highrise.api_token" => "thisIsAFakeKey123",
+              "highrise.site_url" =>  "http://www.example.com"
             }
           }
         when :address
@@ -191,6 +203,10 @@ module HighriseEndpoint
               state:     Faker::Address.state,
               country:   Faker::Address.country,
               phone:     Faker::Number.number(25)
+            },
+            parameters: {
+              "highrise.api_token" => "thisIsAFakeKey123",
+              "highrise.site_url" =>  "http://www.example.com"
             }
           }
       end.with_indifferent_access
