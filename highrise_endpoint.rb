@@ -9,6 +9,8 @@ end
 
 module HighriseEndpoint
   class Application < EndpointBase::Sinatra::Base
+    endpoint_key(ENV["X-HUB-ACCESS-TOKEN"])
+
     set :logging, true
 
     # Adds new customer to Highrise from spree hub.
