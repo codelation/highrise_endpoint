@@ -1,5 +1,5 @@
 Bundler.require(:default)
-require "endpoint_base/sinatra/base"
+require "endpoint_base/sinatra"
 Dotenv.load
 
 def set_highrise_configs(payload)
@@ -10,10 +10,6 @@ end
 module HighriseEndpoint
   class Application < EndpointBase::Sinatra::Base
     set :logging, true
-
-    before do
-      ap @payload
-    end
 
     # Adds new customer to Highrise from spree hub.
     post "/add_customer" do
