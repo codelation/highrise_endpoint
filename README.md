@@ -3,6 +3,7 @@
 
 This integration is designed to integrate spree hub with Highrise CRM. All transactions related to the spree storefront will be available for view in Highrise. This is a one-way integration. Data on Highrise will not sync back to the storefront.
 
+
 ## Running server
 Start server with
 
