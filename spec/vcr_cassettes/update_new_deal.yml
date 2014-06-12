@@ -21,36 +21,36 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 12 Jun 2014 23:28:49 GMT
+      - Thu, 12 Jun 2014 23:28:59 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
-      - '15783'
+      - '16119'
       Connection:
       - Keep-Alive
       Status:
       - 200 OK
       X-Throttle-Count:
-      - '21'
+      - '25'
       Cache-Control:
       - private, max-age=0, must-revalidate
       X-Request-Id:
-      - 38212ecc2e69e09c9f38d4c64e5ed419
+      - 7d13a8d998cd561b78fd17fb2e7ec676
       X-Frame-Options:
       - SAMEORIGIN
       X-Throttle-Max:
       - '500'
       Etag:
-      - '"67d01944b61715470068cbf0df699f15"'
+      - '"ef19127032cc7d9dc00e00c0539ecfe6"'
       Strict-Transport-Security:
       - max-age=31536000
       X-Runtime:
-      - '617'
+      - '713'
       Set-Cookie:
-      - _sunrise_session=BAh7BjoPc2Vzc2lvbl9pZCIlYjA0ZWJkMTFhMTMyZmFhNGRmZjU1ZjcyODZmNjRlYTk%3D--4474ca986337ae0e605fe4387262723e406877e1;
+      - _sunrise_session=BAh7BjoPc2Vzc2lvbl9pZCIlZmI4NmRjNGEzMGUxZjg0MjRhZDc5MTJhMGRiYmI0YTI%3D--06f618e165e3ac31b918b78525c6b64b9b9a37d0;
         path=/; HttpOnly; secure
       X-Throttle-Horizon:
-      - '2014-06-12T23:28:50Z'
+      - '2014-06-12T23:29:00Z'
       Timing-Allow-Origin:
       - "*"
       Vary:
@@ -1801,6 +1801,84 @@ http_interactions:
             <author-id type="integer">1041927</author-id>
             <background nil="true"></background>
             <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-06-12T23:28:53Z</created-at>
+            <currency>USD</currency>
+            <duration type="integer">1</duration>
+            <group-id type="integer" nil="true"></group-id>
+            <id type="integer">3743948</id>
+            <name>Order #2023852715</name>
+            <owner-id type="integer" nil="true"></owner-id>
+            <party-id type="integer">209593865</party-id>
+            <price type="integer">1000</price>
+            <price-type>fixed</price-type>
+            <responsible-party-id type="integer" nil="true"></responsible-party-id>
+            <status>won</status>
+            <status-changed-on type="date" nil="true"></status-changed-on>
+            <updated-at type="datetime">2014-06-12T23:28:56Z</updated-at>
+            <visible-to>Everyone</visible-to>
+            <party>
+              <author-id type="integer">1041927</author-id>
+              <background nil="true"></background>
+              <company-id type="integer" nil="true"></company-id>
+              <created-at type="datetime">2014-06-12T23:28:41Z</created-at>
+              <first-name>Matthew</first-name>
+              <group-id type="integer" nil="true"></group-id>
+              <id type="integer">209593865</id>
+              <last-name>Sanford</last-name>
+              <owner-id type="integer" nil="true"></owner-id>
+              <title nil="true"></title>
+              <type>Person</type>
+              <updated-at type="datetime">2014-06-12T23:28:42Z</updated-at>
+              <visible-to>Everyone</visible-to>
+              <company-name nil="true"></company-name>
+              <linkedin-url nil="true"></linkedin-url>
+              <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+        <contact-data>
+          <phone-numbers type="array">
+            <phone-number>
+              <id type="integer">169015137</id>
+              <location>Work</location>
+              <number>0056214874000579736862287</number>
+            </phone-number>
+          </phone-numbers>
+          <web-addresses type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>jamel@hilll.org</address>
+              <id type="integer">107385047</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <instant-messengers type="array"/>
+          <addresses type="array">
+            <address>
+              <city>New Maiafurt</city>
+              <country>American Samoa</country>
+              <id type="integer">100430949</id>
+              <location>Work</location>
+              <state>Louisiana</state>
+              <street>8063 Shania Lights</street>
+              <zip>86164</zip>
+            </address>
+          </addresses>
+          <twitter-accounts type="array"/>
+        </contact-data>
+        <subject_datas type="array">
+          <subject_data>
+            <id type="integer">127166447</id>
+            <subject_field_id type="integer">901228</subject_field_id>
+            <subject_field_label>Customer ID</subject_field_label>
+            <value>6368822126</value>
+          </subject_data>
+        </subject_datas>
+            </party>
+            <parties type="array"/>
+          </deal>
+          <deal>
+            <account-id type="integer">318224</account-id>
+            <author-id type="integer">1041927</author-id>
+            <background nil="true"></background>
+            <category-id type="integer" nil="true"></category-id>
             <created-at type="datetime">2014-06-12T16:17:04Z</created-at>
             <currency>USD</currency>
             <duration type="integer">1</duration>
@@ -2025,6 +2103,84 @@ http_interactions:
             <subject_field_id type="integer">901228</subject_field_id>
             <subject_field_label>Customer ID</subject_field_label>
             <value>8785333453</value>
+          </subject_data>
+        </subject_datas>
+            </party>
+            <parties type="array"/>
+          </deal>
+          <deal>
+            <account-id type="integer">318224</account-id>
+            <author-id type="integer">1041927</author-id>
+            <background nil="true"></background>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-06-12T23:28:50Z</created-at>
+            <currency>USD</currency>
+            <duration type="integer">1</duration>
+            <group-id type="integer" nil="true"></group-id>
+            <id type="integer">3743947</id>
+            <name>Order #4024726667</name>
+            <owner-id type="integer" nil="true"></owner-id>
+            <party-id type="integer">209593865</party-id>
+            <price type="integer">390</price>
+            <price-type>fixed</price-type>
+            <responsible-party-id type="integer" nil="true"></responsible-party-id>
+            <status>won</status>
+            <status-changed-on type="date" nil="true"></status-changed-on>
+            <updated-at type="datetime">2014-06-12T23:28:50Z</updated-at>
+            <visible-to>Everyone</visible-to>
+            <party>
+              <author-id type="integer">1041927</author-id>
+              <background nil="true"></background>
+              <company-id type="integer" nil="true"></company-id>
+              <created-at type="datetime">2014-06-12T23:28:41Z</created-at>
+              <first-name>Matthew</first-name>
+              <group-id type="integer" nil="true"></group-id>
+              <id type="integer">209593865</id>
+              <last-name>Sanford</last-name>
+              <owner-id type="integer" nil="true"></owner-id>
+              <title nil="true"></title>
+              <type>Person</type>
+              <updated-at type="datetime">2014-06-12T23:28:42Z</updated-at>
+              <visible-to>Everyone</visible-to>
+              <company-name nil="true"></company-name>
+              <linkedin-url nil="true"></linkedin-url>
+              <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+        <contact-data>
+          <phone-numbers type="array">
+            <phone-number>
+              <id type="integer">169015137</id>
+              <location>Work</location>
+              <number>0056214874000579736862287</number>
+            </phone-number>
+          </phone-numbers>
+          <web-addresses type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>jamel@hilll.org</address>
+              <id type="integer">107385047</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <instant-messengers type="array"/>
+          <addresses type="array">
+            <address>
+              <city>New Maiafurt</city>
+              <country>American Samoa</country>
+              <id type="integer">100430949</id>
+              <location>Work</location>
+              <state>Louisiana</state>
+              <street>8063 Shania Lights</street>
+              <zip>86164</zip>
+            </address>
+          </addresses>
+          <twitter-accounts type="array"/>
+        </contact-data>
+        <subject_datas type="array">
+          <subject_data>
+            <id type="integer">127166447</id>
+            <subject_field_id type="integer">901228</subject_field_id>
+            <subject_field_label>Customer ID</subject_field_label>
+            <value>6368822126</value>
           </subject_data>
         </subject_datas>
             </party>
@@ -3514,7 +3670,7 @@ http_interactions:
           </deal>
         </deals>
     http_version: 
-  recorded_at: Thu, 12 Jun 2014 23:28:49 GMT
+  recorded_at: Thu, 12 Jun 2014 23:28:59 GMT
 - request:
     method: get
     uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Baddress1%5D=8063%20Shania%20Lights&criteria%5Baddress2%5D=Suite%20983&criteria%5Bcity%5D=New%20Maiafurt&criteria%5Bcountry%5D=American%20Samoa&criteria%5Bfirstname%5D=Augustine&criteria%5Blastname%5D=Sanford&criteria%5Bphone%5D=0056214874000579736862287&criteria%5Bstate%5D=Louisiana&criteria%5Bzipcode%5D=86164&n=0
@@ -3536,238 +3692,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 12 Jun 2014 23:28:49 GMT
+      - Thu, 12 Jun 2014 23:29:00 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
-      - '1524'
-      Connection:
-      - Keep-Alive
-      Status:
-      - 200 OK
-      Etag:
-      - '"58eb5fddb6fae14c15103c79f5f6a1fb"'
-      X-Throttle-Horizon:
-      - '2014-06-12T23:28:50Z'
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Throttle-Count:
-      - '22'
-      X-Request-Id:
-      - ede70138195025a7de7c724bf751fe69
-      X-Throttle-Max:
-      - '500'
-      X-Runtime:
-      - '35'
-      Cache-Control:
-      - private, max-age=0, must-revalidate
-      Timing-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-    body:
-      encoding: UTF-8
-      string: |
-        <?xml version="1.0" encoding="UTF-8"?>
-        <people type="array">
-          <person>
-            <author-id type="integer">1041927</author-id>
-            <background nil="true"></background>
-            <company-id type="integer" nil="true"></company-id>
-            <created-at type="datetime">2014-06-12T23:28:41Z</created-at>
-            <first-name>Matthew</first-name>
-            <group-id type="integer" nil="true"></group-id>
-            <id type="integer">209593865</id>
-            <last-name>Sanford</last-name>
-            <owner-id type="integer" nil="true"></owner-id>
-            <title nil="true"></title>
-            <updated-at type="datetime">2014-06-12T23:28:42Z</updated-at>
-            <visible-to>Everyone</visible-to>
-            <company-name nil="true"></company-name>
-            <linkedin-url nil="true"></linkedin-url>
-            <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
-        <contact-data>
-          <twitter-accounts type="array"/>
-          <phone-numbers type="array">
-            <phone-number>
-              <id type="integer">169015137</id>
-              <location>Work</location>
-              <number>0056214874000579736862287</number>
-            </phone-number>
-          </phone-numbers>
-          <addresses type="array">
-            <address>
-              <city>New Maiafurt</city>
-              <country>American Samoa</country>
-              <id type="integer">100430949</id>
-              <location>Work</location>
-              <state>Louisiana</state>
-              <street>8063 Shania Lights</street>
-              <zip>86164</zip>
-            </address>
-          </addresses>
-          <web-addresses type="array"/>
-          <email-addresses type="array">
-            <email-address>
-              <address>jamel@hilll.org</address>
-              <id type="integer">107385047</id>
-              <location>Work</location>
-            </email-address>
-          </email-addresses>
-          <instant-messengers type="array"/>
-        </contact-data>
-        <subject_datas type="array">
-          <subject_data>
-            <id type="integer">127166447</id>
-            <subject_field_id type="integer">901228</subject_field_id>
-            <subject_field_label>Customer ID</subject_field_label>
-            <value>6368822126</value>
-          </subject_data>
-        </subject_datas>
-          </person>
-          <person>
-            <author-id type="integer">1041927</author-id>
-            <background nil="true"></background>
-            <company-id type="integer" nil="true"></company-id>
-            <created-at type="datetime">2014-06-12T23:28:43Z</created-at>
-            <first-name>Augustine</first-name>
-            <group-id type="integer" nil="true"></group-id>
-            <id type="integer">209593866</id>
-            <last-name>Sanford</last-name>
-            <owner-id type="integer" nil="true"></owner-id>
-            <title nil="true"></title>
-            <updated-at type="datetime">2014-06-12T23:28:43Z</updated-at>
-            <visible-to>Everyone</visible-to>
-            <company-name nil="true"></company-name>
-            <linkedin-url nil="true"></linkedin-url>
-            <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
-        <contact-data>
-          <twitter-accounts type="array"/>
-          <phone-numbers type="array">
-            <phone-number>
-              <id type="integer">169015138</id>
-              <location>Work</location>
-              <number>0056214874000579736862287</number>
-            </phone-number>
-          </phone-numbers>
-          <addresses type="array">
-            <address>
-              <city>New Maiafurt</city>
-              <country>American Samoa</country>
-              <id type="integer">100430950</id>
-              <location>Work</location>
-              <state>Louisiana</state>
-              <street>8063 Shania Lights</street>
-              <zip>86164</zip>
-            </address>
-          </addresses>
-          <web-addresses type="array"/>
-          <email-addresses type="array">
-            <email-address>
-              <address>adelbert@oreilly.net</address>
-              <id type="integer">107385048</id>
-              <location>Work</location>
-            </email-address>
-          </email-addresses>
-          <instant-messengers type="array"/>
-        </contact-data>
-        <subject_datas type="array">
-          <subject_data>
-            <id type="integer">127166448</id>
-            <subject_field_id type="integer">901228</subject_field_id>
-            <subject_field_label>Customer ID</subject_field_label>
-            <value>7485023625</value>
-          </subject_data>
-        </subject_datas>
-          </person>
-        </people>
-    http_version: 
-  recorded_at: Thu, 12 Jun 2014 23:28:49 GMT
-- request:
-    method: get
-    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Baddress1%5D=8063%20Shania%20Lights&criteria%5Baddress2%5D=Suite%20983&criteria%5Bcity%5D=New%20Maiafurt&criteria%5Bcountry%5D=American%20Samoa&criteria%5Bfirstname%5D=Augustine&criteria%5Blastname%5D=Sanford&criteria%5Bphone%5D=0056214874000579736862287&criteria%5Bstate%5D=Louisiana&criteria%5Bzipcode%5D=86164&n=2
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/xml
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Thu, 12 Jun 2014 23:28:49 GMT
-      Content-Type:
-      - application/xml; charset=utf-8
-      Content-Length:
-      - '62'
-      Connection:
-      - keep-alive
-      Status:
-      - 200 OK
-      Etag:
-      - '"304246700dd9732895ecf4e138caeb37"'
-      X-Throttle-Horizon:
-      - '2014-06-12T23:28:50Z'
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Throttle-Count:
-      - '23'
-      X-Request-Id:
-      - 8bd34b36a5ea5600f3565e7e27e9566b
-      X-Throttle-Max:
-      - '500'
-      X-Runtime:
-      - '11'
-      Cache-Control:
-      - private, max-age=0, must-revalidate
-      Timing-Allow-Origin:
-      - "*"
-    body:
-      encoding: UTF-8
-      string: |
-        <?xml version="1.0" encoding="UTF-8"?>
-        <people type="array"/>
-    http_version: 
-  recorded_at: Thu, 12 Jun 2014 23:28:49 GMT
-- request:
-    method: get
-    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Baddress1%5D=8063%20Shania%20Lights&criteria%5Baddress2%5D=Suite%20983&criteria%5Bcity%5D=New%20Maiafurt&criteria%5Bcountry%5D=American%20Samoa&criteria%5Bfirstname%5D=Augustine&criteria%5Blastname%5D=Sanford&criteria%5Bphone%5D=0056214874000579736862287&criteria%5Bstate%5D=Louisiana&criteria%5Bzipcode%5D=86164&n=0
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/xml
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Thu, 12 Jun 2014 23:28:50 GMT
-      Content-Type:
-      - application/xml; charset=utf-8
-      Content-Length:
-      - '1504'
+      - '1264'
       Connection:
       - Keep-Alive
       Status:
@@ -3777,19 +3706,19 @@ http_interactions:
       Cache-Control:
       - private, max-age=0, must-revalidate
       X-Request-Id:
-      - c9f586d682cac1d9c0fe0f00cc355d8c
+      - a2d48c684a3db709350fba1842d9c6c5
       X-Frame-Options:
       - SAMEORIGIN
       X-Throttle-Max:
       - '500'
       Etag:
-      - '"8db2d94b44db6e2b8c435c63b189e375"'
+      - '"ddf05ff54b136038a813eb924c1c66d9"'
       Strict-Transport-Security:
       - max-age=31536000
       X-Runtime:
-      - '36'
+      - '61'
       X-Throttle-Horizon:
-      - '2014-06-12T23:29:00Z'
+      - '2014-06-12T23:29:10Z'
       Timing-Allow-Origin:
       - "*"
       Vary:
@@ -3909,12 +3838,122 @@ http_interactions:
           </subject_data>
         </subject_datas>
           </person>
+          <person>
+            <author-id type="integer">1041927</author-id>
+            <background nil="true"></background>
+            <company-id type="integer" nil="true"></company-id>
+            <created-at type="datetime">2014-06-12T23:28:51Z</created-at>
+            <first-name>Matthew</first-name>
+            <group-id type="integer" nil="true"></group-id>
+            <id type="integer">209593869</id>
+            <last-name>Sanford</last-name>
+            <owner-id type="integer" nil="true"></owner-id>
+            <title nil="true"></title>
+            <updated-at type="datetime">2014-06-12T23:28:52Z</updated-at>
+            <visible-to>Everyone</visible-to>
+            <company-name nil="true"></company-name>
+            <linkedin-url nil="true"></linkedin-url>
+            <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+        <contact-data>
+          <phone-numbers type="array">
+            <phone-number>
+              <id type="integer">169015140</id>
+              <location>Work</location>
+              <number>0056214874000579736862287</number>
+            </phone-number>
+          </phone-numbers>
+          <web-addresses type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>idell@sanfordstokes.org</address>
+              <id type="integer">107385049</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <instant-messengers type="array"/>
+          <addresses type="array">
+            <address>
+              <city>New Maiafurt</city>
+              <country>American Samoa</country>
+              <id type="integer">100430951</id>
+              <location>Work</location>
+              <state>Louisiana</state>
+              <street>8063 Shania Lights</street>
+              <zip>86164</zip>
+            </address>
+          </addresses>
+          <twitter-accounts type="array"/>
+        </contact-data>
+        <subject_datas type="array">
+          <subject_data>
+            <id type="integer">127166449</id>
+            <subject_field_id type="integer">901228</subject_field_id>
+            <subject_field_label>Customer ID</subject_field_label>
+            <value>6948290255</value>
+          </subject_data>
+        </subject_datas>
+          </person>
+          <person>
+            <author-id type="integer">1041927</author-id>
+            <background nil="true"></background>
+            <company-id type="integer" nil="true"></company-id>
+            <created-at type="datetime">2014-06-12T23:28:52Z</created-at>
+            <first-name>Augustine</first-name>
+            <group-id type="integer" nil="true"></group-id>
+            <id type="integer">209593870</id>
+            <last-name>Sanford</last-name>
+            <owner-id type="integer" nil="true"></owner-id>
+            <title nil="true"></title>
+            <updated-at type="datetime">2014-06-12T23:28:52Z</updated-at>
+            <visible-to>Everyone</visible-to>
+            <company-name nil="true"></company-name>
+            <linkedin-url nil="true"></linkedin-url>
+            <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+        <contact-data>
+          <phone-numbers type="array">
+            <phone-number>
+              <id type="integer">169015141</id>
+              <location>Work</location>
+              <number>0056214874000579736862287</number>
+            </phone-number>
+          </phone-numbers>
+          <web-addresses type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>thomas@cole.info</address>
+              <id type="integer">107385050</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <instant-messengers type="array"/>
+          <addresses type="array">
+            <address>
+              <city>New Maiafurt</city>
+              <country>American Samoa</country>
+              <id type="integer">100430952</id>
+              <location>Work</location>
+              <state>Louisiana</state>
+              <street>8063 Shania Lights</street>
+              <zip>86164</zip>
+            </address>
+          </addresses>
+          <twitter-accounts type="array"/>
+        </contact-data>
+        <subject_datas type="array">
+          <subject_data>
+            <id type="integer">127166450</id>
+            <subject_field_id type="integer">901228</subject_field_id>
+            <subject_field_label>Customer ID</subject_field_label>
+            <value>9018361064</value>
+          </subject_data>
+        </subject_datas>
+          </person>
         </people>
     http_version: 
-  recorded_at: Thu, 12 Jun 2014 23:28:50 GMT
+  recorded_at: Thu, 12 Jun 2014 23:29:00 GMT
 - request:
     method: get
-    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Baddress1%5D=8063%20Shania%20Lights&criteria%5Baddress2%5D=Suite%20983&criteria%5Bcity%5D=New%20Maiafurt&criteria%5Bcountry%5D=American%20Samoa&criteria%5Bfirstname%5D=Augustine&criteria%5Blastname%5D=Sanford&criteria%5Bphone%5D=0056214874000579736862287&criteria%5Bstate%5D=Louisiana&criteria%5Bzipcode%5D=86164&n=2
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Baddress1%5D=8063%20Shania%20Lights&criteria%5Baddress2%5D=Suite%20983&criteria%5Bcity%5D=New%20Maiafurt&criteria%5Bcountry%5D=American%20Samoa&criteria%5Bfirstname%5D=Augustine&criteria%5Blastname%5D=Sanford&criteria%5Bphone%5D=0056214874000579736862287&criteria%5Bstate%5D=Louisiana&criteria%5Bzipcode%5D=86164&n=4
     body:
       encoding: US-ASCII
       string: ''
@@ -3933,7 +3972,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 12 Jun 2014 23:28:50 GMT
+      - Thu, 12 Jun 2014 23:29:00 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
@@ -3942,24 +3981,24 @@ http_interactions:
       - keep-alive
       Status:
       - 200 OK
-      X-Throttle-Count:
-      - '2'
-      Cache-Control:
-      - private, max-age=0, must-revalidate
-      X-Request-Id:
-      - b4ca4b1e06ba6aa73707cd0089bf57b7
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Throttle-Max:
-      - '500'
       Etag:
       - '"304246700dd9732895ecf4e138caeb37"'
+      X-Throttle-Horizon:
+      - '2014-06-12T23:29:10Z'
       Strict-Transport-Security:
       - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Count:
+      - '2'
+      X-Request-Id:
+      - 8e4cee4354afb067d394f4dfb25eefab
+      X-Throttle-Max:
+      - '500'
       X-Runtime:
-      - '10'
-      X-Throttle-Horizon:
-      - '2014-06-12T23:29:00Z'
+      - '15'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
       Timing-Allow-Origin:
       - "*"
     body:
@@ -3968,7 +4007,344 @@ http_interactions:
         <?xml version="1.0" encoding="UTF-8"?>
         <people type="array"/>
     http_version: 
-  recorded_at: Thu, 12 Jun 2014 23:28:50 GMT
+  recorded_at: Thu, 12 Jun 2014 23:29:00 GMT
+- request:
+    method: get
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Baddress1%5D=8063%20Shania%20Lights&criteria%5Baddress2%5D=Suite%20983&criteria%5Bcity%5D=New%20Maiafurt&criteria%5Bcountry%5D=American%20Samoa&criteria%5Bfirstname%5D=Augustine&criteria%5Blastname%5D=Sanford&criteria%5Bphone%5D=0056214874000579736862287&criteria%5Bstate%5D=Louisiana&criteria%5Bzipcode%5D=86164&n=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 Jun 2014 23:29:00 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '1264'
+      Connection:
+      - Keep-Alive
+      Status:
+      - 200 OK
+      X-Throttle-Count:
+      - '3'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      X-Request-Id:
+      - 1483a344803002ccd786e8dcbb6adc02
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Max:
+      - '500'
+      Etag:
+      - '"ddf05ff54b136038a813eb924c1c66d9"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Runtime:
+      - '71'
+      X-Throttle-Horizon:
+      - '2014-06-12T23:29:10Z'
+      Timing-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <people type="array">
+          <person>
+            <author-id type="integer">1041927</author-id>
+            <background nil="true"></background>
+            <company-id type="integer" nil="true"></company-id>
+            <created-at type="datetime">2014-06-12T23:28:41Z</created-at>
+            <first-name>Matthew</first-name>
+            <group-id type="integer" nil="true"></group-id>
+            <id type="integer">209593865</id>
+            <last-name>Sanford</last-name>
+            <owner-id type="integer" nil="true"></owner-id>
+            <title nil="true"></title>
+            <updated-at type="datetime">2014-06-12T23:28:42Z</updated-at>
+            <visible-to>Everyone</visible-to>
+            <company-name nil="true"></company-name>
+            <linkedin-url nil="true"></linkedin-url>
+            <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+        <contact-data>
+          <phone-numbers type="array">
+            <phone-number>
+              <id type="integer">169015137</id>
+              <location>Work</location>
+              <number>0056214874000579736862287</number>
+            </phone-number>
+          </phone-numbers>
+          <web-addresses type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>jamel@hilll.org</address>
+              <id type="integer">107385047</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <instant-messengers type="array"/>
+          <addresses type="array">
+            <address>
+              <city>New Maiafurt</city>
+              <country>American Samoa</country>
+              <id type="integer">100430949</id>
+              <location>Work</location>
+              <state>Louisiana</state>
+              <street>8063 Shania Lights</street>
+              <zip>86164</zip>
+            </address>
+          </addresses>
+          <twitter-accounts type="array"/>
+        </contact-data>
+        <subject_datas type="array">
+          <subject_data>
+            <id type="integer">127166447</id>
+            <subject_field_id type="integer">901228</subject_field_id>
+            <subject_field_label>Customer ID</subject_field_label>
+            <value>6368822126</value>
+          </subject_data>
+        </subject_datas>
+          </person>
+          <person>
+            <author-id type="integer">1041927</author-id>
+            <background nil="true"></background>
+            <company-id type="integer" nil="true"></company-id>
+            <created-at type="datetime">2014-06-12T23:28:43Z</created-at>
+            <first-name>Augustine</first-name>
+            <group-id type="integer" nil="true"></group-id>
+            <id type="integer">209593866</id>
+            <last-name>Sanford</last-name>
+            <owner-id type="integer" nil="true"></owner-id>
+            <title nil="true"></title>
+            <updated-at type="datetime">2014-06-12T23:28:43Z</updated-at>
+            <visible-to>Everyone</visible-to>
+            <company-name nil="true"></company-name>
+            <linkedin-url nil="true"></linkedin-url>
+            <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+        <contact-data>
+          <phone-numbers type="array">
+            <phone-number>
+              <id type="integer">169015138</id>
+              <location>Work</location>
+              <number>0056214874000579736862287</number>
+            </phone-number>
+          </phone-numbers>
+          <web-addresses type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>adelbert@oreilly.net</address>
+              <id type="integer">107385048</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <instant-messengers type="array"/>
+          <addresses type="array">
+            <address>
+              <city>New Maiafurt</city>
+              <country>American Samoa</country>
+              <id type="integer">100430950</id>
+              <location>Work</location>
+              <state>Louisiana</state>
+              <street>8063 Shania Lights</street>
+              <zip>86164</zip>
+            </address>
+          </addresses>
+          <twitter-accounts type="array"/>
+        </contact-data>
+        <subject_datas type="array">
+          <subject_data>
+            <id type="integer">127166448</id>
+            <subject_field_id type="integer">901228</subject_field_id>
+            <subject_field_label>Customer ID</subject_field_label>
+            <value>7485023625</value>
+          </subject_data>
+        </subject_datas>
+          </person>
+          <person>
+            <author-id type="integer">1041927</author-id>
+            <background nil="true"></background>
+            <company-id type="integer" nil="true"></company-id>
+            <created-at type="datetime">2014-06-12T23:28:51Z</created-at>
+            <first-name>Matthew</first-name>
+            <group-id type="integer" nil="true"></group-id>
+            <id type="integer">209593869</id>
+            <last-name>Sanford</last-name>
+            <owner-id type="integer" nil="true"></owner-id>
+            <title nil="true"></title>
+            <updated-at type="datetime">2014-06-12T23:28:52Z</updated-at>
+            <visible-to>Everyone</visible-to>
+            <company-name nil="true"></company-name>
+            <linkedin-url nil="true"></linkedin-url>
+            <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+        <contact-data>
+          <phone-numbers type="array">
+            <phone-number>
+              <id type="integer">169015140</id>
+              <location>Work</location>
+              <number>0056214874000579736862287</number>
+            </phone-number>
+          </phone-numbers>
+          <web-addresses type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>idell@sanfordstokes.org</address>
+              <id type="integer">107385049</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <instant-messengers type="array"/>
+          <addresses type="array">
+            <address>
+              <city>New Maiafurt</city>
+              <country>American Samoa</country>
+              <id type="integer">100430951</id>
+              <location>Work</location>
+              <state>Louisiana</state>
+              <street>8063 Shania Lights</street>
+              <zip>86164</zip>
+            </address>
+          </addresses>
+          <twitter-accounts type="array"/>
+        </contact-data>
+        <subject_datas type="array">
+          <subject_data>
+            <id type="integer">127166449</id>
+            <subject_field_id type="integer">901228</subject_field_id>
+            <subject_field_label>Customer ID</subject_field_label>
+            <value>6948290255</value>
+          </subject_data>
+        </subject_datas>
+          </person>
+          <person>
+            <author-id type="integer">1041927</author-id>
+            <background nil="true"></background>
+            <company-id type="integer" nil="true"></company-id>
+            <created-at type="datetime">2014-06-12T23:28:52Z</created-at>
+            <first-name>Augustine</first-name>
+            <group-id type="integer" nil="true"></group-id>
+            <id type="integer">209593870</id>
+            <last-name>Sanford</last-name>
+            <owner-id type="integer" nil="true"></owner-id>
+            <title nil="true"></title>
+            <updated-at type="datetime">2014-06-12T23:28:52Z</updated-at>
+            <visible-to>Everyone</visible-to>
+            <company-name nil="true"></company-name>
+            <linkedin-url nil="true"></linkedin-url>
+            <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+        <contact-data>
+          <phone-numbers type="array">
+            <phone-number>
+              <id type="integer">169015141</id>
+              <location>Work</location>
+              <number>0056214874000579736862287</number>
+            </phone-number>
+          </phone-numbers>
+          <web-addresses type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>thomas@cole.info</address>
+              <id type="integer">107385050</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <instant-messengers type="array"/>
+          <addresses type="array">
+            <address>
+              <city>New Maiafurt</city>
+              <country>American Samoa</country>
+              <id type="integer">100430952</id>
+              <location>Work</location>
+              <state>Louisiana</state>
+              <street>8063 Shania Lights</street>
+              <zip>86164</zip>
+            </address>
+          </addresses>
+          <twitter-accounts type="array"/>
+        </contact-data>
+        <subject_datas type="array">
+          <subject_data>
+            <id type="integer">127166450</id>
+            <subject_field_id type="integer">901228</subject_field_id>
+            <subject_field_label>Customer ID</subject_field_label>
+            <value>9018361064</value>
+          </subject_data>
+        </subject_datas>
+          </person>
+        </people>
+    http_version: 
+  recorded_at: Thu, 12 Jun 2014 23:29:00 GMT
+- request:
+    method: get
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Baddress1%5D=8063%20Shania%20Lights&criteria%5Baddress2%5D=Suite%20983&criteria%5Bcity%5D=New%20Maiafurt&criteria%5Bcountry%5D=American%20Samoa&criteria%5Bfirstname%5D=Augustine&criteria%5Blastname%5D=Sanford&criteria%5Bphone%5D=0056214874000579736862287&criteria%5Bstate%5D=Louisiana&criteria%5Bzipcode%5D=86164&n=4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 Jun 2014 23:29:01 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '62'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Etag:
+      - '"304246700dd9732895ecf4e138caeb37"'
+      X-Throttle-Horizon:
+      - '2014-06-12T23:29:10Z'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Count:
+      - '4'
+      X-Request-Id:
+      - 5bf21675d081a8b449eafb3d9303c324
+      X-Throttle-Max:
+      - '500'
+      X-Runtime:
+      - '221'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <people type="array"/>
+    http_version: 
+  recorded_at: Thu, 12 Jun 2014 23:29:01 GMT
 - request:
     method: post
     uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/deals.xml
@@ -3978,8 +4354,8 @@ http_interactions:
         <?xml version="1.0" encoding="UTF-8"?>
         <deal>
           <currency>USD</currency>
-          <name>Order #4024726667</name>
-          <price type="float">390.08349999999996</price>
+          <name>Order #2648800860</name>
+          <price type="float">167.1715</price>
           <status>won</status>
           <party-id type="integer">209593865</party-id>
         </deal>
@@ -4000,35 +4376,35 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 12 Jun 2014 23:28:50 GMT
+      - Thu, 12 Jun 2014 23:29:01 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
-      - '1090'
+      - '1092'
       Connection:
       - Keep-Alive
       Status:
       - 201 Created
-      X-Throttle-Horizon:
-      - '2014-06-12T23:29:00Z'
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Throttle-Count:
-      - '3'
-      Set-Cookie:
-      - last_deal_currency=USD; path=/; secure
-      X-Request-Id:
-      - e76f8cdd6dffb8a59af3d0c9cecda077
-      X-Throttle-Max:
-      - '500'
-      X-Runtime:
-      - '43'
-      Location:
-      - https://HIGHRISE_SITE_HOST/deals/3743947
+      - '5'
       Cache-Control:
       - no-cache
+      X-Request-Id:
+      - 4cbc21828b855b33d1e0ef195d8289af
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Max:
+      - '500'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Runtime:
+      - '47'
+      Set-Cookie:
+      - last_deal_currency=USD; path=/; secure
+      X-Throttle-Horizon:
+      - '2014-06-12T23:29:10Z'
+      Location:
+      - https://HIGHRISE_SITE_HOST/deals/3743949
       Timing-Allow-Origin:
       - "*"
       Vary:
@@ -4042,20 +4418,20 @@ http_interactions:
           <author-id type="integer">1041927</author-id>
           <background nil="true"></background>
           <category-id type="integer" nil="true"></category-id>
-          <created-at type="datetime">2014-06-12T23:28:50Z</created-at>
+          <created-at type="datetime">2014-06-12T23:29:01Z</created-at>
           <currency>USD</currency>
           <duration type="integer">1</duration>
           <group-id type="integer" nil="true"></group-id>
-          <id type="integer">3743947</id>
-          <name>Order #4024726667</name>
+          <id type="integer">3743949</id>
+          <name>Order #2648800860</name>
           <owner-id type="integer" nil="true"></owner-id>
           <party-id type="integer">209593865</party-id>
-          <price type="integer">390</price>
+          <price type="integer">167</price>
           <price-type>fixed</price-type>
           <responsible-party-id type="integer" nil="true"></responsible-party-id>
           <status>won</status>
           <status-changed-on type="date" nil="true"></status-changed-on>
-          <updated-at type="datetime">2014-06-12T23:28:50Z</updated-at>
+          <updated-at type="datetime">2014-06-12T23:29:01Z</updated-at>
           <visible-to>Everyone</visible-to>
           <party>
             <author-id type="integer">1041927</author-id>
@@ -4075,7 +4451,6 @@ http_interactions:
             <linkedin-url nil="true"></linkedin-url>
             <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
         <contact-data>
-          <twitter-accounts type="array"/>
           <phone-numbers type="array">
             <phone-number>
               <id type="integer">169015137</id>
@@ -4083,6 +4458,15 @@ http_interactions:
               <number>0056214874000579736862287</number>
             </phone-number>
           </phone-numbers>
+          <web-addresses type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>jamel@hilll.org</address>
+              <id type="integer">107385047</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <instant-messengers type="array"/>
           <addresses type="array">
             <address>
               <city>New Maiafurt</city>
@@ -4094,15 +4478,7 @@ http_interactions:
               <zip>86164</zip>
             </address>
           </addresses>
-          <web-addresses type="array"/>
-          <email-addresses type="array">
-            <email-address>
-              <address>jamel@hilll.org</address>
-              <id type="integer">107385047</id>
-              <location>Work</location>
-            </email-address>
-          </email-addresses>
-          <instant-messengers type="array"/>
+          <twitter-accounts type="array"/>
         </contact-data>
         <subject_datas type="array">
           <subject_data>
@@ -4116,5 +4492,5 @@ http_interactions:
           <parties type="array"/>
         </deal>
     http_version: 
-  recorded_at: Thu, 12 Jun 2014 23:28:50 GMT
+  recorded_at: Thu, 12 Jun 2014 23:29:01 GMT
 recorded_with: VCR 2.9.2

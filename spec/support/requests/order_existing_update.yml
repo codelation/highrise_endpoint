@@ -1,32 +1,32 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: 0102240381368085224432159
+request_id: '9333157137806344820959052'
 order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: 0785525176
-  status: :in_progress
+  id: '2023852715'
+  status: :complete
   channel: :spree
-  email: newell@tillman.net
+  email: mariane@cartwright.name
   currency: USD
-  placed_on: 2014-06-12 18:28:43.668037000 -05:00
+  placed_on: 2014-06-12 18:28:53.187672000 -05:00
   totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    item: 10131
-    adjustment: 1
-    tax: 6585.150000000001
-    shipping: 1
-    payment: 16717.15
-    order: 16717.15
+    item: 27016
+    adjustment: 4
+    tax: 17560.4
+    shipping: 4
+    payment: 44580.4
+    order: 44580.4
   line_items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     product_id: gorgeous-granite-gloves
     name: Gorgeous Granite Gloves
-    quantity: '3'
+    quantity: '8'
     price: 3377
   adjustments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Tax
-    value: 6585.150000000001
+    value: 17560.4
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Shipping
-    value: 1
+    value: 4
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     firstname: Jettie
     lastname: Gleichner
@@ -50,8 +50,8 @@ order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   payments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     number: 63
-    status: :in_progress
-    amount: 16717.15
+    status: :failed
+    amount: 44580.4
     payment_method: Credit Card
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123

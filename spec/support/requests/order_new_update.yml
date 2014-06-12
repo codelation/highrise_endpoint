@@ -1,12 +1,12 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: 0102240381368085224432159
+request_id: '6849315050411167897865646'
 order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: 0785525176
-  status: :in_progress
+  id: '2648800860'
+  status: :pending
   channel: :spree
-  email: newell@tillman.net
+  email: bradley@legroskuhn.info
   currency: USD
-  placed_on: 2014-06-12 18:28:43.668037000 -05:00
+  placed_on: 2014-06-12 18:28:58.793995000 -05:00
   totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     item: 10131
     adjustment: 1
@@ -50,7 +50,7 @@ order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   payments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     number: 63
-    status: :in_progress
+    status: :pending
     amount: 16717.15
     payment_method: Credit Card
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
