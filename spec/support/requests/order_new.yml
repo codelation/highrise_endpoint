@@ -1,32 +1,32 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '7955598765514212101314555'
+request_id: '1236152735327058924102929'
 order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '4622824784'
-  status: :complete
+  id: '8792344686'
+  status: :in_progress
   channel: :spree
-  email: evans.orn@lang.com
+  email: brandy.wilkinson@auer.org
   currency: USD
-  placed_on: 2014-06-12 11:18:54.419667000 -05:00
+  placed_on: 2014-06-12 11:18:59.433470000 -05:00
   totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    item: 12313
-    adjustment: 4
-    tax: 8003.450000000001
-    shipping: 4
-    payment: 20320.45
-    order: 20320.45
+    item: 1759
+    adjustment: 1
+    tax: 1143.3500000000001
+    shipping: 1
+    payment: 2903.3500000000004
+    order: 2903.3500000000004
   line_items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     product_id: practical-wooden-car
     name: Practical Wooden Car
-    quantity: '7'
+    quantity: '1'
     price: 1759
   adjustments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Tax
-    value: 8003.450000000001
+    value: 1143.3500000000001
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Shipping
-    value: 4
+    value: 1
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     firstname: Cali
     lastname: Medhurst
@@ -50,8 +50,8 @@ order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   payments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     number: 63
-    status: :pending
-    amount: 20320.45
+    status: :failed
+    amount: 2903.3500000000004
     payment_method: Credit Card
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123

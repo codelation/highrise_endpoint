@@ -80,14 +80,16 @@ module HighriseEndpoint
 
       deals = Highrise::Deal.all
       deals = deals.map{ |deal|
-         deal if deal.name == @payload[:order][:id]
+         deal if deal.name == "Order ##{@payload[:order][:id]}"
       }.compact
+
+      person = Highrise::Person.search(@payload[:order][:billing_address]).first
 
       if deals.length > 0
         @deal = deals.first
         structure = HighriseEndpoint::DealBlueprint.new(payload: @payload, deal: JSON.parse(@deal.to_json)).build
 
-        if @deal.name == @payload[:order][:id]
+        if @deal.name == "Order ##{@payload[:order][:id]}"
           @deal.load(structure)
         else
           @deal = Highrise::Deal.new(structure)
@@ -113,6 +115,38 @@ module HighriseEndpoint
     post "/update_order" do
       set_highrise_configs(@payload)
 
+      deals = Highrise::Deal.all
+      deals = deals.map{ |deal|
+         deal if deal.name == "Order ##{@payload[:order][:id]}"
+      }.compact
+
+      person = Highrise::Person.search(@payload[:order][:billing_address]).first
+
+      if deals.length > 0
+        @deal = deals.first
+        structure = HighriseEndpoint::DealBlueprint.new(payload: @payload, deal: JSON.parse(@deal.to_json)).build
+
+        if @deal.name == "Order ##{@payload[:order][:id]}"
+          @deal.load(structure)
+        else
+          @deal = Highrise::Deal.new(structure)
+        end
+
+        if @deal.save
+          jbuilder :update_order_success
+        else
+          jbuilder :update_order_failure
+        end
+      else
+        structure = HighriseEndpoint::DealBlueprint.new(payload: @payload).build
+        @deal = Highrise::Deal.new(structure)
+
+        if @deal.save
+          jbuilder :add_order_success
+        else
+          jbuilder :add_order_failure
+        end
+      end
     end
 
     post "/add_product" do

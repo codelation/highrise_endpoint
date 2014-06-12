@@ -30,7 +30,7 @@ describe HighriseEndpoint::Application do
       end
 
       it "should update information on Highrise" do
-        VCR.use_cassette(:retrieve_updated_add_person) do
+        VCR.use_cassette(:retrieve_updated_add_customer) do
 
           customers = Highrise::Person.search(
             email:       @customer[:email],
@@ -78,7 +78,7 @@ describe HighriseEndpoint::Application do
       end
 
       it "should add person to Highrise" do
-        VCR.use_cassette(:retrieve_created_add_person) do
+        VCR.use_cassette(:retrieve_created_add_customer) do
 
           customers = Highrise::Person.search(
             email:       @customer[:email],

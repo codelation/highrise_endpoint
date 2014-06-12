@@ -1,14 +1,14 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '5354056509517452682739031'
+request_id: 0486851204716927752305862
 product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: intelligent-plastic-shirt
-  name: Intelligent Plastic Shirt
-  sku: intelligent-plastic-shirt
-  description: Ipsa rem ea autem dolores vel facere eum.
-  price: 1233
-  cost_price: 11
-  available_on: 2014-06-08 21:01:13.413118000 -05:00
-  permalink: intelligent-plastic-shirt
+  id: practical-wooden-car
+  name: Practical Wooden Car
+  sku: practical-wooden-car
+  description: Porro nulla sapiente neque molestiae ab quaerat sunt vel.
+  price: 1759
+  cost_price: 114
+  available_on: 2014-06-12 11:18:54.416088000 -05:00
+  permalink: practical-wooden-car
   meta_description: 
   meta_keywords: 
   shipping_category: Default
@@ -28,28 +28,28 @@ product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     fit: smart fit
   images:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    url: http://dummyimage.com/600x400/000/fff.jpg&text=Intelligent Plastic Shirt
+    url: http://dummyimage.com/600x400/000/fff.jpg&text=Practical Wooden Car
     position: 1
-    title: Intelligent Plastic Shirt
+    title: Practical Wooden Car
     type: thumbnail
     dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       height: 220
       width: 100
   variants:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    sku: intelligent-plastic-shirt-Super-Special-Edition
-    price: 1238
-    cost_price: 1238
-    quantity: '3543701490575562296206390'
+    sku: practical-wooden-car-Super-Special-Edition
+    price: 1764
+    cost_price: 1764
+    quantity: '4221088520355849350791301'
     options: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       color: GREY
       size: S
     images:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      url: http://dummyimage.com/600x400/000/fff.jpg&text=Intelligent Plastic Shirt
-        Super Special Edition
+      url: http://dummyimage.com/600x400/000/fff.jpg&text=Practical Wooden Car Super
+        Special Edition
       position: 1
-      title: Intelligent Plastic Shirt Super Special Edition
+      title: Practical Wooden Car Super Special Edition
       type: thumbnail
       dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
         height: 220

@@ -1,3 +1,13 @@
+# This is a monkey patch to allow Highrise to not give a 422 about having party/parties nested.
+module Highrise
+  class Deal
+    def encode_with_nested_attribute_exclusion(options={})
+      encode_without_nested_attribute_exclusion({:except => [:party, :parties]}.merge(options))
+    end
+    alias_method_chain :encode, :nested_attribute_exclusion
+  end
+end
+
 module HighriseEndpoint
   class DealBlueprint < Blueprint
     attr_accessor :deal
@@ -13,7 +23,7 @@ module HighriseEndpoint
 
       {
         currency: order[:currency],
-        name:     order[:id],
+        name:     "Order ##{order[:id]}",
         price:    order[:totals][:order]/100.00,
         status:   "won",
         party_id: person.id

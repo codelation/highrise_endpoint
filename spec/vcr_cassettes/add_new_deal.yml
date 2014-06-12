@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 12 Jun 2014 16:18:58 GMT
+      - Thu, 12 Jun 2014 16:19:00 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
@@ -31,23 +31,23 @@ http_interactions:
       Status:
       - 200 OK
       X-Throttle-Count:
-      - '20'
+      - '21'
       Etag:
       - '"d86cbe03d165cbcb59951ad6c0b85df1"'
       X-Runtime:
-      - '710'
+      - '562'
       Cache-Control:
       - private, max-age=0, must-revalidate
       X-Throttle-Max:
       - '500'
       X-Request-Id:
-      - a2e664d4616edd1d2b638fda34296a53
+      - 1fbc41ebd8de813e755731b4e838165c
       X-Frame-Options:
       - SAMEORIGIN
       Strict-Transport-Security:
       - max-age=31536000
       Set-Cookie:
-      - _sunrise_session=BAh7BjoPc2Vzc2lvbl9pZCIlMzNhMDUxYjUyNjNiMWFjNTAzZTkwMDc0MzVhMWFlY2I%3D--2591248206f0c983e9873364b46cebd60cda2629;
+      - _sunrise_session=BAh7BjoPc2Vzc2lvbl9pZCIlNzEzNzJlMDA0YTcyYmYzZmIwOTY0ZGU0ZmRmOTZmMDU%3D--6e9262ea59a646cc79d91ede2ced90ca13491884;
         path=/; HttpOnly; secure
       X-Throttle-Horizon:
       - '2014-06-12T16:19:00Z'
@@ -3280,5 +3280,607 @@ http_interactions:
           </deal>
         </deals>
     http_version: 
-  recorded_at: Thu, 12 Jun 2014 16:18:58 GMT
+  recorded_at: Thu, 12 Jun 2014 16:19:00 GMT
+- request:
+    method: get
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Baddress1%5D=9629%20Kraig%20Squares&criteria%5Baddress2%5D=Apt.%20618&criteria%5Bcity%5D=East%20Mittie&criteria%5Bcountry%5D=China&criteria%5Bfirstname%5D=Sherwood&criteria%5Blastname%5D=Ryan&criteria%5Bphone%5D=6668352000678651922974024&criteria%5Bstate%5D=Iowa&criteria%5Bzipcode%5D=91462&n=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 Jun 2014 16:19:00 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '1510'
+      Connection:
+      - Keep-Alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Horizon:
+      - '2014-06-12T16:19:10Z'
+      X-Runtime:
+      - '33'
+      Etag:
+      - '"e6857b78b184f0c78b0c7a65c020cb5b"'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      X-Throttle-Count:
+      - '1'
+      X-Throttle-Max:
+      - '500'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 54c31ddeee3458df36785729b6de8b46
+      Timing-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <people type="array">
+          <person>
+            <author-id type="integer">1041927</author-id>
+            <background nil="true"></background>
+            <company-id type="integer" nil="true"></company-id>
+            <created-at type="datetime">2014-06-12T16:18:52Z</created-at>
+            <first-name>Matthew</first-name>
+            <group-id type="integer" nil="true"></group-id>
+            <id type="integer">209569175</id>
+            <last-name>Ryan</last-name>
+            <owner-id type="integer" nil="true"></owner-id>
+            <title nil="true"></title>
+            <updated-at type="datetime">2014-06-12T16:18:53Z</updated-at>
+            <visible-to>Everyone</visible-to>
+            <company-name nil="true"></company-name>
+            <linkedin-url nil="true"></linkedin-url>
+            <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+        <contact-data>
+          <phone-numbers type="array">
+            <phone-number>
+              <id type="integer">168996159</id>
+              <location>Work</location>
+              <number>6668352000678651922974024</number>
+            </phone-number>
+          </phone-numbers>
+          <web-addresses type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>prince_tromp@cole.com</address>
+              <id type="integer">107370175</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <instant-messengers type="array"/>
+          <addresses type="array">
+            <address>
+              <city>East Mittie</city>
+              <country>China</country>
+              <id type="integer">100423201</id>
+              <location>Work</location>
+              <state>Iowa</state>
+              <street>9629 Kraig Squares</street>
+              <zip>91462</zip>
+            </address>
+          </addresses>
+          <twitter-accounts type="array"/>
+        </contact-data>
+        <subject_datas type="array">
+          <subject_data>
+            <id type="integer">127146274</id>
+            <subject_field_id type="integer">901228</subject_field_id>
+            <subject_field_label>Customer ID</subject_field_label>
+            <value>0053562941</value>
+          </subject_data>
+        </subject_datas>
+          </person>
+          <person>
+            <author-id type="integer">1041927</author-id>
+            <background nil="true"></background>
+            <company-id type="integer" nil="true"></company-id>
+            <created-at type="datetime">2014-06-12T16:18:54Z</created-at>
+            <first-name>Sherwood</first-name>
+            <group-id type="integer" nil="true"></group-id>
+            <id type="integer">209569178</id>
+            <last-name>Ryan</last-name>
+            <owner-id type="integer" nil="true"></owner-id>
+            <title nil="true"></title>
+            <updated-at type="datetime">2014-06-12T16:18:54Z</updated-at>
+            <visible-to>Everyone</visible-to>
+            <company-name nil="true"></company-name>
+            <linkedin-url nil="true"></linkedin-url>
+            <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+        <contact-data>
+          <phone-numbers type="array">
+            <phone-number>
+              <id type="integer">168996161</id>
+              <location>Work</location>
+              <number>6668352000678651922974024</number>
+            </phone-number>
+          </phone-numbers>
+          <web-addresses type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>rudolph_hirthe@rogahn.org</address>
+              <id type="integer">107370178</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <instant-messengers type="array"/>
+          <addresses type="array">
+            <address>
+              <city>East Mittie</city>
+              <country>China</country>
+              <id type="integer">100423204</id>
+              <location>Work</location>
+              <state>Iowa</state>
+              <street>9629 Kraig Squares</street>
+              <zip>91462</zip>
+            </address>
+          </addresses>
+          <twitter-accounts type="array"/>
+        </contact-data>
+        <subject_datas type="array">
+          <subject_data>
+            <id type="integer">127146275</id>
+            <subject_field_id type="integer">901228</subject_field_id>
+            <subject_field_label>Customer ID</subject_field_label>
+            <value>0767906323</value>
+          </subject_data>
+        </subject_datas>
+          </person>
+        </people>
+    http_version: 
+  recorded_at: Thu, 12 Jun 2014 16:19:00 GMT
+- request:
+    method: get
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Baddress1%5D=9629%20Kraig%20Squares&criteria%5Baddress2%5D=Apt.%20618&criteria%5Bcity%5D=East%20Mittie&criteria%5Bcountry%5D=China&criteria%5Bfirstname%5D=Sherwood&criteria%5Blastname%5D=Ryan&criteria%5Bphone%5D=6668352000678651922974024&criteria%5Bstate%5D=Iowa&criteria%5Bzipcode%5D=91462&n=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 Jun 2014 16:19:00 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '62'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Throttle-Count:
+      - '2'
+      Etag:
+      - '"304246700dd9732895ecf4e138caeb37"'
+      X-Runtime:
+      - '12'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      X-Throttle-Max:
+      - '500'
+      X-Request-Id:
+      - ecc384979d16770d6e805444688ff210
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Throttle-Horizon:
+      - '2014-06-12T16:19:10Z'
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <people type="array"/>
+    http_version: 
+  recorded_at: Thu, 12 Jun 2014 16:19:00 GMT
+- request:
+    method: get
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Baddress1%5D=9629%20Kraig%20Squares&criteria%5Baddress2%5D=Apt.%20618&criteria%5Bcity%5D=East%20Mittie&criteria%5Bcountry%5D=China&criteria%5Bfirstname%5D=Sherwood&criteria%5Blastname%5D=Ryan&criteria%5Bphone%5D=6668352000678651922974024&criteria%5Bstate%5D=Iowa&criteria%5Bzipcode%5D=91462&n=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 Jun 2014 16:19:00 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '1537'
+      Connection:
+      - Keep-Alive
+      Status:
+      - 200 OK
+      X-Throttle-Count:
+      - '3'
+      Etag:
+      - '"303ab6092b177a15ef8d7813589dcdc0"'
+      X-Runtime:
+      - '36'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      X-Throttle-Max:
+      - '500'
+      X-Request-Id:
+      - e390aee035f5893f375c9c6a9e51015e
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Throttle-Horizon:
+      - '2014-06-12T16:19:10Z'
+      Timing-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <people type="array">
+          <person>
+            <author-id type="integer">1041927</author-id>
+            <background nil="true"></background>
+            <company-id type="integer" nil="true"></company-id>
+            <created-at type="datetime">2014-06-12T16:18:52Z</created-at>
+            <first-name>Matthew</first-name>
+            <group-id type="integer" nil="true"></group-id>
+            <id type="integer">209569175</id>
+            <last-name>Ryan</last-name>
+            <owner-id type="integer" nil="true"></owner-id>
+            <title nil="true"></title>
+            <updated-at type="datetime">2014-06-12T16:18:53Z</updated-at>
+            <visible-to>Everyone</visible-to>
+            <company-name nil="true"></company-name>
+            <linkedin-url nil="true"></linkedin-url>
+            <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+        <contact-data>
+          <twitter-accounts type="array"/>
+          <phone-numbers type="array">
+            <phone-number>
+              <id type="integer">168996159</id>
+              <location>Work</location>
+              <number>6668352000678651922974024</number>
+            </phone-number>
+          </phone-numbers>
+          <addresses type="array">
+            <address>
+              <city>East Mittie</city>
+              <country>China</country>
+              <id type="integer">100423201</id>
+              <location>Work</location>
+              <state>Iowa</state>
+              <street>9629 Kraig Squares</street>
+              <zip>91462</zip>
+            </address>
+          </addresses>
+          <web-addresses type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>prince_tromp@cole.com</address>
+              <id type="integer">107370175</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <instant-messengers type="array"/>
+        </contact-data>
+        <subject_datas type="array">
+          <subject_data>
+            <id type="integer">127146274</id>
+            <subject_field_id type="integer">901228</subject_field_id>
+            <subject_field_label>Customer ID</subject_field_label>
+            <value>0053562941</value>
+          </subject_data>
+        </subject_datas>
+          </person>
+          <person>
+            <author-id type="integer">1041927</author-id>
+            <background nil="true"></background>
+            <company-id type="integer" nil="true"></company-id>
+            <created-at type="datetime">2014-06-12T16:18:54Z</created-at>
+            <first-name>Sherwood</first-name>
+            <group-id type="integer" nil="true"></group-id>
+            <id type="integer">209569178</id>
+            <last-name>Ryan</last-name>
+            <owner-id type="integer" nil="true"></owner-id>
+            <title nil="true"></title>
+            <updated-at type="datetime">2014-06-12T16:18:54Z</updated-at>
+            <visible-to>Everyone</visible-to>
+            <company-name nil="true"></company-name>
+            <linkedin-url nil="true"></linkedin-url>
+            <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+        <contact-data>
+          <twitter-accounts type="array"/>
+          <phone-numbers type="array">
+            <phone-number>
+              <id type="integer">168996161</id>
+              <location>Work</location>
+              <number>6668352000678651922974024</number>
+            </phone-number>
+          </phone-numbers>
+          <addresses type="array">
+            <address>
+              <city>East Mittie</city>
+              <country>China</country>
+              <id type="integer">100423204</id>
+              <location>Work</location>
+              <state>Iowa</state>
+              <street>9629 Kraig Squares</street>
+              <zip>91462</zip>
+            </address>
+          </addresses>
+          <web-addresses type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>rudolph_hirthe@rogahn.org</address>
+              <id type="integer">107370178</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <instant-messengers type="array"/>
+        </contact-data>
+        <subject_datas type="array">
+          <subject_data>
+            <id type="integer">127146275</id>
+            <subject_field_id type="integer">901228</subject_field_id>
+            <subject_field_label>Customer ID</subject_field_label>
+            <value>0767906323</value>
+          </subject_data>
+        </subject_datas>
+          </person>
+        </people>
+    http_version: 
+  recorded_at: Thu, 12 Jun 2014 16:19:00 GMT
+- request:
+    method: get
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Baddress1%5D=9629%20Kraig%20Squares&criteria%5Baddress2%5D=Apt.%20618&criteria%5Bcity%5D=East%20Mittie&criteria%5Bcountry%5D=China&criteria%5Bfirstname%5D=Sherwood&criteria%5Blastname%5D=Ryan&criteria%5Bphone%5D=6668352000678651922974024&criteria%5Bstate%5D=Iowa&criteria%5Bzipcode%5D=91462&n=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 Jun 2014 16:19:01 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '62'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Throttle-Count:
+      - '4'
+      Etag:
+      - '"304246700dd9732895ecf4e138caeb37"'
+      X-Runtime:
+      - '15'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      X-Throttle-Max:
+      - '500'
+      X-Request-Id:
+      - d7f8d28caeb4cf41dfd91eae4ee6369f
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Throttle-Horizon:
+      - '2014-06-12T16:19:10Z'
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <people type="array"/>
+    http_version: 
+  recorded_at: Thu, 12 Jun 2014 16:19:01 GMT
+- request:
+    method: post
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/deals.xml
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <deal>
+          <currency>USD</currency>
+          <name>Order #8792344686</name>
+          <price type="float">29.033500000000004</price>
+          <status>won</status>
+          <party-id type="integer">209569175</party-id>
+        </deal>
+    headers:
+      Content-Type:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 Jun 2014 16:19:01 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '1092'
+      Connection:
+      - Keep-Alive
+      Status:
+      - 201 Created
+      X-Throttle-Count:
+      - '5'
+      Location:
+      - https://HIGHRISE_SITE_HOST/deals/3742971
+      Cache-Control:
+      - no-cache
+      X-Runtime:
+      - '42'
+      X-Throttle-Max:
+      - '500'
+      X-Request-Id:
+      - e026d9c83177a5b0c58091bd17dbfa9f
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      Set-Cookie:
+      - last_deal_currency=USD; path=/; secure
+      X-Throttle-Horizon:
+      - '2014-06-12T16:19:10Z'
+      Timing-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <deal>
+          <account-id type="integer">318224</account-id>
+          <author-id type="integer">1041927</author-id>
+          <background nil="true"></background>
+          <category-id type="integer" nil="true"></category-id>
+          <created-at type="datetime">2014-06-12T16:19:01Z</created-at>
+          <currency>USD</currency>
+          <duration type="integer">1</duration>
+          <group-id type="integer" nil="true"></group-id>
+          <id type="integer">3742971</id>
+          <name>Order #8792344686</name>
+          <owner-id type="integer" nil="true"></owner-id>
+          <party-id type="integer">209569175</party-id>
+          <price type="integer">29</price>
+          <price-type>fixed</price-type>
+          <responsible-party-id type="integer" nil="true"></responsible-party-id>
+          <status>won</status>
+          <status-changed-on type="date" nil="true"></status-changed-on>
+          <updated-at type="datetime">2014-06-12T16:19:01Z</updated-at>
+          <visible-to>Everyone</visible-to>
+          <party>
+            <author-id type="integer">1041927</author-id>
+            <background nil="true"></background>
+            <company-id type="integer" nil="true"></company-id>
+            <created-at type="datetime">2014-06-12T16:18:52Z</created-at>
+            <first-name>Matthew</first-name>
+            <group-id type="integer" nil="true"></group-id>
+            <id type="integer">209569175</id>
+            <last-name>Ryan</last-name>
+            <owner-id type="integer" nil="true"></owner-id>
+            <title nil="true"></title>
+            <type>Person</type>
+            <updated-at type="datetime">2014-06-12T16:18:53Z</updated-at>
+            <visible-to>Everyone</visible-to>
+            <company-name nil="true"></company-name>
+            <linkedin-url nil="true"></linkedin-url>
+            <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+        <contact-data>
+          <twitter-accounts type="array"/>
+          <phone-numbers type="array">
+            <phone-number>
+              <id type="integer">168996159</id>
+              <location>Work</location>
+              <number>6668352000678651922974024</number>
+            </phone-number>
+          </phone-numbers>
+          <addresses type="array">
+            <address>
+              <city>East Mittie</city>
+              <country>China</country>
+              <id type="integer">100423201</id>
+              <location>Work</location>
+              <state>Iowa</state>
+              <street>9629 Kraig Squares</street>
+              <zip>91462</zip>
+            </address>
+          </addresses>
+          <web-addresses type="array"/>
+          <email-addresses type="array">
+            <email-address>
+              <address>prince_tromp@cole.com</address>
+              <id type="integer">107370175</id>
+              <location>Work</location>
+            </email-address>
+          </email-addresses>
+          <instant-messengers type="array"/>
+        </contact-data>
+        <subject_datas type="array">
+          <subject_data>
+            <id type="integer">127146274</id>
+            <subject_field_id type="integer">901228</subject_field_id>
+            <subject_field_label>Customer ID</subject_field_label>
+            <value>0053562941</value>
+          </subject_data>
+        </subject_datas>
+          </party>
+          <parties type="array"/>
+        </deal>
+    http_version: 
+  recorded_at: Thu, 12 Jun 2014 16:19:01 GMT
 recorded_with: VCR 2.9.2
