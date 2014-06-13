@@ -26,7 +26,7 @@ module HighriseEndpoint
         name:     "Order ##{order[:id]}",
         price:    order[:totals][:order]/100.00,
         status:   "won",
-        party_id: person.id
+        party_id: person ? person.id : nil
       }.with_indifferent_access
     end
 
