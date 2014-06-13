@@ -149,16 +149,6 @@ module HighriseEndpoint
       end
     end
 
-    post "/add_product" do
-      set_highrise_configs(@payload)
-
-    end
-
-    post "/update_product" do
-      set_highrise_configs(@payload)
-
-    end
-
     post "/add_shipment" do
       set_highrise_configs(@payload)
 

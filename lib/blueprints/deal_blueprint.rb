@@ -19,7 +19,7 @@ module HighriseEndpoint
 
     def attributes
       order = @payload[:order]
-      person = Highrise::Person.search(order[:billing_address]).first
+      person = Highrise::Person.search(email: order[:email]).first
 
       {
         currency: order[:currency],
