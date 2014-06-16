@@ -1,14 +1,14 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '2844409054949392437906607'
+request_id: '2173531745263140391509641'
 product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: ergonomic-granite-computer
-  name: Ergonomic Granite Computer
-  sku: ergonomic-granite-computer
-  description: Aut et voluptatem voluptatem ut.
-  price: 6060
-  cost_price: 5713
-  available_on: 2014-06-16 13:27:16.111402000 -05:00
-  permalink: ergonomic-granite-computer
+  id: rustic-steel-table
+  name: Rustic Steel Table
+  sku: rustic-steel-table
+  description: Provident eos dolorum exercitationem.
+  price: 2249
+  cost_price: 983
+  available_on: 2014-06-16 13:34:12.293103000 -05:00
+  permalink: rustic-steel-table
   meta_description: 
   meta_keywords: 
   shipping_category: Default
@@ -28,28 +28,28 @@ product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     fit: smart fit
   images:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    url: http://dummyimage.com/600x400/000/fff.jpg&text=Ergonomic Granite Computer
+    url: http://dummyimage.com/600x400/000/fff.jpg&text=Rustic Steel Table
     position: 1
-    title: Ergonomic Granite Computer
+    title: Rustic Steel Table
     type: thumbnail
     dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       height: 220
       width: 100
   variants:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    sku: ergonomic-granite-computer-Super-Special-Edition
-    price: 6065
-    cost_price: 6065
-    quantity: '3020453234077055020105186'
+    sku: rustic-steel-table-Super-Special-Edition
+    price: 2254
+    cost_price: 2254
+    quantity: '3809428870183624515374760'
     options: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       color: GREY
       size: S
     images:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      url: http://dummyimage.com/600x400/000/fff.jpg&text=Ergonomic Granite Computer
-        Super Special Edition
+      url: http://dummyimage.com/600x400/000/fff.jpg&text=Rustic Steel Table Super
+        Special Edition
       position: 1
-      title: Ergonomic Granite Computer Super Special Edition
+      title: Rustic Steel Table Super Special Edition
       type: thumbnail
       dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
         height: 220

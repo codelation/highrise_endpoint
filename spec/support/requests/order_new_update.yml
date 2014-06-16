@@ -1,57 +1,57 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '3503353173575261699019359'
+request_id: 0152108528932389112029475
 order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '9590614485'
+  id: '9687530029'
   status: :pending
   channel: :spree
-  email: lenna@oreilly.net
+  email: ahmad_gleichner@bogisich.com
   currency: USD
-  placed_on: 2014-06-16 13:27:25.549620000 -05:00
+  placed_on: 2014-06-16 13:34:21.822623000 -05:00
   totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    item: 0
-    adjustment: 6
-    tax: 0.0
-    shipping: 6
-    payment: 6.0
-    order: 6.0
+    item: 6747
+    adjustment: 5
+    tax: 4385.55
+    shipping: 5
+    payment: 11137.55
+    order: 11137.55
   line_items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: ergonomic-granite-computer
-    name: Ergonomic Granite Computer
-    quantity: '0'
-    price: 6060
+    product_id: rustic-steel-table
+    name: Rustic Steel Table
+    quantity: '3'
+    price: 2249
   adjustments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Tax
-    value: 0.0
+    value: 4385.55
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Shipping
-    value: 6
+    value: 5
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Hunter
-    lastname: Moen
-    address1: 54653 Faye Mills
-    address2: Apt. 953
-    zipcode: 45585-3926
-    city: Earnestineton
-    state: Massachusetts
-    country: Hong Kong
-    phone: '9098047602443255050458723'
+    firstname: Jo
+    lastname: Willms
+    address1: 47676 Toy Rue
+    address2: Suite 553
+    zipcode: '67010'
+    city: Wymanton
+    state: New Mexico
+    country: Turks and Caicos Islands
+    phone: '9253305140833987624010858'
   billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Thea
-    lastname: Borer
-    address1: 943 Kuhlman Corners
-    address2: Apt. 221
-    zipcode: 33516-4243
-    city: Daretown
-    state: Mississippi
-    country: Seychelles
-    phone: 0168782433685347379376379
+    firstname: Napoleon
+    lastname: Gulgowski
+    address1: 787 Brakus Forks
+    address2: Suite 781
+    zipcode: 66935-6164
+    city: North Odellmouth
+    state: Florida
+    country: Slovenia
+    phone: '1710973455637445774937508'
   payments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     number: 63
-    status: :pending
-    amount: 6.0
+    status: :complete
+    amount: 11137.55
     payment_method: Credit Card
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123
