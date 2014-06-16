@@ -1,0 +1,31 @@
+--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+request_id: '3353412317760497083818620'
+shipment: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  id: '9564189177'
+  order_id: '9316031707'
+  email: jocelyn.hudson@wehnerfeeney.name
+  cost: 0
+  status: :ready
+  stock_location: :default
+  shipping_method: UPS Ground (USD)
+  tracking: '2162334957650123019420211'
+  shipped_at: 2014-06-16 13:27:27.067842000 -05:00
+  shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    firstname: Hunter
+    lastname: Moen
+    address1: 54653 Faye Mills
+    address2: Apt. 953
+    zipcode: 45585-3926
+    city: Earnestineton
+    state: Massachusetts
+    country: Hong Kong
+    phone: '9098047602443255050458723'
+  items:
+  - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    product_id: ergonomic-granite-computer
+    name: Ergonomic Granite Computer
+    quantity: '7'
+    price: 6060
+parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  highrise.api_token: thisIsAFakeKey123
+  highrise.site_url: http://www.example.com

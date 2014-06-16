@@ -1,57 +1,57 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '9333157137806344820959052'
+request_id: '7057907739938526257115601'
 order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '2023852715'
-  status: :complete
+  id: '9179114343'
+  status: :in_progress
   channel: :spree
-  email: mariane@cartwright.name
+  email: arne_crist@cormier.org
   currency: USD
-  placed_on: 2014-06-12 18:28:53.187672000 -05:00
+  placed_on: 2014-06-16 13:27:23.174062000 -05:00
   totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    item: 27016
+    item: 30300
     adjustment: 4
-    tax: 17560.4
+    tax: 19695.0
     shipping: 4
-    payment: 44580.4
-    order: 44580.4
+    payment: 49999.0
+    order: 49999.0
   line_items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: gorgeous-granite-gloves
-    name: Gorgeous Granite Gloves
-    quantity: '8'
-    price: 3377
+    product_id: ergonomic-granite-computer
+    name: Ergonomic Granite Computer
+    quantity: '5'
+    price: 6060
   adjustments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Tax
-    value: 17560.4
+    value: 19695.0
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Shipping
     value: 4
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Jettie
-    lastname: Gleichner
-    address1: 60788 Lawrence Haven
-    address2: Suite 758
-    zipcode: '86957'
-    city: Lake Tito
-    state: Wyoming
-    country: Bosnia and Herzegovina
-    phone: '6310479229281588196409903'
+    firstname: Hunter
+    lastname: Moen
+    address1: 54653 Faye Mills
+    address2: Apt. 953
+    zipcode: 45585-3926
+    city: Earnestineton
+    state: Massachusetts
+    country: Hong Kong
+    phone: '9098047602443255050458723'
   billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Augustine
-    lastname: Sanford
-    address1: 8063 Shania Lights
-    address2: Suite 983
-    zipcode: '86164'
-    city: New Maiafurt
-    state: Louisiana
-    country: American Samoa
-    phone: 0056214874000579736862287
+    firstname: Thea
+    lastname: Borer
+    address1: 943 Kuhlman Corners
+    address2: Apt. 221
+    zipcode: 33516-4243
+    city: Daretown
+    state: Mississippi
+    country: Seychelles
+    phone: 0168782433685347379376379
   payments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     number: 63
-    status: :failed
-    amount: 44580.4
+    status: :in_progress
+    amount: 49999.0
     payment_method: Credit Card
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123

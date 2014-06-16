@@ -24,6 +24,25 @@ module HighriseEndpoint
 
     def to_hash
       @data ||= case @type
+        when :address
+          {
+            request_id: Faker::Number.number(25),
+            address: {
+              firstname: Faker::Name.first_name,
+              lastname:  Faker::Name.last_name,
+              address1:  Faker::Address.street_address,
+              address2:  Faker::Address.secondary_address,
+              zipcode:   Faker::Address.zip_code,
+              city:      Faker::Address.city,
+              state:     Faker::Address.state,
+              country:   Faker::Address.country,
+              phone:     Faker::Number.number(25)
+            },
+            parameters: {
+              "highrise.api_token" => "thisIsAFakeKey123",
+              "highrise.site_url" =>  "http://www.example.com"
+            }
+          }
         when :customer
           shipping_address    = HighriseEndpoint::Requests.new(:address, "shipping").to_hash[:address]
           billing_address     = HighriseEndpoint::Requests.new(:address, "billing").to_hash[:address]
@@ -190,19 +209,23 @@ module HighriseEndpoint
               "highrise.site_url" =>  "http://www.example.com"
             }
           }
-        when :address
+        when :shipment
+          order = HighriseEndpoint::Requests.new(:order, "for_shipment").to_hash[:order]
+
           {
             request_id: Faker::Number.number(25),
-            address: {
-              firstname: Faker::Name.first_name,
-              lastname:  Faker::Name.last_name,
-              address1:  Faker::Address.street_address,
-              address2:  Faker::Address.secondary_address,
-              zipcode:   Faker::Address.zip_code,
-              city:      Faker::Address.city,
-              state:     Faker::Address.state,
-              country:   Faker::Address.country,
-              phone:     Faker::Number.number(25)
+            shipment: {
+              id: Faker::Number.number(10),
+              order_id: order[:id],
+              email: order[:email],
+              cost: order[:totals][:shipping],
+              status: :ready,
+              stock_location: :default,
+              shipping_method: "UPS Ground (USD)",
+              tracking: Faker::Number.number(25),
+              shipped_at: Time.now,
+              shipping_address: order[:shipping_address],
+              items: order[:line_items]
             },
             parameters: {
               "highrise.api_token" => "thisIsAFakeKey123",

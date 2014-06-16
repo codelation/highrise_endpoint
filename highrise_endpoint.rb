@@ -152,11 +152,89 @@ module HighriseEndpoint
     post "/add_shipment" do
       set_highrise_configs(@payload)
 
+      @shipment = @payload[:shipment]
+
+      deals = Highrise::Deal.all
+      deals = deals.map{ |deal|
+        deal if deal.name == "Order ##{@shipment[:order_id]}"
+      }.compact
+
+      @deal = deals.first
+
+      if @deal
+        address = @shipment[:shipping_address]
+
+        formatted_address = <<-FORMATTED_ADDRESS
+#{address[:firstname]} #{address[:lastname]}
+#{address[:address1]}
+#{address[:address2]}
+#{address[:city]}, #{address[:state]}, #{address[:country]} #{address[:zipcode]}
+FORMATTED_ADDRESS
+
+        shipment_body = <<-SHIPMENT_BODY
+Tracking: #{@shipment[:tracking] ? @shipment[:tracking] : "No tracking code for this shipment."}
+
+Shipped to:
+#{formatted_address}
+
+Manifest:
+#{@shipment[:items]}
+
+Shipped On: #{@shipment[:shipped_at] ? @shipment[:shipped_at] : "Not yet shipped."}
+SHIPMENT_BODY
+
+        @note = Highrise::Note.create(body: shipment_body, subject_id: @deal.id, subject_type: "Deal")
+
+        if @note.save
+          jbuilder :add_shipment_success
+        else
+          jbuilder :add_shipment_failure
+        end
+      end
     end
 
     post "/update_shipment" do
       set_highrise_configs(@payload)
 
+      @shipment = @payload[:shipment]
+
+      deals = Highrise::Deal.all
+      deals = deals.map{ |deal|
+        deal if deal.name == "Order ##{@shipment[:order_id]}"
+      }.compact
+
+      @deal = deals.first
+
+      if @deal
+        address = @shipment[:shipping_address]
+
+        formatted_address = <<-FORMATTED_ADDRESS
+#{address[:firstname]} #{address[:lastname]}
+#{address[:address1]}
+#{address[:address2]}
+#{address[:city]}, #{address[:state]}, #{address[:country]} #{address[:zipcode]}
+FORMATTED_ADDRESS
+
+        shipment_body = <<-SHIPMENT_BODY
+Tracking: #{@shipment[:tracking] ? @shipment[:tracking] : "No tracking code for this shipment."}
+
+Shipped to:
+#{formatted_address}
+
+Manifest:
+#{@shipment[:items]}
+
+Shipped On: #{@shipment[:shipped_at] ? @shipment[:shipped_at] : "Not yet shipped."}
+SHIPMENT_BODY
+
+        @note = Highrise::Note.create(body: shipment_body, subject_id: @deal.id, subject_type: "Deal")
+
+        if @note.save
+          jbuilder :update_shipment_success
+        else
+          jbuilder :update_shipment_failure
+        end
+      end
     end
   end
 end

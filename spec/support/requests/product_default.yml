@@ -1,14 +1,14 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '9769557017503194523276308'
+request_id: '2844409054949392437906607'
 product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: gorgeous-granite-gloves
-  name: Gorgeous Granite Gloves
-  sku: gorgeous-granite-gloves
-  description: Quis praesentium et numquam quia officia saepe ut.
-  price: 3377
-  cost_price: 1064
-  available_on: 2014-06-12 18:28:43.664467000 -05:00
-  permalink: gorgeous-granite-gloves
+  id: ergonomic-granite-computer
+  name: Ergonomic Granite Computer
+  sku: ergonomic-granite-computer
+  description: Aut et voluptatem voluptatem ut.
+  price: 6060
+  cost_price: 5713
+  available_on: 2014-06-16 13:27:16.111402000 -05:00
+  permalink: ergonomic-granite-computer
   meta_description: 
   meta_keywords: 
   shipping_category: Default
@@ -28,28 +28,28 @@ product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     fit: smart fit
   images:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    url: http://dummyimage.com/600x400/000/fff.jpg&text=Gorgeous Granite Gloves
+    url: http://dummyimage.com/600x400/000/fff.jpg&text=Ergonomic Granite Computer
     position: 1
-    title: Gorgeous Granite Gloves
+    title: Ergonomic Granite Computer
     type: thumbnail
     dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       height: 220
       width: 100
   variants:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    sku: gorgeous-granite-gloves-Super-Special-Edition
-    price: 3382
-    cost_price: 3382
-    quantity: 0560325540321228318991149
+    sku: ergonomic-granite-computer-Super-Special-Edition
+    price: 6065
+    cost_price: 6065
+    quantity: '3020453234077055020105186'
     options: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       color: GREY
       size: S
     images:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      url: http://dummyimage.com/600x400/000/fff.jpg&text=Gorgeous Granite Gloves
+      url: http://dummyimage.com/600x400/000/fff.jpg&text=Ergonomic Granite Computer
         Super Special Edition
       position: 1
-      title: Gorgeous Granite Gloves Super Special Edition
+      title: Ergonomic Granite Computer Super Special Edition
       type: thumbnail
       dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
         height: 220

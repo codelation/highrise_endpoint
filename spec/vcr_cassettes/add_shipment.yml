@@ -2,6 +2,153 @@
 http_interactions:
 - request:
     method: get
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Bemail%5D=jocelyn.hudson@wehnerfeeney.name&n=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 16 Jun 2014 18:27:19 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '62'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Etag:
+      - '"304246700dd9732895ecf4e138caeb37"'
+      X-Throttle-Horizon:
+      - '2014-06-16T18:27:20Z'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Count:
+      - '25'
+      X-Request-Id:
+      - f4952e0c9edf26a7fe42530dc5cf2d08
+      X-Throttle-Max:
+      - '500'
+      X-Runtime:
+      - '13'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <people type="array"/>
+    http_version: 
+  recorded_at: Mon, 16 Jun 2014 18:27:18 GMT
+- request:
+    method: post
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/deals.xml
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <deal>
+          <currency>USD</currency>
+          <name>Order #9316031707</name>
+          <price type="float">699.93</price>
+          <status>won</status>
+          <party-id nil="true"/>
+        </deal>
+    headers:
+      Content-Type:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 16 Jun 2014 18:27:19 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '951'
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      X-Throttle-Horizon:
+      - '2014-06-16T18:27:20Z'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Count:
+      - '26'
+      Set-Cookie:
+      - last_deal_currency=USD; path=/; secure
+      X-Request-Id:
+      - 2e20fb2ead3f723d3e1ddbfadd002edf
+      X-Throttle-Max:
+      - '500'
+      X-Runtime:
+      - '28'
+      Location:
+      - https://HIGHRISE_SITE_HOST/deals/3748540
+      Cache-Control:
+      - no-cache
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <deal>
+          <account-id type="integer">318704</account-id>
+          <author-id type="integer">1044134</author-id>
+          <background nil="true"></background>
+          <category-id type="integer" nil="true"></category-id>
+          <created-at type="datetime">2014-06-16T18:27:19Z</created-at>
+          <currency>USD</currency>
+          <duration type="integer">1</duration>
+          <group-id type="integer" nil="true"></group-id>
+          <id type="integer">3748540</id>
+          <name>Order #9316031707</name>
+          <owner-id type="integer" nil="true"></owner-id>
+          <party-id type="integer" nil="true"></party-id>
+          <price type="integer">699</price>
+          <price-type>fixed</price-type>
+          <responsible-party-id type="integer" nil="true"></responsible-party-id>
+          <status>won</status>
+          <status-changed-on type="date" nil="true"></status-changed-on>
+          <updated-at type="datetime">2014-06-16T18:27:19Z</updated-at>
+          <visible-to>Everyone</visible-to>
+          <parties type="array"/>
+        </deal>
+    http_version: 
+  recorded_at: Mon, 16 Jun 2014 18:27:19 GMT
+- request:
+    method: get
     uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/deals.xml
     body:
       encoding: US-ASCII
@@ -21,36 +168,36 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 16 Jun 2014 18:27:18 GMT
+      - Mon, 16 Jun 2014 18:27:19 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
-      - '1328'
+      - '1368'
       Connection:
       - Keep-Alive
       Status:
       - 200 OK
-      Etag:
-      - '"5a81f7814bfe8fc275e237a2c5e9fa3d"'
-      X-Throttle-Horizon:
-      - '2014-06-16T18:27:20Z'
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Throttle-Count:
-      - '24'
-      Set-Cookie:
-      - _sunrise_session=BAh7BjoPc2Vzc2lvbl9pZCIlZmI5MjQ5MDc0YzlmNGI5NzBkMzczODJlNDUxZGE0ZmM%3D--c7dea4c659e022f4d552c07f80d45d7e5da0fad4;
-        path=/; HttpOnly; secure
-      X-Request-Id:
-      - 3d42bbcdf9bb3e9b019c3531a8f6df15
-      X-Throttle-Max:
-      - '500'
-      X-Runtime:
-      - '38'
+      - '27'
       Cache-Control:
       - private, max-age=0, must-revalidate
+      X-Request-Id:
+      - b49d3a1ade8dac26d2b5b0e853693666
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Max:
+      - '500'
+      Etag:
+      - '"4f65214e8961168aee241bbe1998a647"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Runtime:
+      - '42'
+      Set-Cookie:
+      - _sunrise_session=BAh7BjoPc2Vzc2lvbl9pZCIlNmIyN2YzZWE0ZDdkY2RkNGFlNDA4MzUxMGQ4NDA0Yjk%3D--2e262b83190a9493e3ca6ef3b8e6b5763d864dfa;
+        path=/; HttpOnly; secure
+      X-Throttle-Horizon:
+      - '2014-06-16T18:27:20Z'
       Timing-Allow-Origin:
       - "*"
       Vary:
@@ -527,6 +674,28 @@ http_interactions:
             <author-id type="integer">1044134</author-id>
             <background nil="true"></background>
             <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-06-16T18:27:19Z</created-at>
+            <currency>USD</currency>
+            <duration type="integer">1</duration>
+            <group-id type="integer" nil="true"></group-id>
+            <id type="integer">3748540</id>
+            <name>Order #9316031707</name>
+            <owner-id type="integer" nil="true"></owner-id>
+            <party-id type="integer" nil="true"></party-id>
+            <price type="integer">699</price>
+            <price-type>fixed</price-type>
+            <responsible-party-id type="integer" nil="true"></responsible-party-id>
+            <status>won</status>
+            <status-changed-on type="date" nil="true"></status-changed-on>
+            <updated-at type="datetime">2014-06-16T18:27:19Z</updated-at>
+            <visible-to>Everyone</visible-to>
+            <parties type="array"/>
+          </deal>
+          <deal>
+            <account-id type="integer">318704</account-id>
+            <author-id type="integer">1044134</author-id>
+            <background nil="true"></background>
+            <category-id type="integer" nil="true"></category-id>
             <created-at type="datetime">2014-06-16T18:23:53Z</created-at>
             <currency>USD</currency>
             <duration type="integer">1</duration>
@@ -590,5 +759,196 @@ http_interactions:
           </deal>
         </deals>
     http_version: 
-  recorded_at: Mon, 16 Jun 2014 18:27:18 GMT
+  recorded_at: Mon, 16 Jun 2014 18:27:19 GMT
+- request:
+    method: post
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/notes.xml
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <note>
+          <body>Tracking: 0116273999079768819573469
+
+        Shipped to:
+        Hunter Moen
+        54653 Faye Mills
+        Apt. 953
+        Earnestineton, Massachusetts, Hong Kong 45585-3926
+
+
+        Manifest:
+        [{"product_id"=&gt;"ergonomic-granite-computer", "name"=&gt;"Ergonomic Granite Computer", "quantity"=&gt;"7", "price"=&gt;6060}]
+
+        Shipped On: 2014-06-16T13:27:19.099-05:00
+        </body>
+          <subject-id type="integer">3748540</subject-id>
+          <subject-type>Deal</subject-type>
+        </note>
+    headers:
+      Content-Type:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 16 Jun 2014 18:27:19 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '557'
+      Connection:
+      - Keep-Alive
+      Status:
+      - 201 Created
+      X-Throttle-Horizon:
+      - '2014-06-16T18:27:20Z'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Count:
+      - '28'
+      X-Request-Id:
+      - 2389ff3cb667e5935384fa1a3a4bbea4
+      X-Throttle-Max:
+      - '500'
+      X-Runtime:
+      - '31'
+      Location:
+      - https://HIGHRISE_SITE_HOST/notes/230835570
+      Cache-Control:
+      - no-cache
+      Timing-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <note>
+          <author-id type="integer">1044134</author-id>
+          <collection-id type="integer">3748540</collection-id>
+          <collection-type>Deal</collection-type>
+          <created-at type="datetime">2014-06-16T18:27:19Z</created-at>
+          <group-id type="integer" nil="true"></group-id>
+          <id type="integer">230835570</id>
+          <owner-id type="integer" nil="true"></owner-id>
+          <subject-id type="integer">3748540</subject-id>
+          <subject-type>Deal</subject-type>
+          <updated-at type="datetime">2014-06-16T18:27:19Z</updated-at>
+          <visible-to>Everyone</visible-to>
+          <body>Tracking: 0116273999079768819573469
+
+        Shipped to:
+        Hunter Moen
+        54653 Faye Mills
+        Apt. 953
+        Earnestineton, Massachusetts, Hong Kong 45585-3926
+
+
+        Manifest:
+        [{&quot;product_id&quot;=&gt;&quot;ergonomic-granite-computer&quot;, &quot;name&quot;=&gt;&quot;Ergonomic Granite Computer&quot;, &quot;quantity&quot;=&gt;&quot;7&quot;, &quot;price&quot;=&gt;6060}]
+
+        Shipped On: 2014-06-16T13:27:19.099-05:00
+        </body>
+          <subject-name>Order #9316031707</subject-name>
+        </note>
+    http_version: 
+  recorded_at: Mon, 16 Jun 2014 18:27:19 GMT
+- request:
+    method: put
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/notes/230835570.xml
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <note>
+          <body>Tracking: 0116273999079768819573469
+
+        Shipped to:
+        Hunter Moen
+        54653 Faye Mills
+        Apt. 953
+        Earnestineton, Massachusetts, Hong Kong 45585-3926
+
+
+        Manifest:
+        [{"product_id"=&gt;"ergonomic-granite-computer", "name"=&gt;"Ergonomic Granite Computer", "quantity"=&gt;"7", "price"=&gt;6060}]
+
+        Shipped On: 2014-06-16T13:27:19.099-05:00
+        </body>
+          <subject-id type="integer">3748540</subject-id>
+          <subject-type>Deal</subject-type>
+          <id type="integer">230835570</id>
+          <author-id type="integer">1044134</author-id>
+          <collection-id type="integer">3748540</collection-id>
+          <collection-type>Deal</collection-type>
+          <created-at type="dateTime">2014-06-16T18:27:19Z</created-at>
+          <group-id nil="true"/>
+          <owner-id nil="true"/>
+          <updated-at type="dateTime">2014-06-16T18:27:19Z</updated-at>
+          <visible-to>Everyone</visible-to>
+          <subject-name>Order #9316031707</subject-name>
+        </note>
+    headers:
+      Content-Type:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 16 Jun 2014 18:27:19 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '1'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Throttle-Horizon:
+      - '2014-06-16T18:27:20Z'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Count:
+      - '29'
+      X-Request-Id:
+      - c3ef903ffa1de6f0bf49c87ad028a142
+      X-Throttle-Max:
+      - '500'
+      X-Runtime:
+      - '35'
+      Cache-Control:
+      - no-cache
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: " "
+    http_version: 
+  recorded_at: Mon, 16 Jun 2014 18:27:19 GMT
 recorded_with: VCR 2.9.2

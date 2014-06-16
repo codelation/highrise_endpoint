@@ -1,32 +1,32 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '2872944933398087333542373'
+request_id: '4737900697918839149702486'
 order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '9313269868'
+  id: '9316031707'
   status: :in_progress
   channel: :spree
-  email: brandon.hackett@lemkehickle.org
+  email: jocelyn.hudson@wehnerfeeney.name
   currency: USD
-  placed_on: 2014-06-16 13:27:16.114394000 -05:00
+  placed_on: 2014-06-16 13:27:18.824695000 -05:00
   totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    item: 0
-    adjustment: 3
-    tax: 0.0
-    shipping: 3
-    payment: 3.0
-    order: 3.0
+    item: 42420
+    adjustment: 0
+    tax: 27573.0
+    shipping: 0
+    payment: 69993.0
+    order: 69993.0
   line_items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     product_id: ergonomic-granite-computer
     name: Ergonomic Granite Computer
-    quantity: '0'
+    quantity: '7'
     price: 6060
   adjustments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Tax
-    value: 0.0
+    value: 27573.0
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Shipping
-    value: 3
+    value: 0
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     firstname: Hunter
     lastname: Moen
@@ -51,7 +51,7 @@ order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     number: 63
     status: :complete
-    amount: 3.0
+    amount: 69993.0
     payment_method: Credit Card
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123
