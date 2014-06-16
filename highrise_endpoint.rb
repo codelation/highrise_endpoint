@@ -105,7 +105,7 @@ module HighriseEndpoint
         @deal = Highrise::Deal.new(structure)
 
         if @deal.save
-          @note = Highrise::Note.create(body: @payload[:order][:line_items], subject_id: @deal.id, subject_type: "Deal")
+          @note = Highrise::Note.create(body: @payload[:order][:line_items].to_json, subject_id: @deal.id, subject_type: "Deal")
 
           jbuilder :add_order_success
         else
@@ -144,7 +144,7 @@ module HighriseEndpoint
         @deal = Highrise::Deal.new(structure)
 
         if @deal.save
-          @note = Highrise::Note.create(body: @payload[:order][:line_items], subject_id: @deal.id, subject_type: "Deal")
+          @note = Highrise::Note.create(body: @payload[:order][:line_items].to_json, subject_id: @deal.id, subject_type: "Deal")
 
           jbuilder :add_order_success
         else
