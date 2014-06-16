@@ -1,31 +1,31 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '2724805369748361151304657'
+request_id: '2390967615573453913175318'
 shipment: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '2562671223'
-  order_id: '9638069136'
-  email: kennedy@mclaughlin.info
-  cost: 1
+  id: '9243696217'
+  order_id: '4234086927'
+  email: burnice.dickens@paucekskiles.com
+  cost: 5
   status: :ready
   stock_location: :default
   shipping_method: UPS Ground (USD)
-  tracking: '8441004630414910538237705'
-  shipped_at: 2014-06-16 13:34:16.268210000 -05:00
+  tracking: '5631772691099468614592291'
+  shipped_at: 2014-06-16 14:33:18.022613000 -05:00
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Jo
-    lastname: Willms
-    address1: 47676 Toy Rue
-    address2: Suite 553
-    zipcode: '67010'
-    city: Wymanton
-    state: New Mexico
-    country: Turks and Caicos Islands
-    phone: '9253305140833987624010858'
+    firstname: Kade
+    lastname: Lakin
+    address1: 2300 Trinity Turnpike
+    address2: Apt. 546
+    zipcode: '91514'
+    city: New Kristopher
+    state: Maine
+    country: Bahrain
+    phone: 0740381707465615090974090
   items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: rustic-steel-table
-    name: Rustic Steel Table
-    quantity: '3'
-    price: 2249
+    product_id: intelligent-concrete-gloves
+    name: Intelligent Concrete Gloves
+    quantity: '1'
+    price: 2828
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123
   highrise.site_url: http://www.example.com

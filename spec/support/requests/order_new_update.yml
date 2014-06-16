@@ -1,57 +1,57 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: 0152108528932389112029475
+request_id: '2814407162135889729476942'
 order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '9687530029'
-  status: :pending
+  id: '6742785939'
+  status: :complete
   channel: :spree
-  email: ahmad_gleichner@bogisich.com
+  email: eddie@fay.name
   currency: USD
-  placed_on: 2014-06-16 13:34:21.822623000 -05:00
+  placed_on: 2014-06-16 14:33:24.716681000 -05:00
   totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    item: 6747
+    item: 2828
     adjustment: 5
-    tax: 4385.55
+    tax: 1838.2
     shipping: 5
-    payment: 11137.55
-    order: 11137.55
+    payment: 4671.2
+    order: 4671.2
   line_items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: rustic-steel-table
-    name: Rustic Steel Table
-    quantity: '3'
-    price: 2249
+    product_id: intelligent-concrete-gloves
+    name: Intelligent Concrete Gloves
+    quantity: '1'
+    price: 2828
   adjustments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Tax
-    value: 4385.55
+    value: 1838.2
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Shipping
     value: 5
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Jo
-    lastname: Willms
-    address1: 47676 Toy Rue
-    address2: Suite 553
-    zipcode: '67010'
-    city: Wymanton
-    state: New Mexico
-    country: Turks and Caicos Islands
-    phone: '9253305140833987624010858'
+    firstname: Kade
+    lastname: Lakin
+    address1: 2300 Trinity Turnpike
+    address2: Apt. 546
+    zipcode: '91514'
+    city: New Kristopher
+    state: Maine
+    country: Bahrain
+    phone: 0740381707465615090974090
   billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Napoleon
-    lastname: Gulgowski
-    address1: 787 Brakus Forks
-    address2: Suite 781
-    zipcode: 66935-6164
-    city: North Odellmouth
-    state: Florida
-    country: Slovenia
-    phone: '1710973455637445774937508'
+    firstname: Leif
+    lastname: Roob
+    address1: 8442 Jones Vista
+    address2: Suite 225
+    zipcode: '93276'
+    city: Alfredahaven
+    state: Colorado
+    country: Lao People's Democratic Republic
+    phone: '7280575578882601163753330'
   payments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     number: 63
     status: :complete
-    amount: 11137.55
+    amount: 4671.2
     payment_method: Credit Card
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123

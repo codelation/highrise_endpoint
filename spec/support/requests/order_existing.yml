@@ -1,57 +1,57 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: 0490737893561038768128702
+request_id: '8454492663927900346337834'
 order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '5368234313'
+  id: 0707982205
   status: :complete
   channel: :spree
-  email: cayla_emmerich@dibbert.com
+  email: cortez_schuster@nicolasbarrows.biz
   currency: USD
-  placed_on: 2014-06-16 13:34:12.297589000 -05:00
+  placed_on: 2014-06-16 14:33:14.223310000 -05:00
   totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    item: 17992
-    adjustment: 6
-    tax: 11694.800000000001
-    shipping: 6
-    payment: 29692.800000000003
-    order: 29692.800000000003
+    item: 8484
+    adjustment: 2
+    tax: 5514.6
+    shipping: 2
+    payment: 14000.6
+    order: 14000.6
   line_items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: rustic-steel-table
-    name: Rustic Steel Table
-    quantity: '8'
-    price: 2249
+    product_id: intelligent-concrete-gloves
+    name: Intelligent Concrete Gloves
+    quantity: '3'
+    price: 2828
   adjustments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Tax
-    value: 11694.800000000001
+    value: 5514.6
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Shipping
-    value: 6
+    value: 2
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Jo
-    lastname: Willms
-    address1: 47676 Toy Rue
-    address2: Suite 553
-    zipcode: '67010'
-    city: Wymanton
-    state: New Mexico
-    country: Turks and Caicos Islands
-    phone: '9253305140833987624010858'
+    firstname: Kade
+    lastname: Lakin
+    address1: 2300 Trinity Turnpike
+    address2: Apt. 546
+    zipcode: '91514'
+    city: New Kristopher
+    state: Maine
+    country: Bahrain
+    phone: 0740381707465615090974090
   billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Napoleon
-    lastname: Gulgowski
-    address1: 787 Brakus Forks
-    address2: Suite 781
-    zipcode: 66935-6164
-    city: North Odellmouth
-    state: Florida
-    country: Slovenia
-    phone: '1710973455637445774937508'
+    firstname: Leif
+    lastname: Roob
+    address1: 8442 Jones Vista
+    address2: Suite 225
+    zipcode: '93276'
+    city: Alfredahaven
+    state: Colorado
+    country: Lao People's Democratic Republic
+    phone: '7280575578882601163753330'
   payments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     number: 63
-    status: :in_progress
-    amount: 29692.800000000003
+    status: :complete
+    amount: 14000.6
     payment_method: Credit Card
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123

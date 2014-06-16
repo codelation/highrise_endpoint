@@ -1,14 +1,14 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '2173531745263140391509641'
+request_id: '7329751436364986631609216'
 product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: rustic-steel-table
-  name: Rustic Steel Table
-  sku: rustic-steel-table
-  description: Provident eos dolorum exercitationem.
-  price: 2249
-  cost_price: 983
-  available_on: 2014-06-16 13:34:12.293103000 -05:00
-  permalink: rustic-steel-table
+  id: intelligent-concrete-gloves
+  name: Intelligent Concrete Gloves
+  sku: intelligent-concrete-gloves
+  description: Excepturi consectetur dignissimos eos ipsam.
+  price: 2828
+  cost_price: 1823
+  available_on: 2014-06-16 14:33:14.219914000 -05:00
+  permalink: intelligent-concrete-gloves
   meta_description: 
   meta_keywords: 
   shipping_category: Default
@@ -28,28 +28,28 @@ product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     fit: smart fit
   images:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    url: http://dummyimage.com/600x400/000/fff.jpg&text=Rustic Steel Table
+    url: http://dummyimage.com/600x400/000/fff.jpg&text=Intelligent Concrete Gloves
     position: 1
-    title: Rustic Steel Table
+    title: Intelligent Concrete Gloves
     type: thumbnail
     dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       height: 220
       width: 100
   variants:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    sku: rustic-steel-table-Super-Special-Edition
-    price: 2254
-    cost_price: 2254
-    quantity: '3809428870183624515374760'
+    sku: intelligent-concrete-gloves-Super-Special-Edition
+    price: 2833
+    cost_price: 2833
+    quantity: '7374617854689244147455054'
     options: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       color: GREY
       size: S
     images:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      url: http://dummyimage.com/600x400/000/fff.jpg&text=Rustic Steel Table Super
-        Special Edition
+      url: http://dummyimage.com/600x400/000/fff.jpg&text=Intelligent Concrete Gloves
+        Super Special Edition
       position: 1
-      title: Rustic Steel Table Super Special Edition
+      title: Intelligent Concrete Gloves Super Special Edition
       type: thumbnail
       dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
         height: 220
