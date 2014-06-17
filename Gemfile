@@ -4,7 +4,7 @@ ruby "2.1.1"
 
 gem "awesome_print"
 gem "dotenv"
-gem "endpoint_base"
+gem "endpoint_base", github: "spree/endpoint_base"
 gem "foreman"
 gem "highrise"
 gem "pry"
