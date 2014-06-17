@@ -4,3 +4,6 @@ rvm:
 script: bundle exec rake test
 notifications:
   email: false
+env:
+  - HIGHRISE_API_TOKEN=793caf24167e9d6da07515f3e36f864b
+  - HIGHRISE_SITE_URL=https://codelationtesting.highrisehq.com

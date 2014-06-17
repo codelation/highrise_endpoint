@@ -9,9 +9,6 @@ end
 
 module HighriseEndpoint
   class Application < EndpointBase::Sinatra::Base
-    Highrise::Base.site = "http://www.example.com"
-    Highrise::Base.user = "thisIsAFakeKey123"
-
     set :logging, true
 
     # Adds new customer to Highrise from spree hub.
