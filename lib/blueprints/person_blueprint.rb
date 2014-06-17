@@ -1,5 +1,7 @@
 module HighriseEndpoint
+  # Maps a request payload into a highrise hash structure
   class PersonBlueprint < Blueprint
+    # A person hash structure, if provided the blueprint hash structure will only include what has changed
     attr_accessor :person
 
     def initialize(payload: nil, person: nil)
@@ -43,6 +45,7 @@ module HighriseEndpoint
       }.with_indifferent_access
     end
 
+    # Only return the part of the hash that has changed attributes
     def build
       if @person
         attributes - @person

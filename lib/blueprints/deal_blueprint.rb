@@ -10,6 +10,7 @@ end
 
 module HighriseEndpoint
   class DealBlueprint < Blueprint
+    # A deal hash structure, if provided the blueprint hash structure will only include what has changed
     attr_accessor :deal
 
     def initialize(payload: nil, deal: nil)
@@ -30,6 +31,7 @@ module HighriseEndpoint
       }.with_indifferent_access
     end
 
+    # Only return the part of the hash that has changed attributes
     def build
       if @deal
         attributes - @deal

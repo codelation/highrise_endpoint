@@ -39,7 +39,9 @@ class Hash
 end
 
 module HighriseEndpoint
+  # Parent class for Blueprints(the mapping from a request into a highrise structure)
   class Blueprint
+    # Payload is the request payload
     attr_accessor :payload
 
     def initialize(payload: nil)

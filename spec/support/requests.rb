@@ -1,10 +1,13 @@
 module HighriseEndpoint
+  # This class could probably be refactored... But it includes faked requests with random data to keep Highrise happy.
   class Requests
+    # The type refers to the type of request from the hub, data is what is generated
     attr_accessor :type, :data
 
     def initialize(type, name = nil)
       @type = type
 
+      # Load from path if the file exists. This way the data will match the VCR cassettes
       path = File.expand_path("../requests/#{@type.to_s}_#{name ? name : "default"}.yml", __FILE__)
       if File.file?(path)
         @data = YAML::load_file(path)
@@ -22,6 +25,7 @@ module HighriseEndpoint
       self.to_hash.to_json
     end
 
+    # This function should be refactored.
     def to_hash
       @data ||= case @type
         when :address
