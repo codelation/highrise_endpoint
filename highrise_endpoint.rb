@@ -2,6 +2,7 @@ Bundler.require(:default)
 require "endpoint_base/sinatra"
 Dotenv.load
 
+# Sets the Highrise credentials based on what is provided
 def set_highrise_configs(payload)
   Highrise::Base.site = payload[:parameters]["highrise.site_url"]
   Highrise::Base.user = payload[:parameters]["highrise.api_token"]
