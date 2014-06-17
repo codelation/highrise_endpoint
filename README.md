@@ -48,13 +48,17 @@ $ rake clean
 
 After running this running `rake test` will regenerate everything that it needs.
 
-## Installed Gems
+## Gems
+The following gems are relied upon for this endpoint.
 
-### Production/Development/Test
+### General
 
 - [Awesome Print](https://github.com/michaeldv/awesome_print)
+- [Dotenv](https://github.com/bkeepers/dotenv)
 - [Endpoint::Base](https://github.com/spree/endpoint_base)
 - [Foreman](https://github.com/ddollar/foreman)
+- [Highrise](https://github.com/tapajos/highrise)
+- [Pry](https://github.com/pry/pry)
 - [Puma](http://puma.io)
 - [Rake](https://github.com/jimweirich/rake)
 - [Sinatra](http://www.sinatrarb.com)
@@ -64,13 +68,9 @@ After running this running `rake test` will regenerate everything that it needs.
 
 ### Test
 - [Faker](https://github.com/stympy/faker)
-- [Capybara](https://github.com/jnicklas/capybara)
-- [database_cleaner](https://github.com/bmabey/database_cleaner)
-- [Faker](https://github.com/stympy/faker)
 - [Guard](https://github.com/guard/guard)
 - [guard-rspec](https://github.com/guard/guard-rspec)
 - [rack-test](https://github.com/brynary/rack-test)
-- [rb-fsevent](https://github.com/thibaudgg/rb-fsevent)
 - [Rspec](http://rspec.info)
 - [terminal-notifier-guard](https://github.com/Springest/terminal-notifier-guard)
 - [vcr](https://github.com/vcr/vcr)
