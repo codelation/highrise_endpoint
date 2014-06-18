@@ -1,31 +1,36 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '4726567462201862276605828'
+request_id: '2729729792478187119479698'
 shipment: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '7196047666'
-  order_id: '4234086927'
-  email: burnice.dickens@paucekskiles.com
+  id: '8851809461'
+  order_id: '0775244511'
+  email: rosa@littel.org
   cost: 5
   status: :ready
   stock_location: :default
   shipping_method: UPS Ground (USD)
-  tracking: '6213729303606069641187738'
-  shipped_at: 2014-06-16 14:33:26.624331000 -05:00
+  tracking: '9282014665019841476983680'
+  shipped_at: 2014-06-17 19:32:26.277336000 -05:00
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Kade
-    lastname: Lakin
-    address1: 2300 Trinity Turnpike
-    address2: Apt. 546
-    zipcode: '91514'
-    city: New Kristopher
-    state: Maine
-    country: Bahrain
-    phone: 0740381707465615090974090
+    firstname: Marty
+    lastname: Quitzon
+    address1: 57308 Balistreri Squares
+    address2: Suite 173
+    zipcode: 14576-4856
+    city: Port Rosendo
+    state: Mississippi
+    country: Armenia
+    phone: '8273970308117015130226564'
   items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: intelligent-concrete-gloves
-    name: Intelligent Concrete Gloves
-    quantity: '1'
-    price: 2828
+    product_id: ergonomic-plastic-computer
+    name: Ergonomic Plastic Computer
+    quantity: '0'
+    price: 6353
+  - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    product_id: ergonomic-plastic-computer
+    name: Ergonomic Plastic Computer
+    quantity: '0'
+    price: 6353
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123
   highrise.site_url: http://www.example.com

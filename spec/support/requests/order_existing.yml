@@ -1,57 +1,62 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '8454492663927900346337834'
+request_id: '9388949688990869547201447'
 order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: 0707982205
-  status: :complete
+  id: '6252564475'
+  status: :pending
   channel: :spree
-  email: cortez_schuster@nicolasbarrows.biz
+  email: justice_kovacek@kunde.org
   currency: USD
-  placed_on: 2014-06-16 14:33:14.223310000 -05:00
+  placed_on: 2014-06-17 19:32:04.489301000 -05:00
   totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    item: 8484
-    adjustment: 2
-    tax: 5514.6
-    shipping: 2
-    payment: 14000.6
-    order: 14000.6
+    item: 50824
+    adjustment: 7
+    tax: 33035.6
+    shipping: 7
+    payment: 83866.6
+    order: 83866.6
   line_items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: intelligent-concrete-gloves
-    name: Intelligent Concrete Gloves
-    quantity: '3'
-    price: 2828
+    product_id: ergonomic-plastic-computer
+    name: Ergonomic Plastic Computer
+    quantity: '8'
+    price: 6353
+  - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    product_id: ergonomic-plastic-computer
+    name: Ergonomic Plastic Computer
+    quantity: '8'
+    price: 6353
   adjustments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Tax
-    value: 5514.6
+    value: 33035.6
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Shipping
-    value: 2
+    value: 7
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Kade
-    lastname: Lakin
-    address1: 2300 Trinity Turnpike
-    address2: Apt. 546
-    zipcode: '91514'
-    city: New Kristopher
-    state: Maine
-    country: Bahrain
-    phone: 0740381707465615090974090
+    firstname: Marty
+    lastname: Quitzon
+    address1: 57308 Balistreri Squares
+    address2: Suite 173
+    zipcode: 14576-4856
+    city: Port Rosendo
+    state: Mississippi
+    country: Armenia
+    phone: '8273970308117015130226564'
   billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Leif
-    lastname: Roob
-    address1: 8442 Jones Vista
-    address2: Suite 225
-    zipcode: '93276'
-    city: Alfredahaven
-    state: Colorado
-    country: Lao People's Democratic Republic
-    phone: '7280575578882601163753330'
+    firstname: Stefanie
+    lastname: Flatley
+    address1: 3570 Hamill Stream
+    address2: Apt. 889
+    zipcode: 95426-3422
+    city: South Everetthaven
+    state: New Mexico
+    country: Serbia
+    phone: '2083240307359144238151776'
   payments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     number: 63
     status: :complete
-    amount: 14000.6
+    amount: 83866.6
     payment_method: Credit Card
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123

@@ -100,6 +100,12 @@ module HighriseEndpoint
                   name: product[:name],
                   quantity: quantity,
                   price: product[:price]
+                },
+                {
+                  product_id: product[:id],
+                  name: product[:name],
+                  quantity: quantity,
+                  price: product[:price]
                 }
               ],
               adjustments: [

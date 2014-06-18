@@ -44,7 +44,7 @@ Shipped to:
 #{formatted_address}
 
 Manifest:
-#{@shipment[:items]}
+#{line_items_to_string(@shipment[:items])}
 
 Shipped On: #{@shipment[:shipped_at] ? @shipment[:shipped_at] : "Not yet shipped."}
 SHIPMENT_BODY

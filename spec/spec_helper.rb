@@ -40,3 +40,9 @@ def set_highrise_parameters(request)
   request[:parameters]["highrise.api_token"] = ENV["HIGHRISE_API_TOKEN"]
   request[:parameters]["highrise.site_url"] = ENV["HIGHRISE_SITE_URL"]
 end
+
+def line_items_to_string(line_items)
+  line_items.map{ |line_item|
+    "##{line_item[:product_id]} - \"#{line_item[:name]}\" | #{line_item[:quantity]} @ #{line_item[:price]/100.00}/each"
+  }.join("\n")
+end
