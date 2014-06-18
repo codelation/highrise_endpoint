@@ -3,6 +3,15 @@
 
 This integration is designed to integrate Spree Hub with the [Highrise](https://highrisehq.com) CRM. All transactions related to the Spree storefront will be available for view in Highrise. This is a one-way integration. Data on Highrise will not sync back to the storefront.
 
+## Configuration
+The following parameters are required by this integration:
+
+| Key | Value |
+| :-- | :---- |
+| `highrise.api_token` | Your API token provided by Highrise |
+| `highrise.site_url` | Your Highrise site url: https://codelationtesting.highrisehq.com |
+
+
 ## Deployment
 To start the server:
 
