@@ -71,7 +71,7 @@ Example of adding tags to the deal's person in `add_order` & `update_order`:
 ### Tasks
 This endpoint supports creating contextual tasks in Highrise on all webhooks.
 
-Example of adding tags to the contextual person in `add_customer` & `update_customer`:
+Example of adding contextual tasks on `add_customer` & `update_customer`:
 ```json
 {
   "customer": {
@@ -90,7 +90,7 @@ Example of adding tags to the contextual person in `add_customer` & `update_cust
 }
 ```
 
-Example of adding contextual tasks to a deal and it's person in `add_order` & `update_order`:
+Example of adding contextual tasks on `add_order` & `update_order`:
 ```json
 {
   "order": {
@@ -116,7 +116,7 @@ Example of adding contextual tasks to a deal and it's person in `add_order` & `u
 }
 ```
 
-Example of adding tags to the deal's person in `add_order` & `update_order`:
+Example of adding contextual tasks on `add_shipment` & `update_shipment`:
 ```json
 {
   "shipment": {
