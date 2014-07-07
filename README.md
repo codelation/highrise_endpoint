@@ -43,9 +43,9 @@ Example of adding tags to a person in `add_customer` & `update_customer`:
     "id": "a123",
     ...
     "highrise_tags": {
-      person: [
+      "person": [
         "Likes T-shirts",
-        "Bought a T-shirt" // I have no idea what these would actually be, I'm just a lowly engineer ;)
+        "Bought a T-shirt"
       ]
     }
   }
@@ -59,9 +59,9 @@ Example of adding tags to a person in `add_order` & `update_order`:
     "id": "R154085346",
     ...
     "highrise_tags": {
-      person: [
+      "person": [
         "Likes T-shirts",
-        "Bought a T-shirt" // I have no idea what these would actually be, I'm just a lowly engineer ;)
+        "Bought a T-shirt"
       ]
     }
   }
