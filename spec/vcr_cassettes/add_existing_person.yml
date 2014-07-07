@@ -1,6 +1,72 @@
 ---
 http_interactions:
 - request:
+    method: get
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/me.xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Jul 2014 20:23:38 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '470'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Throttle-Horizon:
+      - '2014-07-07T20:23:40Z'
+      X-Runtime:
+      - '9'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - e3c92747d709763ae2fc30a8a8ad4330
+      X-Throttle-Count:
+      - '1'
+      X-Throttle-Max:
+      - '500'
+      Etag:
+      - '"881c4bb60b300f034f6744582fd9713a"'
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <user>
+          <created-at type="datetime">2014-06-16T18:10:07Z</created-at>
+          <id type="integer">1044134</id>
+          <token>HIGHRISE_API_TOKEN</token>
+          <updated-at type="datetime">2014-06-16T18:10:07Z</updated-at>
+          <dropbox>dropbox@31813949.HIGHRISE_SITE_HOST</dropbox>
+          <name>Matthew Testing</name>
+          <email-address>matthew+testing2@codelation.com</email-address>
+          <admin type="boolean">true</admin>
+        </user>
+    http_version: 
+  recorded_at: Mon, 07 Jul 2014 20:23:38 GMT
+- request:
     method: post
     uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people.xml
     body:
@@ -8,32 +74,32 @@ http_interactions:
       string: |
         <?xml version="1.0" encoding="UTF-8"?>
         <person>
-          <first-name>Timmothy</first-name>
-          <last-name>Volkman</last-name>
+          <first-name>Britney</first-name>
+          <last-name>Romaguera</last-name>
           <contact-data>
             <email-addresses type="array">
               <email-address>
-                <address>adriel_gottlieb@gradyrunte.biz</address>
+                <address>benjamin@walkerbraun.net</address>
                 <location>Work</location>
               </email-address>
             </email-addresses>
             <addresses type="array">
               <address>
-                <city>Lake Pinkbury</city>
-                <country>Belarus</country>
+                <city>Anahimouth</city>
+                <country>Trinidad and Tobago</country>
                 <location>Work</location>
-                <state>North Dakota</state>
-                <street>3021 Rosina Wall</street>
-                <zip>85426</zip>
+                <state>Florida</state>
+                <street>5282 Ratke Cape</street>
+                <zip>99035-6589</zip>
               </address>
             </addresses>
             <phone-numbers type="array">
               <phone-number>
                 <location>Work</location>
-                <number>3524857259896701957696121</number>
+                <number>3339476946728943731298480</number>
               </phone-number>
             </phone-numbers>
-            <customer-id>5090629312</customer-id>
+            <customer-id>3179386383</customer-id>
           </contact-data>
         </person>
     headers:
@@ -53,34 +119,34 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 07 Jul 2014 17:21:00 GMT
+      - Mon, 07 Jul 2014 20:23:38 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
-      - '870'
+      - '856'
       Connection:
       - Keep-Alive
       Status:
       - 201 Created
       X-Throttle-Horizon:
-      - '2014-07-07T17:21:10Z'
+      - '2014-07-07T20:23:40Z'
       X-Runtime:
-      - '40'
+      - '44'
       Cache-Control:
       - no-cache
       X-Frame-Options:
       - SAMEORIGIN
       Set-Cookie:
-      - _sunrise_session=BAh7BzoPc2Vzc2lvbl9pZCIlYzE4YzI4YmM0MDRhMTQ0MzJkMDBmNWNiYmNlNzcwZDUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoPbmV3X3BlcnNvblQGOgpAdXNlZHsGOwdG--0ae01025ae31e8752d2f4b87e1ec128f6b9ee25a;
+      - _sunrise_session=BAh7BzoPc2Vzc2lvbl9pZCIlMDYzY2RjMTNlMDAwNDBmOGM0MDkxN2M5ZDQ3NTg2ZGQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoPbmV3X3BlcnNvblQGOgpAdXNlZHsGOwdG--1aef0b5fa86af251d62e7a2af850477a7d38b9b5;
         path=/; HttpOnly; secure
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 21f7de1e64e65decaf5a0027620ad9fb
+      - ae175010e14941fd89d0176d67e1df1e
       Location:
-      - https://HIGHRISE_SITE_HOST/people/211354177-timmothy-volkman
+      - https://HIGHRISE_SITE_HOST/people/211376726-britney-romaguera
       X-Throttle-Count:
-      - '1'
+      - '2'
       X-Throttle-Max:
       - '500'
       Timing-Allow-Origin:
@@ -95,14 +161,14 @@ http_interactions:
           <author-id type="integer">1044134</author-id>
           <background nil="true"></background>
           <company-id type="integer" nil="true"></company-id>
-          <created-at type="datetime">2014-07-07T17:21:00Z</created-at>
-          <first-name>Timmothy</first-name>
+          <created-at type="datetime">2014-07-07T20:23:38Z</created-at>
+          <first-name>Britney</first-name>
           <group-id type="integer" nil="true"></group-id>
-          <id type="integer">211354177</id>
-          <last-name>Volkman</last-name>
+          <id type="integer">211376726</id>
+          <last-name>Romaguera</last-name>
           <owner-id type="integer" nil="true"></owner-id>
           <title nil="true"></title>
-          <updated-at type="datetime">2014-07-07T17:21:00Z</updated-at>
+          <updated-at type="datetime">2014-07-07T20:23:38Z</updated-at>
           <visible-to>Everyone</visible-to>
           <company-name nil="true"></company-name>
           <linkedin-url nil="true"></linkedin-url>
@@ -110,15 +176,15 @@ http_interactions:
         <contact-data>
           <phone-numbers type="array">
             <phone-number>
-              <id type="integer">170247028</id>
+              <id type="integer">170267065</id>
               <location>Work</location>
-              <number>3524857259896701957696121</number>
+              <number>3339476946728943731298480</number>
             </phone-number>
           </phone-numbers>
           <email-addresses type="array">
             <email-address>
-              <address>adriel_gottlieb@gradyrunte.biz</address>
-              <id type="integer">108377710</id>
+              <address>benjamin@walkerbraun.net</address>
+              <id type="integer">108392777</id>
               <location>Work</location>
             </email-address>
           </email-addresses>
@@ -127,30 +193,30 @@ http_interactions:
           <twitter-accounts type="array"/>
           <addresses type="array">
             <address>
-              <city>Lake Pinkbury</city>
-              <country>Belarus</country>
-              <id type="integer">101176440</id>
+              <city>Anahimouth</city>
+              <country>Trinidad and Tobago</country>
+              <id type="integer">101182122</id>
               <location>Work</location>
-              <state>North Dakota</state>
-              <street>3021 Rosina Wall</street>
-              <zip>85426</zip>
+              <state>Florida</state>
+              <street>5282 Ratke Cape</street>
+              <zip>99035-6589</zip>
             </address>
           </addresses>
         </contact-data>
         <subject_datas type="array">
           <subject_data>
-            <id type="integer">128614915</id>
+            <id type="integer">128671903</id>
             <subject_field_id type="integer">903080</subject_field_id>
             <subject_field_label>Customer ID</subject_field_label>
-            <value>5090629312</value>
+            <value>3179386383</value>
           </subject_data>
         </subject_datas>
         </person>
     http_version: 
-  recorded_at: Mon, 07 Jul 2014 17:21:00 GMT
+  recorded_at: Mon, 07 Jul 2014 20:23:38 GMT
 - request:
     method: get
-    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Bcustomer_id%5D=5090629312&n=0
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Bcustomer_id%5D=3179386383&n=0
     body:
       encoding: US-ASCII
       string: ''
@@ -169,29 +235,29 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 07 Jul 2014 17:21:01 GMT
+      - Mon, 07 Jul 2014 20:23:38 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
-      - '895'
+      - '885'
       Connection:
       - Keep-Alive
       Status:
       - 200 OK
       X-Throttle-Horizon:
-      - '2014-07-07T17:21:10Z'
+      - '2014-07-07T20:23:40Z'
       X-Runtime:
-      - '40'
+      - '41'
       X-Request-Id:
-      - 8c39320d59c5a7c90ce64074182e4330
+      - 440aa022a1e0c9ae4510da74757727e2
       X-Throttle-Max:
       - '500'
       Etag:
-      - '"d571cba4ed92fe4b9fbd2d9cc461af76"'
+      - '"b86b06a02f704a21a6007efd93b8afb7"'
       X-Frame-Options:
       - SAMEORIGIN
       X-Throttle-Count:
-      - '2'
+      - '3'
       Cache-Control:
       - private, max-age=0, must-revalidate
       Strict-Transport-Security:
@@ -209,14 +275,14 @@ http_interactions:
             <author-id type="integer">1044134</author-id>
             <background nil="true"></background>
             <company-id type="integer" nil="true"></company-id>
-            <created-at type="datetime">2014-07-07T17:21:00Z</created-at>
-            <first-name>Timmothy</first-name>
+            <created-at type="datetime">2014-07-07T20:23:38Z</created-at>
+            <first-name>Britney</first-name>
             <group-id type="integer" nil="true"></group-id>
-            <id type="integer">211354177</id>
-            <last-name>Volkman</last-name>
+            <id type="integer">211376726</id>
+            <last-name>Romaguera</last-name>
             <owner-id type="integer" nil="true"></owner-id>
             <title nil="true"></title>
-            <updated-at type="datetime">2014-07-07T17:21:00Z</updated-at>
+            <updated-at type="datetime">2014-07-07T20:23:38Z</updated-at>
             <visible-to>Everyone</visible-to>
             <company-name nil="true"></company-name>
             <linkedin-url nil="true"></linkedin-url>
@@ -227,45 +293,45 @@ http_interactions:
           <twitter-accounts type="array"/>
           <phone-numbers type="array">
             <phone-number>
-              <id type="integer">170247028</id>
+              <id type="integer">170267065</id>
               <location>Work</location>
-              <number>3524857259896701957696121</number>
+              <number>3339476946728943731298480</number>
             </phone-number>
           </phone-numbers>
           <addresses type="array">
             <address>
-              <city>Lake Pinkbury</city>
-              <country>Belarus</country>
-              <id type="integer">101176440</id>
+              <city>Anahimouth</city>
+              <country>Trinidad and Tobago</country>
+              <id type="integer">101182122</id>
               <location>Work</location>
-              <state>North Dakota</state>
-              <street>3021 Rosina Wall</street>
-              <zip>85426</zip>
+              <state>Florida</state>
+              <street>5282 Ratke Cape</street>
+              <zip>99035-6589</zip>
             </address>
           </addresses>
           <email-addresses type="array">
             <email-address>
-              <address>adriel_gottlieb@gradyrunte.biz</address>
-              <id type="integer">108377710</id>
+              <address>benjamin@walkerbraun.net</address>
+              <id type="integer">108392777</id>
               <location>Work</location>
             </email-address>
           </email-addresses>
         </contact-data>
         <subject_datas type="array">
           <subject_data>
-            <id type="integer">128614915</id>
+            <id type="integer">128671903</id>
             <subject_field_id type="integer">903080</subject_field_id>
             <subject_field_label>Customer ID</subject_field_label>
-            <value>5090629312</value>
+            <value>3179386383</value>
           </subject_data>
         </subject_datas>
           </person>
         </people>
     http_version: 
-  recorded_at: Mon, 07 Jul 2014 17:21:01 GMT
+  recorded_at: Mon, 07 Jul 2014 20:23:38 GMT
 - request:
     method: get
-    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Bcustomer_id%5D=5090629312&n=1
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Bcustomer_id%5D=3179386383&n=1
     body:
       encoding: US-ASCII
       string: ''
@@ -284,7 +350,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 07 Jul 2014 17:21:01 GMT
+      - Mon, 07 Jul 2014 20:23:38 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
@@ -294,11 +360,11 @@ http_interactions:
       Status:
       - 200 OK
       X-Throttle-Horizon:
-      - '2014-07-07T17:21:10Z'
+      - '2014-07-07T20:23:40Z'
       X-Runtime:
-      - '15'
+      - '287'
       X-Request-Id:
-      - 76a7151645760ccba49fb43c74639c98
+      - 8eebce0f6729c66d590603b64d6f174d
       X-Throttle-Max:
       - '500'
       Etag:
@@ -306,7 +372,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Throttle-Count:
-      - '3'
+      - '4'
       Cache-Control:
       - private, max-age=0, must-revalidate
       Strict-Transport-Security:
@@ -319,10 +385,10 @@ http_interactions:
         <?xml version="1.0" encoding="UTF-8"?>
         <people type="array"/>
     http_version: 
-  recorded_at: Mon, 07 Jul 2014 17:21:01 GMT
+  recorded_at: Mon, 07 Jul 2014 20:23:39 GMT
 - request:
     method: put
-    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/211354177.xml
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/211376726.xml
     body:
       encoding: UTF-8
       string: |
@@ -331,27 +397,27 @@ http_interactions:
           <author-id type="integer">1044134</author-id>
           <background nil="true"/>
           <company-id nil="true"/>
-          <created-at type="dateTime">2014-07-07T17:21:00Z</created-at>
+          <created-at type="dateTime">2014-07-07T20:23:38Z</created-at>
           <first-name>Matthew</first-name>
           <group-id nil="true"/>
-          <id type="integer">211354177</id>
-          <last-name>Volkman</last-name>
+          <id type="integer">211376726</id>
+          <last-name>Romaguera</last-name>
           <owner-id nil="true"/>
           <title nil="true"/>
-          <updated-at type="dateTime">2014-07-07T17:21:00Z</updated-at>
+          <updated-at type="dateTime">2014-07-07T20:23:38Z</updated-at>
           <visible-to>Everyone</visible-to>
           <company-name nil="true"/>
           <linkedin-url nil="true"/>
           <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
           <contact-data>
-            <customer-id>5090629312</customer-id>
+            <customer-id>3179386383</customer-id>
           </contact-data>
           <subject-datas type="array">
             <subject-data>
-              <id type="integer">128614915</id>
+              <id type="integer">128671903</id>
               <subject-field-id type="integer">903080</subject-field-id>
               <subject-field-label>Customer ID</subject-field-label>
-              <value>5090629312</value>
+              <value>3179386383</value>
             </subject-data>
           </subject-datas>
         </person>
@@ -372,7 +438,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 07 Jul 2014 17:21:01 GMT
+      - Mon, 07 Jul 2014 20:23:39 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
@@ -382,97 +448,11 @@ http_interactions:
       Status:
       - 200 OK
       X-Throttle-Horizon:
-      - '2014-07-07T17:21:10Z'
+      - '2014-07-07T20:23:40Z'
       X-Runtime:
-      - '29'
-      Cache-Control:
-      - no-cache
-      X-Frame-Options:
-      - SAMEORIGIN
-      Strict-Transport-Security:
-      - max-age=31536000
+      - '40'
       X-Request-Id:
-      - a837985b45f8e19c7d80f7bbb5169641
-      X-Throttle-Count:
-      - '4'
-      X-Throttle-Max:
-      - '500'
-      Timing-Allow-Origin:
-      - "*"
-    body:
-      encoding: UTF-8
-      string: " "
-    http_version: 
-  recorded_at: Mon, 07 Jul 2014 17:21:01 GMT
-- request:
-    method: post
-    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/211354177/tags.xml?name=Rustic%20Steel%20Chair
-    body:
-      encoding: UTF-8
-      string: |
-        <?xml version="1.0" encoding="UTF-8"?>
-        <person>
-          <author-id type="integer">1044134</author-id>
-          <background nil="true"/>
-          <company-id nil="true"/>
-          <created-at type="dateTime">2014-07-07T17:21:00Z</created-at>
-          <first-name>Matthew</first-name>
-          <group-id nil="true"/>
-          <id type="integer">211354177</id>
-          <last-name>Volkman</last-name>
-          <owner-id nil="true"/>
-          <title nil="true"/>
-          <updated-at type="dateTime">2014-07-07T17:21:00Z</updated-at>
-          <visible-to>Everyone</visible-to>
-          <company-name nil="true"/>
-          <linkedin-url nil="true"/>
-          <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
-          <contact-data>
-            <customer-id>5090629312</customer-id>
-          </contact-data>
-          <subject-datas type="array">
-            <subject-data>
-              <id type="integer">128614915</id>
-              <subject-field-id type="integer">903080</subject-field-id>
-              <subject-field-label>Customer ID</subject-field-label>
-              <value>5090629312</value>
-            </subject-data>
-          </subject-datas>
-        </person>
-    headers:
-      Content-Type:
-      - application/xml
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Mon, 07 Jul 2014 17:21:01 GMT
-      Content-Type:
-      - application/xml; charset=utf-8
-      Content-Length:
-      - '120'
-      Connection:
-      - keep-alive
-      Status:
-      - 201 Created
-      Location:
-      - https://HIGHRISE_SITE_HOST/tags/3576753-rustic-steel-chair
-      X-Throttle-Horizon:
-      - '2014-07-07T17:21:10Z'
-      X-Runtime:
-      - '28'
-      X-Request-Id:
-      - 615040484ca7c2ad1c395ebf0df382bb
+      - 6b50ea6abc2c29626af3ef3b47adf608
       X-Throttle-Max:
       - '500'
       X-Frame-Options:
@@ -487,17 +467,12 @@ http_interactions:
       - "*"
     body:
       encoding: UTF-8
-      string: |
-        <?xml version="1.0" encoding="UTF-8"?>
-        <tag>
-          <id type="integer">3576753</id>
-          <name>Rustic Steel Chair</name>
-        </tag>
+      string: " "
     http_version: 
-  recorded_at: Mon, 07 Jul 2014 17:21:01 GMT
+  recorded_at: Mon, 07 Jul 2014 20:23:39 GMT
 - request:
     method: post
-    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/211354177/tags.xml?name=Incredible%20Wooden%20Shirt
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/211376726/tags.xml?name=Sleek%20Concrete%20Car
     body:
       encoding: UTF-8
       string: |
@@ -506,27 +481,27 @@ http_interactions:
           <author-id type="integer">1044134</author-id>
           <background nil="true"/>
           <company-id nil="true"/>
-          <created-at type="dateTime">2014-07-07T17:21:00Z</created-at>
+          <created-at type="dateTime">2014-07-07T20:23:38Z</created-at>
           <first-name>Matthew</first-name>
           <group-id nil="true"/>
-          <id type="integer">211354177</id>
-          <last-name>Volkman</last-name>
+          <id type="integer">211376726</id>
+          <last-name>Romaguera</last-name>
           <owner-id nil="true"/>
           <title nil="true"/>
-          <updated-at type="dateTime">2014-07-07T17:21:00Z</updated-at>
+          <updated-at type="dateTime">2014-07-07T20:23:38Z</updated-at>
           <visible-to>Everyone</visible-to>
           <company-name nil="true"/>
           <linkedin-url nil="true"/>
           <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
           <contact-data>
-            <customer-id>5090629312</customer-id>
+            <customer-id>3179386383</customer-id>
           </contact-data>
           <subject-datas type="array">
             <subject-data>
-              <id type="integer">128614915</id>
+              <id type="integer">128671903</id>
               <subject-field-id type="integer">903080</subject-field-id>
               <subject-field-label>Customer ID</subject-field-label>
-              <value>5090629312</value>
+              <value>3179386383</value>
             </subject-data>
           </subject-datas>
         </person>
@@ -547,19 +522,19 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 07 Jul 2014 17:21:01 GMT
+      - Mon, 07 Jul 2014 20:23:39 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
-      - '125'
+      - '120'
       Connection:
       - keep-alive
       Status:
       - 201 Created
       X-Throttle-Horizon:
-      - '2014-07-07T17:21:10Z'
+      - '2014-07-07T20:23:40Z'
       X-Runtime:
-      - '24'
+      - '33'
       Cache-Control:
       - no-cache
       X-Frame-Options:
@@ -567,9 +542,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - dc4e70b9af4080ee5eca93dec1caa2df
+      - e2c07810b5ac98e9f642214cc9eac504
       Location:
-      - https://HIGHRISE_SITE_HOST/tags/3576754-incredible-wooden-shirt
+      - https://HIGHRISE_SITE_HOST/tags/3577256-sleek-concrete-car
       X-Throttle-Count:
       - '6'
       X-Throttle-Max:
@@ -581,9 +556,617 @@ http_interactions:
       string: |
         <?xml version="1.0" encoding="UTF-8"?>
         <tag>
-          <id type="integer">3576754</id>
-          <name>Incredible Wooden Shirt</name>
+          <id type="integer">3577256</id>
+          <name>Sleek Concrete Car</name>
         </tag>
     http_version: 
-  recorded_at: Mon, 07 Jul 2014 17:21:01 GMT
+  recorded_at: Mon, 07 Jul 2014 20:23:39 GMT
+- request:
+    method: post
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/211376726/tags.xml?name=Sleek%20Wooden%20Chair
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <person>
+          <author-id type="integer">1044134</author-id>
+          <background nil="true"/>
+          <company-id nil="true"/>
+          <created-at type="dateTime">2014-07-07T20:23:38Z</created-at>
+          <first-name>Matthew</first-name>
+          <group-id nil="true"/>
+          <id type="integer">211376726</id>
+          <last-name>Romaguera</last-name>
+          <owner-id nil="true"/>
+          <title nil="true"/>
+          <updated-at type="dateTime">2014-07-07T20:23:38Z</updated-at>
+          <visible-to>Everyone</visible-to>
+          <company-name nil="true"/>
+          <linkedin-url nil="true"/>
+          <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+          <contact-data>
+            <customer-id>3179386383</customer-id>
+          </contact-data>
+          <subject-datas type="array">
+            <subject-data>
+              <id type="integer">128671903</id>
+              <subject-field-id type="integer">903080</subject-field-id>
+              <subject-field-label>Customer ID</subject-field-label>
+              <value>3179386383</value>
+            </subject-data>
+          </subject-datas>
+        </person>
+    headers:
+      Content-Type:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Jul 2014 20:23:39 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '120'
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      X-Throttle-Horizon:
+      - '2014-07-07T20:23:40Z'
+      X-Runtime:
+      - '29'
+      Cache-Control:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 57e030d170156dbcd6eddff027af1b74
+      Location:
+      - https://HIGHRISE_SITE_HOST/tags/3577257-sleek-wooden-chair
+      X-Throttle-Count:
+      - '7'
+      X-Throttle-Max:
+      - '500'
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <tag>
+          <id type="integer">3577257</id>
+          <name>Sleek Wooden Chair</name>
+        </tag>
+    http_version: 
+  recorded_at: Mon, 07 Jul 2014 20:23:39 GMT
+- request:
+    method: post
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/tasks.xml
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <task>
+          <body>Reiciendis rerum eos nesciunt qui.</body>
+          <frame>today</frame>
+          <subject-type>Party</subject-type>
+          <subject-id type="integer">211376726</subject-id>
+          <owner-id type="integer">1044134</owner-id>
+        </task>
+    headers:
+      Content-Type:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Jul 2014 20:23:39 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '841'
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Location:
+      - https://HIGHRISE_SITE_HOST/tasks/39569550
+      Set-Cookie:
+      - last_task_public=false; path=/; secure
+      X-Throttle-Horizon:
+      - '2014-07-07T20:23:40Z'
+      X-Runtime:
+      - '17'
+      X-Request-Id:
+      - 5257679c9c73d339a1d46d580b9769c4
+      X-Throttle-Max:
+      - '500'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Count:
+      - '8'
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <task>
+          <alert-at type="datetime">2014-07-07T23:15:00Z</alert-at>
+          <author-id type="integer">1044134</author-id>
+          <body>Reiciendis rerum eos nesciunt qui.</body>
+          <category-id type="integer" nil="true"></category-id>
+          <created-at type="datetime">2014-07-07T20:23:39Z</created-at>
+          <done-at type="datetime" nil="true"></done-at>
+          <due-at type="datetime">2014-07-08T05:00:00Z</due-at>
+          <id type="integer">39569550</id>
+          <owner-id type="integer">1044134</owner-id>
+          <recording-id type="integer" nil="true"></recording-id>
+          <subject-id type="integer">211376726</subject-id>
+          <subject-type>Party</subject-type>
+          <updated-at type="datetime">2014-07-07T20:23:39Z</updated-at>
+          <public type="boolean">false</public>
+          <frame>today</frame>
+          <subject-name>Matthew Romaguera</subject-name>
+        </task>
+    http_version: 
+  recorded_at: Mon, 07 Jul 2014 20:23:39 GMT
+- request:
+    method: post
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/tasks.xml
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <task>
+          <body>Et occaecati doloremque quisquam et exercitationem nihil.</body>
+          <frame>tomorrow</frame>
+          <subject-type>Party</subject-type>
+          <subject-id type="integer">211376726</subject-id>
+          <owner-id type="integer">1044134</owner-id>
+        </task>
+    headers:
+      Content-Type:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Jul 2014 20:23:39 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '867'
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      X-Throttle-Horizon:
+      - '2014-07-07T20:23:40Z'
+      X-Runtime:
+      - '16'
+      Cache-Control:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - last_task_public=false; path=/; secure
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 421c1637b49b493880d732e3b9918e5e
+      Location:
+      - https://HIGHRISE_SITE_HOST/tasks/39569551
+      X-Throttle-Count:
+      - '9'
+      X-Throttle-Max:
+      - '500'
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <task>
+          <alert-at type="datetime">2014-07-08T17:00:00Z</alert-at>
+          <author-id type="integer">1044134</author-id>
+          <body>Et occaecati doloremque quisquam et exercitationem nihil.</body>
+          <category-id type="integer" nil="true"></category-id>
+          <created-at type="datetime">2014-07-07T20:23:39Z</created-at>
+          <done-at type="datetime" nil="true"></done-at>
+          <due-at type="datetime">2014-07-09T05:00:00Z</due-at>
+          <id type="integer">39569551</id>
+          <owner-id type="integer">1044134</owner-id>
+          <recording-id type="integer" nil="true"></recording-id>
+          <subject-id type="integer">211376726</subject-id>
+          <subject-type>Party</subject-type>
+          <updated-at type="datetime">2014-07-07T20:23:39Z</updated-at>
+          <public type="boolean">false</public>
+          <frame>tomorrow</frame>
+          <subject-name>Matthew Romaguera</subject-name>
+        </task>
+    http_version: 
+  recorded_at: Mon, 07 Jul 2014 20:23:39 GMT
+- request:
+    method: post
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/tasks.xml
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <task>
+          <body>Omnis vel corporis quasi minus error et.</body>
+          <frame>this_week</frame>
+          <subject-type>Party</subject-type>
+          <subject-id type="integer">211376726</subject-id>
+          <owner-id type="integer">1044134</owner-id>
+        </task>
+    headers:
+      Content-Type:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Jul 2014 20:23:40 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '842'
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      X-Throttle-Horizon:
+      - '2014-07-07T20:23:40Z'
+      X-Runtime:
+      - '19'
+      Cache-Control:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - last_task_public=false; path=/; secure
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 8250c23d4f73e335a1149ddd5794876b
+      Location:
+      - https://HIGHRISE_SITE_HOST/tasks/39569552
+      X-Throttle-Count:
+      - '10'
+      X-Throttle-Max:
+      - '500'
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <task>
+          <alert-at type="datetime" nil="true"></alert-at>
+          <author-id type="integer">1044134</author-id>
+          <body>Omnis vel corporis quasi minus error et.</body>
+          <category-id type="integer" nil="true"></category-id>
+          <created-at type="datetime">2014-07-07T20:23:40Z</created-at>
+          <done-at type="datetime" nil="true"></done-at>
+          <due-at type="datetime">2014-07-14T05:00:00Z</due-at>
+          <id type="integer">39569552</id>
+          <owner-id type="integer">1044134</owner-id>
+          <recording-id type="integer" nil="true"></recording-id>
+          <subject-id type="integer">211376726</subject-id>
+          <subject-type>Party</subject-type>
+          <updated-at type="datetime">2014-07-07T20:23:40Z</updated-at>
+          <public type="boolean">false</public>
+          <frame>this_week</frame>
+          <subject-name>Matthew Romaguera</subject-name>
+        </task>
+    http_version: 
+  recorded_at: Mon, 07 Jul 2014 20:23:39 GMT
+- request:
+    method: post
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/tasks.xml
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <task>
+          <body>Neque aut nulla eos ullam consectetur.</body>
+          <frame>next_week</frame>
+          <subject-type>Party</subject-type>
+          <subject-id type="integer">211376726</subject-id>
+          <owner-id type="integer">1044134</owner-id>
+        </task>
+    headers:
+      Content-Type:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Jul 2014 20:23:40 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '840'
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      X-Throttle-Horizon:
+      - '2014-07-07T20:23:50Z'
+      X-Runtime:
+      - '20'
+      Cache-Control:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - last_task_public=false; path=/; secure
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 2a8b156b1efc0219676cffcd0066567a
+      Location:
+      - https://HIGHRISE_SITE_HOST/tasks/39569553
+      X-Throttle-Count:
+      - '1'
+      X-Throttle-Max:
+      - '500'
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <task>
+          <alert-at type="datetime" nil="true"></alert-at>
+          <author-id type="integer">1044134</author-id>
+          <body>Neque aut nulla eos ullam consectetur.</body>
+          <category-id type="integer" nil="true"></category-id>
+          <created-at type="datetime">2014-07-07T20:23:40Z</created-at>
+          <done-at type="datetime" nil="true"></done-at>
+          <due-at type="datetime">2014-07-21T05:00:00Z</due-at>
+          <id type="integer">39569553</id>
+          <owner-id type="integer">1044134</owner-id>
+          <recording-id type="integer" nil="true"></recording-id>
+          <subject-id type="integer">211376726</subject-id>
+          <subject-type>Party</subject-type>
+          <updated-at type="datetime">2014-07-07T20:23:40Z</updated-at>
+          <public type="boolean">false</public>
+          <frame>next_week</frame>
+          <subject-name>Matthew Romaguera</subject-name>
+        </task>
+    http_version: 
+  recorded_at: Mon, 07 Jul 2014 20:23:40 GMT
+- request:
+    method: post
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/tasks.xml
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <task>
+          <body>Occaecati doloribus dicta animi et aut sint et.</body>
+          <frame>later</frame>
+          <subject-type>Party</subject-type>
+          <subject-id type="integer">211376726</subject-id>
+          <owner-id type="integer">1044134</owner-id>
+        </task>
+    headers:
+      Content-Type:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Jul 2014 20:23:40 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '836'
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      X-Throttle-Horizon:
+      - '2014-07-07T20:23:50Z'
+      X-Runtime:
+      - '22'
+      Cache-Control:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - last_task_public=false; path=/; secure
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 9fd38102988e4f31ae68d84de909be9c
+      Location:
+      - https://HIGHRISE_SITE_HOST/tasks/39569554
+      X-Throttle-Count:
+      - '2'
+      X-Throttle-Max:
+      - '500'
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <task>
+          <alert-at type="datetime" nil="true"></alert-at>
+          <author-id type="integer">1044134</author-id>
+          <body>Occaecati doloribus dicta animi et aut sint et.</body>
+          <category-id type="integer" nil="true"></category-id>
+          <created-at type="datetime">2014-07-07T20:23:40Z</created-at>
+          <done-at type="datetime" nil="true"></done-at>
+          <due-at type="datetime" nil="true"></due-at>
+          <id type="integer">39569554</id>
+          <owner-id type="integer">1044134</owner-id>
+          <recording-id type="integer" nil="true"></recording-id>
+          <subject-id type="integer">211376726</subject-id>
+          <subject-type>Party</subject-type>
+          <updated-at type="datetime">2014-07-07T20:23:40Z</updated-at>
+          <public type="boolean">false</public>
+          <frame>later</frame>
+          <subject-name>Matthew Romaguera</subject-name>
+        </task>
+    http_version: 
+  recorded_at: Mon, 07 Jul 2014 20:23:40 GMT
+- request:
+    method: post
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/tasks.xml
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <task>
+          <body>Quia autem aspernatur debitis eos aliquid.</body>
+          <frame>specific</frame>
+          <due-at>2007-03-10T15:11:52Z</due-at>
+          <subject-type>Party</subject-type>
+          <subject-id type="integer">211376726</subject-id>
+          <owner-id type="integer">1044134</owner-id>
+        </task>
+    headers:
+      Content-Type:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Jul 2014 20:23:40 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '851'
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      X-Throttle-Horizon:
+      - '2014-07-07T20:23:50Z'
+      X-Runtime:
+      - '20'
+      Cache-Control:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - last_task_public=false; path=/; secure
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - c267fed331762a6bdc4a2e4bfa5cf722
+      Location:
+      - https://HIGHRISE_SITE_HOST/tasks/39569555
+      X-Throttle-Count:
+      - '3'
+      X-Throttle-Max:
+      - '500'
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <task>
+          <alert-at type="datetime">2007-03-10T15:00:00Z</alert-at>
+          <author-id type="integer">1044134</author-id>
+          <body>Quia autem aspernatur debitis eos aliquid.</body>
+          <category-id type="integer" nil="true"></category-id>
+          <created-at type="datetime">2014-07-07T20:23:40Z</created-at>
+          <done-at type="datetime" nil="true"></done-at>
+          <due-at type="datetime">2007-03-10T15:00:00Z</due-at>
+          <id type="integer">39569555</id>
+          <owner-id type="integer">1044134</owner-id>
+          <recording-id type="integer" nil="true"></recording-id>
+          <subject-id type="integer">211376726</subject-id>
+          <subject-type>Party</subject-type>
+          <updated-at type="datetime">2014-07-07T20:23:40Z</updated-at>
+          <public type="boolean">false</public>
+          <frame>overdue</frame>
+          <subject-name>Matthew Romaguera</subject-name>
+        </task>
+    http_version: 
+  recorded_at: Mon, 07 Jul 2014 20:23:40 GMT
 recorded_with: VCR 2.9.2

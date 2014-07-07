@@ -51,6 +51,7 @@ module HighriseEndpoint
           shipping_address    = HighriseEndpoint::Requests.new(:address, "shipping").to_hash[:address]
           billing_address     = HighriseEndpoint::Requests.new(:address, "billing").to_hash[:address]
           person_tags         = [Faker::Commerce.product_name, Faker::Commerce.product_name]
+          me                  = Highrise::User.me.id
 
           {
             request_id: Faker::Number.number(25),
@@ -63,7 +64,41 @@ module HighriseEndpoint
               billing_address: billing_address,
               highrise_tags: {
                 person: person_tags
-              }
+              },
+              highrise_tasks: {
+                person: [
+                  {
+                    body: Faker::Lorem.sentence,
+                    due: "today",
+                    assigned_to: me
+                  },
+                  {
+                    body: Faker::Lorem.sentence,
+                    due: "tomorrow",
+                    assigned_to: me
+                  },
+                  {
+                    body: Faker::Lorem.sentence,
+                    due: "this_week",
+                    assigned_to: me
+                  },
+                  {
+                    body: Faker::Lorem.sentence,
+                    due: "next_week",
+                    assigned_to: me
+                  },
+                  {
+                    body: Faker::Lorem.sentence,
+                    due: "later",
+                    assigned_to: me
+                  },
+                  {
+                    body: Faker::Lorem.sentence,
+                    due: "2007-03-10T15:11:52Z",
+                    assigned_to: me
+                  }
+                ]
+              },
             },
             parameters: {
               "highrise.api_token" => "thisIsAFakeKey123",
@@ -82,6 +117,7 @@ module HighriseEndpoint
           order_shipping = Faker::Number.digit.to_i
           order_total = order_subtotal + order_tax + order_shipping
           deal_tags = [Faker::Commerce.product_name, Faker::Commerce.product_name]
+          me = Highrise::User.me.id
 
           {
             request_id: Faker::Number.number(25),
@@ -117,6 +153,42 @@ module HighriseEndpoint
               highrise_tags: {
                 deal: deal_tags,
                 person: deal_tags
+              },
+              highrise_tasks: {
+                person: [
+                  {
+                    body: Faker::Lorem.sentence,
+                    due: "tomorrow",
+                    assigned_to: me
+                  },
+                  {
+                    body: Faker::Lorem.sentence,
+                    due: "next_week",
+                    assigned_to: me
+                  },
+                  {
+                    body: Faker::Lorem.sentence,
+                    due: "2007-03-10T15:11:52Z",
+                    assigned_to: me
+                  }
+                ],
+                deal: [
+                  {
+                    body: Faker::Lorem.sentence,
+                    due: "today",
+                    assigned_to: me
+                  },
+                  {
+                    body: Faker::Lorem.sentence,
+                    due: "this_week",
+                    assigned_to: me
+                  },
+                  {
+                    body: Faker::Lorem.sentence,
+                    due: "later",
+                    assigned_to: me
+                  }
+                ]
               },
               adjustments: [
                 {
@@ -231,6 +303,7 @@ module HighriseEndpoint
           }
         when :shipment
           order = HighriseEndpoint::Requests.new(:order, "for_shipment").to_hash[:order]
+          me    = Highrise::User.me.id
 
           {
             request_id: Faker::Number.number(25),
@@ -245,7 +318,43 @@ module HighriseEndpoint
               tracking: Faker::Number.number(25),
               shipped_at: Time.now,
               shipping_address: order[:shipping_address],
-              items: order[:line_items]
+              items: order[:line_items],
+              highrise_tasks: {
+                person: [
+                  {
+                    body: Faker::Lorem.sentence,
+                    due: "tomorrow",
+                    assigned_to: me
+                  },
+                  {
+                    body: Faker::Lorem.sentence,
+                    due: "next_week",
+                    assigned_to: me
+                  },
+                  {
+                    body: Faker::Lorem.sentence,
+                    due: "2007-03-10T15:11:52Z",
+                    assigned_to: me
+                  }
+                ],
+                deal: [
+                  {
+                    body: Faker::Lorem.sentence,
+                    due: "today",
+                    assigned_to: me
+                  },
+                  {
+                    body: Faker::Lorem.sentence,
+                    due: "this_week",
+                    assigned_to: me
+                  },
+                  {
+                    body: Faker::Lorem.sentence,
+                    due: "later",
+                    assigned_to: me
+                  }
+                ]
+              },
             },
             parameters: {
               "highrise.api_token" => "thisIsAFakeKey123",

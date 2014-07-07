@@ -1,36 +1,63 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '5815007939006462330694487'
+request_id: '5760813036838953396725136'
 shipment: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '3097625130'
-  order_id: '3309234935'
-  email: adriel_gottlieb@gradyrunte.biz
+  id: '1413934397'
+  order_id: '3303245552'
+  email: benjamin@walkerbraun.net
   cost: 6
   status: :ready
   stock_location: :default
   shipping_method: UPS Ground (USD)
-  tracking: '8494643229846019973133128'
-  shipped_at: 2014-07-07 12:21:19.629772000 -05:00
+  tracking: '4712077749047977757495817'
+  shipped_at: 2014-07-07 15:24:17.987463000 -05:00
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Jan
-    lastname: Fahey
-    address1: 909 Bechtelar Crossroad
-    address2: Suite 787
-    zipcode: '56723'
-    city: New Anita
-    state: Vermont
-    country: Namibia
-    phone: '6666712317403435423875963'
+    firstname: Lila
+    lastname: Kuvalis
+    address1: 8365 Hackett Plains
+    address2: Apt. 232
+    zipcode: '33177'
+    city: East Josiah
+    state: Washington
+    country: Malta
+    phone: '7320172257364731219043382'
   items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: gorgeous-concrete-chair
-    name: Gorgeous Concrete Chair
-    quantity: '1'
-    price: 36
+    product_id: fantastic-concrete-car
+    name: Fantastic Concrete Car
+    quantity: '3'
+    price: 5092
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: gorgeous-concrete-chair
-    name: Gorgeous Concrete Chair
-    quantity: '1'
-    price: 36
+    product_id: fantastic-concrete-car
+    name: Fantastic Concrete Car
+    quantity: '3'
+    price: 5092
+  highrise_tasks: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    person:
+    - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      body: Explicabo ipsa molestias et placeat.
+      due: tomorrow
+      assigned_to: 1044134
+    - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      body: Tempore harum sapiente tempora.
+      due: next_week
+      assigned_to: 1044134
+    - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      body: Nisi quos eaque corporis accusamus ea doloremque.
+      due: '2007-03-10T15:11:52Z'
+      assigned_to: 1044134
+    deal:
+    - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      body: Illo neque rerum dolore possimus facilis beatae.
+      due: today
+      assigned_to: 1044134
+    - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      body: Est perspiciatis sit repellat quia voluptate.
+      due: this_week
+      assigned_to: 1044134
+    - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      body: Mollitia deleniti consequatur quos similique.
+      due: later
+      assigned_to: 1044134
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123
   highrise.site_url: http://www.example.com

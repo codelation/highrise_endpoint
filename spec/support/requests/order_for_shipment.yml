@@ -1,69 +1,97 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '2495686216502744346656709'
+request_id: '6160587010876274126984262'
 order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '3309234935'
-  status: :in_progress
+  id: '3303245552'
+  status: :complete
   channel: :spree
-  email: adriel_gottlieb@gradyrunte.biz
+  email: benjamin@walkerbraun.net
   currency: USD
-  placed_on: 2014-07-07 12:21:19.192094000 -05:00
+  placed_on: 2014-07-07 15:24:17.059582000 -05:00
   totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    item: 36
+    item: 15276
     adjustment: 6
-    tax: 23.400000000000002
+    tax: 9929.4
     shipping: 6
-    payment: 65.4
-    order: 65.4
+    payment: 25211.4
+    order: 25211.4
   line_items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: gorgeous-concrete-chair
-    name: Gorgeous Concrete Chair
-    quantity: '1'
-    price: 36
+    product_id: fantastic-concrete-car
+    name: Fantastic Concrete Car
+    quantity: '3'
+    price: 5092
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: gorgeous-concrete-chair
-    name: Gorgeous Concrete Chair
-    quantity: '1'
-    price: 36
+    product_id: fantastic-concrete-car
+    name: Fantastic Concrete Car
+    quantity: '3'
+    price: 5092
   highrise_tags: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     deal:
-    - Fantastic Plastic Car
-    - Intelligent Rubber Shirt
+    - Practical Cotton Computer
+    - Small Rubber Pants
     person:
-    - Fantastic Plastic Car
-    - Intelligent Rubber Shirt
+    - Practical Cotton Computer
+    - Small Rubber Pants
+  highrise_tasks: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    person:
+    - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      body: Ratione temporibus amet sed perferendis repudiandae laboriosam dolorem
+        illo.
+      due: tomorrow
+      assigned_to: 1044134
+    - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      body: Nobis a vitae distinctio at excepturi delectus deserunt.
+      due: next_week
+      assigned_to: 1044134
+    - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      body: Qui at sapiente nulla impedit.
+      due: '2007-03-10T15:11:52Z'
+      assigned_to: 1044134
+    deal:
+    - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      body: Sit harum suscipit vitae.
+      due: today
+      assigned_to: 1044134
+    - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      body: Ullam dolor molestias ab quisquam voluptatibus et rerum ea.
+      due: this_week
+      assigned_to: 1044134
+    - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      body: Quibusdam assumenda laborum et.
+      due: later
+      assigned_to: 1044134
   adjustments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Tax
-    value: 23.400000000000002
+    value: 9929.4
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Shipping
     value: 6
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Jan
-    lastname: Fahey
-    address1: 909 Bechtelar Crossroad
-    address2: Suite 787
-    zipcode: '56723'
-    city: New Anita
-    state: Vermont
-    country: Namibia
-    phone: '6666712317403435423875963'
+    firstname: Lila
+    lastname: Kuvalis
+    address1: 8365 Hackett Plains
+    address2: Apt. 232
+    zipcode: '33177'
+    city: East Josiah
+    state: Washington
+    country: Malta
+    phone: '7320172257364731219043382'
   billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Timmothy
-    lastname: Volkman
-    address1: 3021 Rosina Wall
-    address2: Suite 182
-    zipcode: '85426'
-    city: Lake Pinkbury
-    state: North Dakota
-    country: Belarus
-    phone: '3524857259896701957696121'
+    firstname: Britney
+    lastname: Romaguera
+    address1: 5282 Ratke Cape
+    address2: Suite 391
+    zipcode: 99035-6589
+    city: Anahimouth
+    state: Florida
+    country: Trinidad and Tobago
+    phone: '3339476946728943731298480'
   payments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     number: 63
-    status: :in_progress
-    amount: 65.4
+    status: :complete
+    amount: 25211.4
     payment_method: Credit Card
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123

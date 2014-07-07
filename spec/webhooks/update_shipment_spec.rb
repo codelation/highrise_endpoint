@@ -60,6 +60,11 @@ SHIPMENT_BODY
       end
     end
 
+    it "should create tasks on Highrise" do
+      Highrise::Task.all.map{|task| task.body }.should include *@shipment[:highrise_tasks][:person].map{|task| task[:body] }
+      Highrise::Task.all.map{|task| task.body }.should include *@shipment[:highrise_tasks][:deal].map{|task| task[:body] }
+    end
+
     it "should return a nice summary" do
       @response_body[:summary].should eql "Shipment info was added to deal: Order ##{@shipment[:order_id]}"
     end

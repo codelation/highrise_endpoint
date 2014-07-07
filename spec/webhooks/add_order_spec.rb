@@ -51,6 +51,13 @@ describe HighriseEndpoint::Application do
         end
       end
 
+      it "should create tasks on Highrise" do
+        VCR.use_cassette(:retrieve_updated_add_order_with_tasks) do
+          Highrise::Task.all.map{|task| task.body }.should include *@order[:highrise_tasks][:person].map{|task| task[:body] }
+          Highrise::Task.all.map{|task| task.body }.should include *@order[:highrise_tasks][:deal].map{|task| task[:body] }
+        end
+      end
+
       it "should return a nice summary" do
         @response_body[:summary].should eql "Deal was updated on Highrise."
       end
@@ -98,6 +105,13 @@ describe HighriseEndpoint::Application do
           )[0]
 
           person.tags.map{|tag| tag.name }.should include *@order[:highrise_tags][:person]
+        end
+      end
+
+      it "should create tasks on Highrise" do
+        VCR.use_cassette(:retrieve_created_add_order_with_tasks) do
+            Highrise::Task.all.map{|task| task.body }.should include *@order[:highrise_tasks][:person].map{|task| task[:body] }
+            Highrise::Task.all.map{|task| task.body }.should include *@order[:highrise_tasks][:deal].map{|task| task[:body] }
         end
       end
 

@@ -5,6 +5,11 @@ Dotenv.load
 module HighriseEndpoint
 
   class Application < EndpointBase::Sinatra::Base
+    # optional security check, value supplied is compared against HTTP_X_HUB_TOKEN header
+    # which is included in all requests sent by the hub, header is unique per integration.
+    #
+    # to opt of out security check, do not include this line
+    endpoint_key ENV["ENDPOINT_KEY"]
     set :logging, true
 
     # Sets the Highrise credentials based on what is provided
@@ -24,8 +29,14 @@ module HighriseEndpoint
 
       people = Highrise::Person.search(customer_id: payload[:customer][:id])
 
-      tags = if @payload[:customer][:highrise_tags] &&  @payload[:customer][:highrise_tags][:person]
+      tags = if @payload[:customer][:highrise_tags] && @payload[:customer][:highrise_tags][:person]
         @payload[:customer][:highrise_tags][:person]
+      else
+        []
+      end
+
+      tasks = if @payload[:customer][:highrise_tasks] && @payload[:customer][:highrise_tasks][:person]
+        @payload[:customer][:highrise_tasks][:person]
       else
         []
       end
@@ -45,6 +56,16 @@ module HighriseEndpoint
             @person.tag!(tag)
           end
 
+          tasks.each do |task|
+            if ["today", "tomorrow", "this_week", "next_week", "later"].include?(task[:due])
+              highrise_task = Highrise::Task.new(body: task[:body], frame: task[:due], subject_type: "Party", subject_id: @person.id, owner_id: task[:assigned_to])
+            else
+              highrise_task = Highrise::Task.new(body: task[:body], frame: "specific", due_at: task[:due], subject_type: "Party", subject_id: @person.id, owner_id: task[:assigned_to])
+            end
+
+            highrise_task.save
+          end
+
           jbuilder :update_customer_success
         else
           jbuilder :update_customer_failure
@@ -56,6 +77,16 @@ module HighriseEndpoint
         if @person.save
           tags.each do |tag|
             @person.tag!(tag)
+          end
+
+          tasks.each do |task|
+            if ["today", "tomorrow", "this_week", "next_week", "later"].include?(task[:due])
+              highrise_task = Highrise::Task.new(body: task[:body], frame: task[:due], subject_type: "Party", subject_id: @person.id, owner_id: task[:assigned_to])
+            else
+              highrise_task = Highrise::Task.new(body: task[:body], frame: "specific", due_at: task[:due], subject_type: "Party", subject_id: @person.id, owner_id: task[:assigned_to])
+            end
+
+            highrise_task.save
           end
 
           jbuilder :add_customer_success
@@ -82,6 +113,18 @@ module HighriseEndpoint
         []
       end
 
+      person_tasks = if @payload[:order][:highrise_tasks] && @payload[:order][:highrise_tasks][:person]
+        @payload[:order][:highrise_tasks][:person]
+      else
+        []
+      end
+
+      deal_tasks = if @payload[:order][:highrise_tasks] && @payload[:order][:highrise_tasks][:deal]
+        @payload[:order][:highrise_tasks][:deal]
+      else
+        []
+      end
+
       if deals.length > 0
         @deal = deals.first
         structure = HighriseEndpoint::DealBlueprint.new(payload: payload, deal: JSON.parse(@deal.to_json)).build
@@ -97,6 +140,26 @@ module HighriseEndpoint
             person.tag!(person_tag)
           end
 
+          person_tasks.each do |person_task|
+            if ["today", "tomorrow", "this_week", "next_week", "later"].include?(person_task[:due])
+              highrise_task = Highrise::Task.new(body: person_task[:body], frame: person_task[:due], subject_type: "Party", subject_id: person.id, owner_id: person_task[:assigned_to])
+            else
+              highrise_task = Highrise::Task.new(body: person_task[:body], frame: "specific", due_at: person_task[:due], subject_type: "Party", subject_id: person.id, owner_id: person_task[:assigned_to])
+            end
+
+            highrise_task.save
+          end
+
+          deal_tasks.each do |deal_task|
+            if ["today", "tomorrow", "this_week", "next_week", "later"].include?(deal_task[:due])
+              highrise_task = Highrise::Task.new(body: deal_task[:body], frame: deal_task[:due], subject_type: "Deal", subject_id: @deal.id, owner_id: deal_task[:assigned_to])
+            else
+              highrise_task = Highrise::Task.new(body: deal_task[:body], frame: "specific", due_at: deal_task[:due], subject_type: "Deal", subject_id: @deal.id, owner_id: deal_task[:assigned_to])
+            end
+
+            highrise_task.save
+          end
+
           jbuilder :update_order_success
         else
           jbuilder :update_order_failure
@@ -108,6 +171,26 @@ module HighriseEndpoint
         if @deal.save
           person_tags.each do |person_tag|
             person.tag!(person_tag)
+          end
+
+          person_tasks.each do |person_task|
+            if ["today", "tomorrow", "this_week", "next_week", "later"].include?(person_task[:due])
+              highrise_task = Highrise::Task.new(body: person_task[:body], frame: person_task[:due], subject_type: "Party", subject_id: person.id, owner_id: person_task[:assigned_to])
+            else
+              highrise_task = Highrise::Task.new(body: person_task[:body], frame: "specific", due_at: person_task[:due], subject_type: "Party", subject_id: person.id, owner_id: person_task[:assigned_to])
+            end
+
+            highrise_task.save
+          end
+
+          deal_tasks.each do |deal_task|
+            if ["today", "tomorrow", "this_week", "next_week", "later"].include?(deal_task[:due])
+              highrise_task = Highrise::Task.new(body: deal_task[:body], frame: deal_task[:due], subject_type: "Deal", subject_id: @deal.id, owner_id: deal_task[:assigned_to])
+            else
+              highrise_task = Highrise::Task.new(body: deal_task[:body], frame: "specific", due_at: deal_task[:due], subject_type: "Deal", subject_id: @deal.id, owner_id: deal_task[:assigned_to])
+            end
+
+            highrise_task.save
           end
 
           @note = Highrise::Note.create(body: line_items_to_string(payload[:order][:line_items]), subject_id: @deal.id, subject_type: "Deal")
@@ -132,6 +215,18 @@ module HighriseEndpoint
 
       @deal = deals.first
 
+      person_tasks = if @payload[:shipment][:highrise_tasks] && @payload[:shipment][:highrise_tasks][:person]
+        @payload[:shipment][:highrise_tasks][:person]
+      else
+        []
+      end
+
+      deal_tasks = if @payload[:shipment][:highrise_tasks] && @payload[:shipment][:highrise_tasks][:deal]
+        @payload[:shipment][:highrise_tasks][:deal]
+      else
+        []
+      end
+
       if @deal
         address = @shipment[:shipping_address]
 
@@ -155,6 +250,27 @@ Shipped On: #{@shipment[:shipped_at] ? @shipment[:shipped_at] : "Not yet shipped
 SHIPMENT_BODY
 
         @note = Highrise::Note.create(body: shipment_body, subject_id: @deal.id, subject_type: "Deal")
+
+        person_tasks.each do |person_task|
+          if ["today", "tomorrow", "this_week", "next_week", "later"].include?(person_task[:due])
+            highrise_task = Highrise::Task.new(body: person_task[:body], frame: person_task[:due], subject_type: "Party", subject_id: @deal.party.id, owner_id: person_task[:assigned_to])
+          else
+            highrise_task = Highrise::Task.new(body: person_task[:body], frame: "specific", due_at: person_task[:due], subject_type: "Party", subject_id: @deal.party.id, owner_id: person_task[:assigned_to])
+          end
+
+          highrise_task.save
+        end
+
+        deal_tasks.each do |deal_task|
+          if ["today", "tomorrow", "this_week", "next_week", "later"].include?(deal_task[:due])
+            highrise_task = Highrise::Task.new(body: deal_task[:body], frame: deal_task[:due], subject_type: "Deal", subject_id: @deal.id, owner_id: deal_task[:assigned_to])
+          else
+            highrise_task = Highrise::Task.new(body: deal_task[:body], frame: "specific", due_at: deal_task[:due], subject_type: "Deal", subject_id: @deal.id, owner_id: deal_task[:assigned_to])
+          end
+
+          highrise_task.save
+        end
+
 
         if @note.save
           jbuilder :add_shipment_success

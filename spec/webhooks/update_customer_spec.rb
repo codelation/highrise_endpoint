@@ -49,6 +49,12 @@ describe HighriseEndpoint::Application do
         end
       end
 
+      it "should create tasks on Highrise" do
+        VCR.use_cassette(:retrieve_updated_update_customer_with_tasks) do
+          Highrise::Task.all.map{|task| task.body }.should include *@customer[:highrise_tasks][:person].map{|task| task[:body] }
+        end
+      end
+
       it "should return a nice summary" do
         @response_body[:summary].should eql "Person was updated on Highrise."
       end
@@ -94,6 +100,12 @@ describe HighriseEndpoint::Application do
           )
 
           customers.length.should eql 1
+        end
+      end
+
+      it "should create tasks on Highrise" do
+        VCR.use_cassette(:retrieve_created_update_customer_with_tasks) do
+          Highrise::Task.all.map{|task| task.body }.should include *@customer[:highrise_tasks][:person].map{|task| task[:body] }
         end
       end
 

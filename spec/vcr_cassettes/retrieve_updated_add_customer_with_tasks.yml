@@ -1,0 +1,1035 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/tasks.xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Jul 2014 20:23:41 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '3625'
+      Connection:
+      - Keep-Alive
+      Status:
+      - 200 OK
+      X-Throttle-Horizon:
+      - '2014-07-07T20:23:50Z'
+      X-Runtime:
+      - '161'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 853cd06bc98d74c2d9e97f65b7181273
+      X-Throttle-Count:
+      - '8'
+      X-Throttle-Max:
+      - '500'
+      Etag:
+      - '"5fe1f89b22ba7d5c37b6a6890b7b401e"'
+      Timing-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <tasks type="array">
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>At nobis minus doloremque suscipit voluptate vero ea qui.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:08Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-14T05:00:00Z</due-at>
+            <id type="integer">39569272</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376328</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:08Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>this_week</frame>
+            <subject-name>Matthew Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Pariatur iusto id deleniti eos magni eum at.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:08Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-21T05:00:00Z</due-at>
+            <id type="integer">39569273</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376328</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:08Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>next_week</frame>
+            <subject-name>Matthew Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Recusandae pariatur maxime sequi officia.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:08Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime" nil="true"></due-at>
+            <id type="integer">39569274</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376328</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:08Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>later</frame>
+            <subject-name>Matthew Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Laborum minus eaque vitae nostrum magnam.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:12Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-14T05:00:00Z</due-at>
+            <id type="integer">39569283</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376334</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:12Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>this_week</frame>
+            <subject-name>Shaun Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Nam consequatur eum minima.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:12Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-21T05:00:00Z</due-at>
+            <id type="integer">39569284</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376334</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:12Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>next_week</frame>
+            <subject-name>Shaun Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Excepturi eum unde vero voluptates eos.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:12Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime" nil="true"></due-at>
+            <id type="integer">39569285</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376334</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:12Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>later</frame>
+            <subject-name>Shaun Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Voluptatum corporis ut sint voluptas qui saepe consequatur aperiam.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:47Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-14T05:00:00Z</due-at>
+            <id type="integer">39569308</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376359</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:47Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>this_week</frame>
+            <subject-name>Matthew Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Labore autem aut in consequuntur delectus qui.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:48Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-21T05:00:00Z</due-at>
+            <id type="integer">39569309</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376359</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:48Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>next_week</frame>
+            <subject-name>Matthew Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Ratione voluptatem consequatur commodi eaque in officiis fugit.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:48Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime" nil="true"></due-at>
+            <id type="integer">39569310</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376359</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:48Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>later</frame>
+            <subject-name>Matthew Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Dolor accusantium magni quibusdam perferendis possimus odit corrupti laborum.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:50Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-14T05:00:00Z</due-at>
+            <id type="integer">39569318</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376363</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:50Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>this_week</frame>
+            <subject-name>Shaun Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Voluptatem quasi qui veritatis pariatur molestiae voluptas eos explicabo.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:50Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-21T05:00:00Z</due-at>
+            <id type="integer">39569319</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376363</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:50Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>next_week</frame>
+            <subject-name>Shaun Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Quo et aut eum odit vitae aspernatur.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:50Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime" nil="true"></due-at>
+            <id type="integer">39569320</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376363</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:50Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>later</frame>
+            <subject-name>Shaun Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Qui sequi numquam ducimus.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:01Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-14T05:00:00Z</due-at>
+            <id type="integer">39569463</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376579</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:01Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>this_week</frame>
+            <subject-name>Matthew Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Modi fuga aut doloribus corporis nostrum occaecati repudiandae.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:02Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-21T05:00:00Z</due-at>
+            <id type="integer">39569464</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376579</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:02Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>next_week</frame>
+            <subject-name>Matthew Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Provident voluptas dolor et aut.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:02Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime" nil="true"></due-at>
+            <id type="integer">39569465</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376579</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:02Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>later</frame>
+            <subject-name>Matthew Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Reprehenderit minus ut quo hic eveniet et qui.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:05Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-14T05:00:00Z</due-at>
+            <id type="integer">39569471</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376580</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:05Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>this_week</frame>
+            <subject-name>Kylee Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Asperiores ipsum reiciendis illo.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:06Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-21T05:00:00Z</due-at>
+            <id type="integer">39569472</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376580</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:06Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>next_week</frame>
+            <subject-name>Kylee Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Quibusdam illum incidunt omnis voluptate consectetur sed cumque.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:06Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime" nil="true"></due-at>
+            <id type="integer">39569473</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376580</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:06Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>later</frame>
+            <subject-name>Kylee Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Quia iure dolores ex rerum expedita.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:30Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-14T05:00:00Z</due-at>
+            <id type="integer">39569486</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376594</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:30Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>this_week</frame>
+            <subject-name>Matthew Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Quidem et facilis quod quis id veniam.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:30Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-21T05:00:00Z</due-at>
+            <id type="integer">39569487</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376594</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:30Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>next_week</frame>
+            <subject-name>Matthew Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Velit autem voluptate recusandae molestias in voluptatum.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:31Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime" nil="true"></due-at>
+            <id type="integer">39569488</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376594</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:31Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>later</frame>
+            <subject-name>Matthew Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>In autem sed libero fugiat quaerat.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:33Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-14T05:00:00Z</due-at>
+            <id type="integer">39569494</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376604</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:33Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>this_week</frame>
+            <subject-name>Kylee Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Sapiente id dolorem ad est sunt.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:33Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-21T05:00:00Z</due-at>
+            <id type="integer">39569495</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376604</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:33Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>next_week</frame>
+            <subject-name>Kylee Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Rerum nulla fugiat minima dolor eum illo excepturi vitae.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:33Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime" nil="true"></due-at>
+            <id type="integer">39569496</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376604</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:33Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>later</frame>
+            <subject-name>Kylee Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Omnis vel corporis quasi minus error et.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:23:40Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-14T05:00:00Z</due-at>
+            <id type="integer">39569552</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376726</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:23:40Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>this_week</frame>
+            <subject-name>Matthew Romaguera</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Neque aut nulla eos ullam consectetur.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:23:40Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-21T05:00:00Z</due-at>
+            <id type="integer">39569553</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376726</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:23:40Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>next_week</frame>
+            <subject-name>Matthew Romaguera</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime" nil="true"></alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Occaecati doloribus dicta animi et aut sint et.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:23:40Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime" nil="true"></due-at>
+            <id type="integer">39569554</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376726</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:23:40Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>later</frame>
+            <subject-name>Matthew Romaguera</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2007-03-10T15:00:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Ratione nulla ipsum voluptas saepe eveniet et porro.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:08Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2007-03-10T15:00:00Z</due-at>
+            <id type="integer">39569275</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376328</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:08Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>overdue</frame>
+            <subject-name>Matthew Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2007-03-10T15:00:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Eos rem earum maxime suscipit voluptatum est quia.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:12Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2007-03-10T15:00:00Z</due-at>
+            <id type="integer">39569286</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376334</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:12Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>overdue</frame>
+            <subject-name>Shaun Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2007-03-10T15:00:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Similique in qui optio a.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:48Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2007-03-10T15:00:00Z</due-at>
+            <id type="integer">39569311</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376359</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:48Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>overdue</frame>
+            <subject-name>Matthew Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2007-03-10T15:00:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Accusantium aliquid necessitatibus quis vero iure molestiae tempore maiores.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:50Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2007-03-10T15:00:00Z</due-at>
+            <id type="integer">39569322</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376363</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:50Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>overdue</frame>
+            <subject-name>Shaun Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2007-03-10T15:00:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Sit ut in quia soluta.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:02Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2007-03-10T15:00:00Z</due-at>
+            <id type="integer">39569466</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376579</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:02Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>overdue</frame>
+            <subject-name>Matthew Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2007-03-10T15:00:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Enim accusantium aut rerum in.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:06Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2007-03-10T15:00:00Z</due-at>
+            <id type="integer">39569474</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376580</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:06Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>overdue</frame>
+            <subject-name>Kylee Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2007-03-10T15:00:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Quia illum ullam rem dicta ad ut.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:31Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2007-03-10T15:00:00Z</due-at>
+            <id type="integer">39569489</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376594</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:31Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>overdue</frame>
+            <subject-name>Matthew Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2007-03-10T15:00:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Saepe culpa distinctio non voluptatum consequuntur.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:33Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2007-03-10T15:00:00Z</due-at>
+            <id type="integer">39569497</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376604</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:33Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>overdue</frame>
+            <subject-name>Kylee Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2007-03-10T15:00:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Quia autem aspernatur debitis eos aliquid.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:23:40Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2007-03-10T15:00:00Z</due-at>
+            <id type="integer">39569555</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376726</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:23:40Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>overdue</frame>
+            <subject-name>Matthew Romaguera</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2014-07-07T23:15:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Qui aspernatur dicta sit rerum.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:07Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-08T05:00:00Z</due-at>
+            <id type="integer">39569270</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376328</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:07Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>today</frame>
+            <subject-name>Matthew Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2014-07-07T23:15:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Consequuntur velit quaerat inventore velit non repudiandae itaque.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:11Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-08T05:00:00Z</due-at>
+            <id type="integer">39569281</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376334</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:11Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>today</frame>
+            <subject-name>Shaun Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2014-07-07T23:15:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Cum vel rerum possimus sit omnis laborum assumenda sit.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:47Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-08T05:00:00Z</due-at>
+            <id type="integer">39569306</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376359</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:47Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>today</frame>
+            <subject-name>Matthew Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2014-07-07T23:15:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Et incidunt aut odio ut.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:50Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-08T05:00:00Z</due-at>
+            <id type="integer">39569314</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376363</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:50Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>today</frame>
+            <subject-name>Shaun Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2014-07-07T23:15:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Laboriosam commodi et sed aut eveniet ab.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:01Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-08T05:00:00Z</due-at>
+            <id type="integer">39569461</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376579</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:01Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>today</frame>
+            <subject-name>Matthew Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2014-07-07T23:15:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Repellendus rem id veritatis tempora ut veniam.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:05Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-08T05:00:00Z</due-at>
+            <id type="integer">39569468</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376580</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:05Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>today</frame>
+            <subject-name>Kylee Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2014-07-07T23:15:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Molestias et consequatur labore totam saepe nesciunt ut.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:30Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-08T05:00:00Z</due-at>
+            <id type="integer">39569484</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376594</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:30Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>today</frame>
+            <subject-name>Matthew Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2014-07-07T23:15:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Maiores placeat eum ipsum qui facilis est.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:33Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-08T05:00:00Z</due-at>
+            <id type="integer">39569492</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376604</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:33Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>today</frame>
+            <subject-name>Kylee Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2014-07-07T23:15:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Reiciendis rerum eos nesciunt qui.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:23:39Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-08T05:00:00Z</due-at>
+            <id type="integer">39569550</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376726</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:23:39Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>today</frame>
+            <subject-name>Matthew Romaguera</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2014-07-08T17:00:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Molestiae et animi consequuntur.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:07Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-09T05:00:00Z</due-at>
+            <id type="integer">39569271</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376328</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:07Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>tomorrow</frame>
+            <subject-name>Matthew Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2014-07-08T17:00:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Aut unde dolores reprehenderit et est facere nulla amet.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:11Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-09T05:00:00Z</due-at>
+            <id type="integer">39569282</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376334</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:11Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>tomorrow</frame>
+            <subject-name>Shaun Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2014-07-08T17:00:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Voluptas aut placeat rerum.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:47Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-09T05:00:00Z</due-at>
+            <id type="integer">39569307</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376359</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:47Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>tomorrow</frame>
+            <subject-name>Matthew Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2014-07-08T17:00:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Qui sunt laborum dicta.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:15:50Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-09T05:00:00Z</due-at>
+            <id type="integer">39569316</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376363</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:15:50Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>tomorrow</frame>
+            <subject-name>Shaun Schimmel</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2014-07-08T17:00:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Voluptatem aliquid est dolor.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:01Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-09T05:00:00Z</due-at>
+            <id type="integer">39569462</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376579</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:01Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>tomorrow</frame>
+            <subject-name>Matthew Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2014-07-08T17:00:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Quae voluptatem aut reprehenderit ipsa veniam officia iste omnis.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:05Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-09T05:00:00Z</due-at>
+            <id type="integer">39569469</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376580</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:05Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>tomorrow</frame>
+            <subject-name>Kylee Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2014-07-08T17:00:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Rerum et rerum distinctio et nulla.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:30Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-09T05:00:00Z</due-at>
+            <id type="integer">39569485</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376594</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:30Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>tomorrow</frame>
+            <subject-name>Matthew Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2014-07-08T17:00:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Repellat consectetur non et asperiores nesciunt quod ratione rerum.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:21:33Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-09T05:00:00Z</due-at>
+            <id type="integer">39569493</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376604</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:21:33Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>tomorrow</frame>
+            <subject-name>Kylee Jacobs</subject-name>
+          </task>
+          <task>
+            <alert-at type="datetime">2014-07-08T17:00:00Z</alert-at>
+            <author-id type="integer">1044134</author-id>
+            <body>Et occaecati doloremque quisquam et exercitationem nihil.</body>
+            <category-id type="integer" nil="true"></category-id>
+            <created-at type="datetime">2014-07-07T20:23:39Z</created-at>
+            <done-at type="datetime" nil="true"></done-at>
+            <due-at type="datetime">2014-07-09T05:00:00Z</due-at>
+            <id type="integer">39569551</id>
+            <owner-id type="integer">1044134</owner-id>
+            <recording-id type="integer" nil="true"></recording-id>
+            <subject-id type="integer">211376726</subject-id>
+            <subject-type>Party</subject-type>
+            <updated-at type="datetime">2014-07-07T20:23:39Z</updated-at>
+            <public type="boolean">false</public>
+            <frame>tomorrow</frame>
+            <subject-name>Matthew Romaguera</subject-name>
+          </task>
+        </tasks>
+    http_version: 
+  recorded_at: Mon, 07 Jul 2014 20:23:41 GMT
+recorded_with: VCR 2.9.2

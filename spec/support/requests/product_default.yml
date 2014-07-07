@@ -1,14 +1,14 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '7420037958183242607051891'
+request_id: 0222482878108589773234208
 product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: gorgeous-concrete-chair
-  name: Gorgeous Concrete Chair
-  sku: gorgeous-concrete-chair
-  description: Voluptate reiciendis debitis alias.
-  price: 36
-  cost_price: 35
-  available_on: 2014-07-07 12:21:03.777344000 -05:00
-  permalink: gorgeous-concrete-chair
+  id: fantastic-concrete-car
+  name: Fantastic Concrete Car
+  sku: fantastic-concrete-car
+  description: Ut soluta modi quia ipsa delectus qui et.
+  price: 5092
+  cost_price: 1967
+  available_on: 2014-07-07 15:23:46.346199000 -05:00
+  permalink: fantastic-concrete-car
   meta_description: 
   meta_keywords: 
   shipping_category: Default
@@ -28,28 +28,28 @@ product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     fit: smart fit
   images:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    url: http://dummyimage.com/600x400/000/fff.jpg&text=Gorgeous Concrete Chair
+    url: http://dummyimage.com/600x400/000/fff.jpg&text=Fantastic Concrete Car
     position: 1
-    title: Gorgeous Concrete Chair
+    title: Fantastic Concrete Car
     type: thumbnail
     dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       height: 220
       width: 100
   variants:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    sku: gorgeous-concrete-chair-Super-Special-Edition
-    price: 41
-    cost_price: 41
-    quantity: '9127529348896007136603503'
+    sku: fantastic-concrete-car-Super-Special-Edition
+    price: 5097
+    cost_price: 5097
+    quantity: 0442594087749690990397161
     options: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       color: GREY
       size: S
     images:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      url: http://dummyimage.com/600x400/000/fff.jpg&text=Gorgeous Concrete Chair
-        Super Special Edition
+      url: http://dummyimage.com/600x400/000/fff.jpg&text=Fantastic Concrete Car Super
+        Special Edition
       position: 1
-      title: Gorgeous Concrete Chair Super Special Edition
+      title: Fantastic Concrete Car Super Special Edition
       type: thumbnail
       dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
         height: 220
