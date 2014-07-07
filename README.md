@@ -83,11 +83,6 @@ Example of adding tags to the contextual person in `add_customer` & `update_cust
           "body": "This task will be associated with this person.",
           "due": "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
           "assigned_to": HIGHRISE_USER_ID
-        },
-        {
-          "body": "You can have multiple too.",
-          "due": "today",
-          "assigned_to": "123456"
         }
       ]
     }
@@ -107,11 +102,6 @@ Example of adding contextual tasks to a deal and it's person in `add_order` & `u
           "body": "This task will be associated with this deal's person.",
           "due": "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
           "assigned_to": HIGHRISE_USER_ID
-        },
-        {
-          "body": "You can have multiple too.",
-          "due": "today",
-          "assigned_to": "123456"
         }
       ],
       "deal": [
@@ -119,11 +109,6 @@ Example of adding contextual tasks to a deal and it's person in `add_order` & `u
           "body": "This task will be associated with this deal.",
           "due": "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
           "assigned_to": HIGHRISE_USER_ID
-        },
-        {
-          "body": "You can have multiple too.",
-          "due": "tomorrow",
-          "assigned_to": "654321"
         }
       ]
     }
@@ -143,11 +128,6 @@ Example of adding tags to the deal's person in `add_order` & `update_order`:
           "body": "This task will be associated with the person of this shipment's deal.",
           "due": "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
           "assigned_to": HIGHRISE_USER_ID
-        },
-        {
-          "body": "You can have multiple too.",
-          "due": "today",
-          "assigned_to": "123456"
         }
       ],
       "deal": [
@@ -155,11 +135,6 @@ Example of adding tags to the deal's person in `add_order` & `update_order`:
           "body": "This task will be associated with this shipment's deal.",
           "due": "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
           "assigned_to": HIGHRISE_USER_ID
-        },
-        {
-          "body": "You can have multiple too.",
-          "due": "tomorrow",
-          "assigned_to": "654321"
         }
       ]
     }
