@@ -52,7 +52,7 @@ Example of adding tags to a person in `add_customer` & `update_customer`:
 }
 ```
 
-Example of adding tags to a person in `add_order` & `update_order`:
+Example of adding tags to the deal's person in `add_order` & `update_order`:
 ```json
 {
   "order": {
