@@ -21,8 +21,8 @@ $ rake start RACK_ENV=environment
 
 This will automatically attach to port 3000, but if it's on Heroku then it will attach itself to the `PORT` environment variable.
 
-# Functionality
-This endpoint implements the following webhook points: 
+## Functionality
+This endpoint implements the following webhook points:
 
 | Object | Webhook | Highrise | Function |
 | :----| :-----| :------ | :------- |
@@ -32,6 +32,41 @@ This endpoint implements the following webhook points:
 | Order | `/update_order` | Deal | This updates a deal in Highrise
 | Shipment | `/add_shipment` | Deal.note | This adds a deal note in Highrise
 | Shipment | `/update_shipment` | Deal.note | This adds a deal note in Highrise
+
+### Tagging
+This endpoint supports tagging of people in Highrise on the `add_customer`, `update_customer`, `add_order`, and `update_order` webhooks.
+
+Example of adding tags to a person in `add_customer` & `update_customer`:
+```json
+{
+  "customer": {
+    "id": "a123",
+    ...
+    "highrise_tags": {
+      person: [
+        "Likes T-shirts",
+        "Bought a T-shirt" // I have no idea what these would actually be, I'm just a lowly engineer ;)
+      ]
+    }
+  }
+}
+```
+
+Example of adding tags to a person in `add_order` & `update_order`:
+```json
+{
+  "order": {
+    "id": "R154085346",
+    ...
+    "highrise_tags": {
+      person: [
+        "Likes T-shirts",
+        "Bought a T-shirt" // I have no idea what these would actually be, I'm just a lowly engineer ;)
+      ]
+    }
+  }
+}
+```
 
 ## Testing & Development
 While testing it is important to have two environment variables set. You can either manually set these with `export` or just create a `.env` file in the root of the project with the following format:

@@ -50,6 +50,7 @@ module HighriseEndpoint
         when :customer
           shipping_address    = HighriseEndpoint::Requests.new(:address, "shipping").to_hash[:address]
           billing_address     = HighriseEndpoint::Requests.new(:address, "billing").to_hash[:address]
+          person_tags         = [Faker::Commerce.product_name, Faker::Commerce.product_name]
 
           {
             request_id: Faker::Number.number(25),
@@ -59,7 +60,10 @@ module HighriseEndpoint
               lastname:  billing_address[:lastname],
               email:     Faker::Internet.email,
               shipping_address: shipping_address,
-              billing_address: billing_address
+              billing_address: billing_address,
+              highrise_tags: {
+                person: person_tags
+              }
             },
             parameters: {
               "highrise.api_token" => "thisIsAFakeKey123",
@@ -70,12 +74,14 @@ module HighriseEndpoint
           shipping_address    = HighriseEndpoint::Requests.new(:address, "shipping").to_hash[:address]
           billing_address     = HighriseEndpoint::Requests.new(:address, "billing").to_hash[:address]
           product             = HighriseEndpoint::Requests.new(:product).to_hash[:product]
+          customer            = HighriseEndpoint::Requests.new(:customer, "existing_add").to_hash[:customer]
 
           quantity = Faker::Number.digit
           order_subtotal = product[:price] * quantity.to_i
           order_tax = order_subtotal.to_i * 0.65
           order_shipping = Faker::Number.digit.to_i
           order_total = order_subtotal + order_tax + order_shipping
+          deal_tags = [Faker::Commerce.product_name, Faker::Commerce.product_name]
 
           {
             request_id: Faker::Number.number(25),
@@ -83,7 +89,7 @@ module HighriseEndpoint
               id: Faker::Number.number(10),
               status: [:complete, :in_progress, :pending].sample,
               channel: :spree,
-              email: Faker::Internet.email,
+              email: customer[:email],
               currency: "USD",
               placed_on: Time.now,
               totals: {
@@ -108,6 +114,10 @@ module HighriseEndpoint
                   price: product[:price]
                 }
               ],
+              highrise_tags: {
+                deal: deal_tags,
+                person: deal_tags
+              },
               adjustments: [
                 {
                   name: "Tax",

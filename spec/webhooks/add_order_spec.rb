@@ -40,6 +40,17 @@ describe HighriseEndpoint::Application do
         end
       end
 
+      it "should tag the deal on Highrise" do
+        VCR.use_cassette(:retrieve_updated_add_order_with_tags) do
+
+          person = Highrise::Person.search(
+            email: @order[:email]
+          )[0]
+
+          person.tags.map{|tag| tag.name }.should include *@order[:highrise_tags][:person]
+        end
+      end
+
       it "should return a nice summary" do
         @response_body[:summary].should eql "Deal was updated on Highrise."
       end
@@ -76,6 +87,17 @@ describe HighriseEndpoint::Application do
           }.compact
 
           deals.length.should eql 1
+        end
+      end
+
+      it "should tag the deal on Highrise" do
+        VCR.use_cassette(:retrieve_created_add_order_with_tags) do
+
+          person = Highrise::Person.search(
+            email: @order[:email]
+          )[0]
+
+          person.tags.map{|tag| tag.name }.should include *@order[:highrise_tags][:person]
         end
       end
 

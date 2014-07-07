@@ -24,6 +24,12 @@ module HighriseEndpoint
 
       people = Highrise::Person.search(customer_id: payload[:customer][:id])
 
+      tags = if @payload[:customer][:highrise_tags] &&  @payload[:customer][:highrise_tags][:person]
+        @payload[:customer][:highrise_tags][:person]
+      else
+        []
+      end
+
       if people.length > 0
         @person = people.first
         structure = HighriseEndpoint::PersonBlueprint.new(payload: payload, person: JSON.parse(@person.to_json)).build
@@ -35,6 +41,10 @@ module HighriseEndpoint
         end
 
         if @person.save
+          tags.each do |tag|
+            @person.tag!(tag)
+          end
+
           jbuilder :update_customer_success
         else
           jbuilder :update_customer_failure
@@ -44,6 +54,10 @@ module HighriseEndpoint
         @person = Highrise::Person.new(structure)
 
         if @person.save
+          tags.each do |tag|
+            @person.tag!(tag)
+          end
+
           jbuilder :add_customer_success
         else
           jbuilder :add_customer_failure
@@ -62,6 +76,12 @@ module HighriseEndpoint
 
       person = Highrise::Person.search(payload[:order][:billing_address]).first
 
+      person_tags = if @payload[:order][:highrise_tags] &&  @payload[:order][:highrise_tags][:person]
+        @payload[:order][:highrise_tags][:person]
+      else
+        []
+      end
+
       if deals.length > 0
         @deal = deals.first
         structure = HighriseEndpoint::DealBlueprint.new(payload: payload, deal: JSON.parse(@deal.to_json)).build
@@ -73,6 +93,10 @@ module HighriseEndpoint
         end
 
         if @deal.save
+          person_tags.each do |person_tag|
+            person.tag!(person_tag)
+          end
+
           jbuilder :update_order_success
         else
           jbuilder :update_order_failure
@@ -82,6 +106,10 @@ module HighriseEndpoint
         @deal = Highrise::Deal.new(structure)
 
         if @deal.save
+          person_tags.each do |person_tag|
+            person.tag!(person_tag)
+          end
+
           @note = Highrise::Note.create(body: line_items_to_string(payload[:order][:line_items]), subject_id: @deal.id, subject_type: "Deal")
 
           jbuilder :add_order_success

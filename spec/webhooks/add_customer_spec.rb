@@ -49,6 +49,26 @@ describe HighriseEndpoint::Application do
         end
       end
 
+      it "should tag the person on Highrise" do
+        VCR.use_cassette(:retrieve_updated_add_customer_with_tags) do
+
+          customers = Highrise::Person.search(
+            email:       @customer[:email],
+            firstname:   @customer[:firstname],
+            lastname:    @customer[:lastname],
+            number:      @billing_address[:phone],
+            street:      @billing_address[:address1],
+            city:        @billing_address[:city],
+            state:       @billing_address[:state],
+            zip:         @billing_address[:zipcode],
+            country:     @billing_address[:country],
+            customer_id: @customer[:id]
+          )
+
+          customers[0].tags.map{|tag| tag.name }.should include *@customer[:highrise_tags][:person]
+        end
+      end
+
       it "should return a nice summary" do
         @response_body[:summary].should eql "Person was updated on Highrise."
       end
@@ -94,6 +114,26 @@ describe HighriseEndpoint::Application do
           )
 
           customers.length.should eql 1
+        end
+      end
+
+      it "should tag the person on Highrise" do
+        VCR.use_cassette(:retrieve_created_add_customer_with_tags) do
+
+          customers = Highrise::Person.search(
+            email:       @customer[:email],
+            firstname:   @customer[:firstname],
+            lastname:    @customer[:lastname],
+            number:      @billing_address[:phone],
+            street:      @billing_address[:address1],
+            city:        @billing_address[:city],
+            state:       @billing_address[:state],
+            zip:         @billing_address[:zipcode],
+            country:     @billing_address[:country],
+            customer_id: @customer[:id]
+          )
+
+          customers[0].tags.map{|tag| tag.name }.should include *@customer[:highrise_tags][:person]
         end
       end
 

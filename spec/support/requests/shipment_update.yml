@@ -1,36 +1,36 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '2729729792478187119479698'
+request_id: '6039482652216770581376016'
 shipment: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '8851809461'
-  order_id: '0775244511'
-  email: rosa@littel.org
-  cost: 5
+  id: '5831265578'
+  order_id: '3309234935'
+  email: adriel_gottlieb@gradyrunte.biz
+  cost: 6
   status: :ready
   stock_location: :default
   shipping_method: UPS Ground (USD)
-  tracking: '9282014665019841476983680'
-  shipped_at: 2014-06-17 19:32:26.277336000 -05:00
+  tracking: '7760384174886076585322730'
+  shipped_at: 2014-07-07 12:21:40.854907000 -05:00
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Marty
-    lastname: Quitzon
-    address1: 57308 Balistreri Squares
-    address2: Suite 173
-    zipcode: 14576-4856
-    city: Port Rosendo
-    state: Mississippi
-    country: Armenia
-    phone: '8273970308117015130226564'
+    firstname: Jan
+    lastname: Fahey
+    address1: 909 Bechtelar Crossroad
+    address2: Suite 787
+    zipcode: '56723'
+    city: New Anita
+    state: Vermont
+    country: Namibia
+    phone: '6666712317403435423875963'
   items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: ergonomic-plastic-computer
-    name: Ergonomic Plastic Computer
-    quantity: '0'
-    price: 6353
+    product_id: gorgeous-concrete-chair
+    name: Gorgeous Concrete Chair
+    quantity: '1'
+    price: 36
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: ergonomic-plastic-computer
-    name: Ergonomic Plastic Computer
-    quantity: '0'
-    price: 6353
+    product_id: gorgeous-concrete-chair
+    name: Gorgeous Concrete Chair
+    quantity: '1'
+    price: 36
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123
   highrise.site_url: http://www.example.com

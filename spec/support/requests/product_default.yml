@@ -1,14 +1,14 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '8629487941963548508563171'
+request_id: '7420037958183242607051891'
 product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: ergonomic-plastic-computer
-  name: Ergonomic Plastic Computer
-  sku: ergonomic-plastic-computer
-  description: Ut autem quia qui occaecati enim fugit.
-  price: 6353
-  cost_price: 5941
-  available_on: 2014-06-17 19:32:04.485524000 -05:00
-  permalink: ergonomic-plastic-computer
+  id: gorgeous-concrete-chair
+  name: Gorgeous Concrete Chair
+  sku: gorgeous-concrete-chair
+  description: Voluptate reiciendis debitis alias.
+  price: 36
+  cost_price: 35
+  available_on: 2014-07-07 12:21:03.777344000 -05:00
+  permalink: gorgeous-concrete-chair
   meta_description: 
   meta_keywords: 
   shipping_category: Default
@@ -28,28 +28,28 @@ product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     fit: smart fit
   images:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    url: http://dummyimage.com/600x400/000/fff.jpg&text=Ergonomic Plastic Computer
+    url: http://dummyimage.com/600x400/000/fff.jpg&text=Gorgeous Concrete Chair
     position: 1
-    title: Ergonomic Plastic Computer
+    title: Gorgeous Concrete Chair
     type: thumbnail
     dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       height: 220
       width: 100
   variants:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    sku: ergonomic-plastic-computer-Super-Special-Edition
-    price: 6358
-    cost_price: 6358
-    quantity: '4805597050265733522551889'
+    sku: gorgeous-concrete-chair-Super-Special-Edition
+    price: 41
+    cost_price: 41
+    quantity: '9127529348896007136603503'
     options: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       color: GREY
       size: S
     images:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      url: http://dummyimage.com/600x400/000/fff.jpg&text=Ergonomic Plastic Computer
+      url: http://dummyimage.com/600x400/000/fff.jpg&text=Gorgeous Concrete Chair
         Super Special Edition
       position: 1
-      title: Ergonomic Plastic Computer Super Special Edition
+      title: Gorgeous Concrete Chair Super Special Edition
       type: thumbnail
       dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
         height: 220

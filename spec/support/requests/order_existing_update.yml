@@ -1,62 +1,69 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '3327966257872315912946541'
+request_id: '5556792096714085599985264'
 order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '5803314736'
-  status: :in_progress
+  id: '3915903559'
+  status: :complete
   channel: :spree
-  email: jaqueline@strosin.net
+  email: adriel_gottlieb@gradyrunte.biz
   currency: USD
-  placed_on: 2014-06-17 19:32:19.183942000 -05:00
+  placed_on: 2014-07-07 12:21:28.058091000 -05:00
   totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    item: 31765
-    adjustment: 4
-    tax: 20647.25
-    shipping: 4
-    payment: 52416.25
-    order: 52416.25
+    item: 180
+    adjustment: 3
+    tax: 117.0
+    shipping: 3
+    payment: 300.0
+    order: 300.0
   line_items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: ergonomic-plastic-computer
-    name: Ergonomic Plastic Computer
+    product_id: gorgeous-concrete-chair
+    name: Gorgeous Concrete Chair
     quantity: '5'
-    price: 6353
+    price: 36
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: ergonomic-plastic-computer
-    name: Ergonomic Plastic Computer
+    product_id: gorgeous-concrete-chair
+    name: Gorgeous Concrete Chair
     quantity: '5'
-    price: 6353
+    price: 36
+  highrise_tags: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    deal:
+    - Gorgeous Concrete Shoes
+    - Awesome Concrete Shirt
+    person:
+    - Gorgeous Concrete Shoes
+    - Awesome Concrete Shirt
   adjustments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Tax
-    value: 20647.25
+    value: 117.0
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Shipping
-    value: 4
+    value: 3
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Marty
-    lastname: Quitzon
-    address1: 57308 Balistreri Squares
-    address2: Suite 173
-    zipcode: 14576-4856
-    city: Port Rosendo
-    state: Mississippi
-    country: Armenia
-    phone: '8273970308117015130226564'
+    firstname: Jan
+    lastname: Fahey
+    address1: 909 Bechtelar Crossroad
+    address2: Suite 787
+    zipcode: '56723'
+    city: New Anita
+    state: Vermont
+    country: Namibia
+    phone: '6666712317403435423875963'
   billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Stefanie
-    lastname: Flatley
-    address1: 3570 Hamill Stream
-    address2: Apt. 889
-    zipcode: 95426-3422
-    city: South Everetthaven
-    state: New Mexico
-    country: Serbia
-    phone: '2083240307359144238151776'
+    firstname: Timmothy
+    lastname: Volkman
+    address1: 3021 Rosina Wall
+    address2: Suite 182
+    zipcode: '85426'
+    city: Lake Pinkbury
+    state: North Dakota
+    country: Belarus
+    phone: '3524857259896701957696121'
   payments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     number: 63
-    status: :complete
-    amount: 52416.25
+    status: :pending
+    amount: 300.0
     payment_method: Credit Card
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123

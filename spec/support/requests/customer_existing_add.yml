@@ -1,30 +1,34 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '6442645790898607707890711'
+request_id: '3017911221528943726078059'
 customer: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '4729710232'
-  firstname: Stefanie
-  lastname: Flatley
-  email: jerrell_beahan@kuhlman.name
+  id: '5090629312'
+  firstname: Timmothy
+  lastname: Volkman
+  email: adriel_gottlieb@gradyrunte.biz
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Marty
-    lastname: Quitzon
-    address1: 57308 Balistreri Squares
-    address2: Suite 173
-    zipcode: 14576-4856
-    city: Port Rosendo
-    state: Mississippi
-    country: Armenia
-    phone: '8273970308117015130226564'
+    firstname: Jan
+    lastname: Fahey
+    address1: 909 Bechtelar Crossroad
+    address2: Suite 787
+    zipcode: '56723'
+    city: New Anita
+    state: Vermont
+    country: Namibia
+    phone: '6666712317403435423875963'
   billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Stefanie
-    lastname: Flatley
-    address1: 3570 Hamill Stream
-    address2: Apt. 889
-    zipcode: 95426-3422
-    city: South Everetthaven
-    state: New Mexico
-    country: Serbia
-    phone: '2083240307359144238151776'
+    firstname: Timmothy
+    lastname: Volkman
+    address1: 3021 Rosina Wall
+    address2: Suite 182
+    zipcode: '85426'
+    city: Lake Pinkbury
+    state: North Dakota
+    country: Belarus
+    phone: '3524857259896701957696121'
+  highrise_tags: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    person:
+    - Rustic Steel Chair
+    - Incredible Wooden Shirt
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123
   highrise.site_url: http://www.example.com

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Bcustomer_id%5D=5315471554&n=0
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/search.xml?criteria%5Bcustomer_id%5D=4623617268&n=0
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 18 Jun 2014 00:32:15 GMT
+      - Mon, 07 Jul 2014 17:21:27 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
@@ -30,24 +30,24 @@ http_interactions:
       - keep-alive
       Status:
       - 200 OK
-      X-Throttle-Count:
-      - '15'
-      Etag:
-      - '"304246700dd9732895ecf4e138caeb37"'
+      X-Throttle-Horizon:
+      - '2014-07-07T17:21:30Z'
+      X-Runtime:
+      - '17'
       Cache-Control:
       - private, max-age=0, must-revalidate
-      X-Request-Id:
-      - 7c66776044b4e6b92f47f215c410c5a2
-      X-Runtime:
-      - '9'
-      X-Throttle-Max:
-      - '500'
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Throttle-Horizon:
-      - '2014-06-18T00:32:20Z'
       X-Frame-Options:
       - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - ca8c6d27f602ba6bd167b48036196f3c
+      X-Throttle-Count:
+      - '14'
+      X-Throttle-Max:
+      - '500'
+      Etag:
+      - '"304246700dd9732895ecf4e138caeb37"'
       Timing-Allow-Origin:
       - "*"
     body:
@@ -56,7 +56,7 @@ http_interactions:
         <?xml version="1.0" encoding="UTF-8"?>
         <people type="array"/>
     http_version: 
-  recorded_at: Wed, 18 Jun 2014 00:32:15 GMT
+  recorded_at: Mon, 07 Jul 2014 17:21:27 GMT
 - request:
     method: post
     uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people.xml
@@ -65,32 +65,32 @@ http_interactions:
       string: |
         <?xml version="1.0" encoding="UTF-8"?>
         <person>
-          <first-name>Stefanie</first-name>
-          <last-name>Flatley</last-name>
+          <first-name>Timmothy</first-name>
+          <last-name>Volkman</last-name>
           <contact-data>
             <email-addresses type="array">
               <email-address>
-                <address>marcos@grimesglover.com</address>
+                <address>savanah@kihn.info</address>
                 <location>Work</location>
               </email-address>
             </email-addresses>
             <addresses type="array">
               <address>
-                <city>South Everetthaven</city>
-                <country>Serbia</country>
+                <city>Lake Pinkbury</city>
+                <country>Belarus</country>
                 <location>Work</location>
-                <state>New Mexico</state>
-                <street>3570 Hamill Stream</street>
-                <zip>95426-3422</zip>
+                <state>North Dakota</state>
+                <street>3021 Rosina Wall</street>
+                <zip>85426</zip>
               </address>
             </addresses>
             <phone-numbers type="array">
               <phone-number>
                 <location>Work</location>
-                <number>2083240307359144238151776</number>
+                <number>3524857259896701957696121</number>
               </phone-number>
             </phone-numbers>
-            <customer-id>5315471554</customer-id>
+            <customer-id>4623617268</customer-id>
           </contact-data>
         </person>
     headers:
@@ -110,36 +110,36 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 18 Jun 2014 00:32:15 GMT
+      - Mon, 07 Jul 2014 17:21:27 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
-      - '852'
+      - '855'
       Connection:
       - Keep-Alive
       Status:
       - 201 Created
-      X-Throttle-Count:
-      - '16'
-      Cache-Control:
-      - no-cache
+      Location:
+      - https://HIGHRISE_SITE_HOST/people/211354693-timmothy-volkman
       Set-Cookie:
-      - _sunrise_session=BAh7BzoPc2Vzc2lvbl9pZCIlMzFjZGEyMGRkNTJhYjlkZGRkMmQwZDQ5M2E2N2RkNWIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoPbmV3X3BlcnNvblQGOgpAdXNlZHsGOwdG--89181ad2a1f18782a0317af693e625270898aa57;
+      - _sunrise_session=BAh7BzoPc2Vzc2lvbl9pZCIlNmU4N2VlODI5Y2FhYjhmZWZlYzI0M2MyMjVmZjY1Y2MiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoPbmV3X3BlcnNvblQGOgpAdXNlZHsGOwdG--67a9a5c68c20aa207bf1749b4c717766e0d43b2d;
         path=/; HttpOnly; secure
-      X-Request-Id:
-      - d6fe977e216026e61c7cc66fa2368c0b
+      X-Throttle-Horizon:
+      - '2014-07-07T17:21:30Z'
       X-Runtime:
-      - '36'
+      - '42'
+      X-Request-Id:
+      - 99e85da2c0bd5d8229f7b784dd47a19c
       X-Throttle-Max:
       - '500'
-      Strict-Transport-Security:
-      - max-age=31536000
-      Location:
-      - https://HIGHRISE_SITE_HOST/people/209945175-stefanie-flatley
-      X-Throttle-Horizon:
-      - '2014-06-18T00:32:20Z'
       X-Frame-Options:
       - SAMEORIGIN
+      X-Throttle-Count:
+      - '15'
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000
       Timing-Allow-Origin:
       - "*"
       Vary:
@@ -152,57 +152,293 @@ http_interactions:
           <author-id type="integer">1044134</author-id>
           <background nil="true"></background>
           <company-id type="integer" nil="true"></company-id>
-          <created-at type="datetime">2014-06-18T00:32:15Z</created-at>
-          <first-name>Stefanie</first-name>
+          <created-at type="datetime">2014-07-07T17:21:27Z</created-at>
+          <first-name>Timmothy</first-name>
           <group-id type="integer" nil="true"></group-id>
-          <id type="integer">209945175</id>
-          <last-name>Flatley</last-name>
+          <id type="integer">211354693</id>
+          <last-name>Volkman</last-name>
           <owner-id type="integer" nil="true"></owner-id>
           <title nil="true"></title>
-          <updated-at type="datetime">2014-06-18T00:32:15Z</updated-at>
+          <updated-at type="datetime">2014-07-07T17:21:27Z</updated-at>
           <visible-to>Everyone</visible-to>
           <company-name nil="true"></company-name>
           <linkedin-url nil="true"></linkedin-url>
           <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
         <contact-data>
+          <web-addresses type="array"/>
+          <instant-messengers type="array"/>
           <twitter-accounts type="array"/>
           <phone-numbers type="array">
             <phone-number>
-              <id type="integer">169246944</id>
+              <id type="integer">170247340</id>
               <location>Work</location>
-              <number>2083240307359144238151776</number>
+              <number>3524857259896701957696121</number>
             </phone-number>
           </phone-numbers>
           <addresses type="array">
             <address>
-              <city>South Everetthaven</city>
-              <country>Serbia</country>
-              <id type="integer">100559761</id>
+              <city>Lake Pinkbury</city>
+              <country>Belarus</country>
+              <id type="integer">101176450</id>
               <location>Work</location>
-              <state>New Mexico</state>
-              <street>3570 Hamill Stream</street>
-              <zip>95426-3422</zip>
+              <state>North Dakota</state>
+              <street>3021 Rosina Wall</street>
+              <zip>85426</zip>
             </address>
           </addresses>
-          <instant-messengers type="array"/>
-          <web-addresses type="array"/>
           <email-addresses type="array">
             <email-address>
-              <address>marcos@grimesglover.com</address>
-              <id type="integer">107581696</id>
+              <address>savanah@kihn.info</address>
+              <id type="integer">108377949</id>
               <location>Work</location>
             </email-address>
           </email-addresses>
         </contact-data>
         <subject_datas type="array">
           <subject_data>
-            <id type="integer">127427612</id>
+            <id type="integer">128614940</id>
             <subject_field_id type="integer">903080</subject_field_id>
             <subject_field_label>Customer ID</subject_field_label>
-            <value>5315471554</value>
+            <value>4623617268</value>
           </subject_data>
         </subject_datas>
         </person>
     http_version: 
-  recorded_at: Wed, 18 Jun 2014 00:32:15 GMT
+  recorded_at: Mon, 07 Jul 2014 17:21:27 GMT
+- request:
+    method: post
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/211354693/tags.xml?name=Rustic%20Rubber%20Gloves
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <person>
+          <first-name>Timmothy</first-name>
+          <last-name>Volkman</last-name>
+          <contact-data>
+            <web-addresses type="array"/>
+            <instant-messengers type="array"/>
+            <twitter-accounts type="array"/>
+            <phone-numbers type="array">
+              <phone-number>
+                <id type="integer">170247340</id>
+                <location>Work</location>
+                <number>3524857259896701957696121</number>
+              </phone-number>
+            </phone-numbers>
+            <addresses type="array">
+              <address>
+                <city>Lake Pinkbury</city>
+                <country>Belarus</country>
+                <id type="integer">101176450</id>
+                <location>Work</location>
+                <state>North Dakota</state>
+                <street>3021 Rosina Wall</street>
+                <zip>85426</zip>
+              </address>
+            </addresses>
+            <email-addresses type="array">
+              <email-address>
+                <address>savanah@kihn.info</address>
+                <id type="integer">108377949</id>
+                <location>Work</location>
+              </email-address>
+            </email-addresses>
+          </contact-data>
+          <id type="integer">211354693</id>
+          <author-id type="integer">1044134</author-id>
+          <background nil="true"/>
+          <company-id nil="true"/>
+          <created-at type="dateTime">2014-07-07T17:21:27Z</created-at>
+          <group-id nil="true"/>
+          <owner-id nil="true"/>
+          <title nil="true"/>
+          <updated-at type="dateTime">2014-07-07T17:21:27Z</updated-at>
+          <visible-to>Everyone</visible-to>
+          <company-name nil="true"/>
+          <linkedin-url nil="true"/>
+          <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+          <subject-datas type="array">
+            <subject-data>
+              <id type="integer">128614940</id>
+              <subject-field-id type="integer">903080</subject-field-id>
+              <subject-field-label>Customer ID</subject-field-label>
+              <value>4623617268</value>
+            </subject-data>
+          </subject-datas>
+        </person>
+    headers:
+      Content-Type:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Jul 2014 17:21:27 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '122'
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      X-Throttle-Horizon:
+      - '2014-07-07T17:21:30Z'
+      X-Runtime:
+      - '33'
+      Cache-Control:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 802324b06d97c81de2a1431c0e4eb187
+      Location:
+      - https://HIGHRISE_SITE_HOST/tags/3576763-rustic-rubber-gloves
+      X-Throttle-Count:
+      - '16'
+      X-Throttle-Max:
+      - '500'
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <tag>
+          <id type="integer">3576763</id>
+          <name>Rustic Rubber Gloves</name>
+        </tag>
+    http_version: 
+  recorded_at: Mon, 07 Jul 2014 17:21:27 GMT
+- request:
+    method: post
+    uri: https://HIGHRISE_API_TOKEN:@HIGHRISE_SITE_HOST/people/211354693/tags.xml?name=Rustic%20Wooden%20Car
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <person>
+          <first-name>Timmothy</first-name>
+          <last-name>Volkman</last-name>
+          <contact-data>
+            <web-addresses type="array"/>
+            <instant-messengers type="array"/>
+            <twitter-accounts type="array"/>
+            <phone-numbers type="array">
+              <phone-number>
+                <id type="integer">170247340</id>
+                <location>Work</location>
+                <number>3524857259896701957696121</number>
+              </phone-number>
+            </phone-numbers>
+            <addresses type="array">
+              <address>
+                <city>Lake Pinkbury</city>
+                <country>Belarus</country>
+                <id type="integer">101176450</id>
+                <location>Work</location>
+                <state>North Dakota</state>
+                <street>3021 Rosina Wall</street>
+                <zip>85426</zip>
+              </address>
+            </addresses>
+            <email-addresses type="array">
+              <email-address>
+                <address>savanah@kihn.info</address>
+                <id type="integer">108377949</id>
+                <location>Work</location>
+              </email-address>
+            </email-addresses>
+          </contact-data>
+          <id type="integer">211354693</id>
+          <author-id type="integer">1044134</author-id>
+          <background nil="true"/>
+          <company-id nil="true"/>
+          <created-at type="dateTime">2014-07-07T17:21:27Z</created-at>
+          <group-id nil="true"/>
+          <owner-id nil="true"/>
+          <title nil="true"/>
+          <updated-at type="dateTime">2014-07-07T17:21:27Z</updated-at>
+          <visible-to>Everyone</visible-to>
+          <company-name nil="true"/>
+          <linkedin-url nil="true"/>
+          <avatar-url>http://dge9rmgqjs8m1.cloudfront.net/highrise/missing/avatar.gif?r=3</avatar-url>
+          <subject-datas type="array">
+            <subject-data>
+              <id type="integer">128614940</id>
+              <subject-field-id type="integer">903080</subject-field-id>
+              <subject-field-label>Customer ID</subject-field-label>
+              <value>4623617268</value>
+            </subject-data>
+          </subject-datas>
+        </person>
+    headers:
+      Content-Type:
+      - application/xml
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Jul 2014 17:21:27 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Content-Length:
+      - '119'
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Location:
+      - https://HIGHRISE_SITE_HOST/tags/3576764-rustic-wooden-car
+      X-Throttle-Horizon:
+      - '2014-07-07T17:21:30Z'
+      X-Runtime:
+      - '28'
+      X-Request-Id:
+      - a6fc29c1c2deaf14cd921b5a153c940c
+      X-Throttle-Max:
+      - '500'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Throttle-Count:
+      - '17'
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000
+      Timing-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <tag>
+          <id type="integer">3576764</id>
+          <name>Rustic Wooden Car</name>
+        </tag>
+    http_version: 
+  recorded_at: Mon, 07 Jul 2014 17:21:27 GMT
 recorded_with: VCR 2.9.2
