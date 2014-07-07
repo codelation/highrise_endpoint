@@ -80,9 +80,9 @@ Example of adding tags to the contextual person in `add_customer` & `update_cust
     "highrise_tasks": {
       "person": [
         {
-          body: "This task will be associated with this person.",
-          due: "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
-          assigned_to: HIGHRISE_USER_ID
+          "body": "This task will be associated with this person.",
+          "due": "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
+          "assigned_to": HIGHRISE_USER_ID
         }
       ]
     }
