@@ -99,16 +99,16 @@ Example of adding contextual tasks to a deal and it's person in `add_order` & `u
     "highrise_tasks": {
       "person": [
         {
-          body: "This task will be associated with this deal's person.",
-          due: "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
-          assigned_to: HIGHRISE_USER_ID
+          "body": "This task will be associated with this deal's person.",
+          "due": "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
+          "assigned_to": HIGHRISE_USER_ID
         }
       ],
       "deal": [
         {
-          body: "This task will be associated with this deal.",
-          due: "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
-          assigned_to: HIGHRISE_USER_ID
+          "body": "This task will be associated with this deal.",
+          "due": "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
+          "assigned_to": HIGHRISE_USER_ID
         }
       ]
     }
@@ -125,16 +125,16 @@ Example of adding tags to the deal's person in `add_order` & `update_order`:
     "highrise_tasks": {
       "person": [
         {
-          body: "This task will be associated with the person of this shipment's deal.",
-          due: "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
-          assigned_to: HIGHRISE_USER_ID
+          "body": "This task will be associated with the person of this shipment's deal.",
+          "due": "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
+          "assigned_to": HIGHRISE_USER_ID
         }
       ],
       "deal": [
         {
-          body: "This task will be associated with this shipment's deal.",
-          due: "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
-          assigned_to: HIGHRISE_USER_ID
+          "body": "This task will be associated with this shipment's deal.",
+          "due": "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
+          "assigned_to": HIGHRISE_USER_ID
         }
       ]
     }
