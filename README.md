@@ -68,6 +68,80 @@ Example of adding tags to the deal's person in `add_order` & `update_order`:
 }
 ```
 
+### Tasks
+This endpoint supports creating contextual tasks in Highrise on all webhooks.
+
+Example of adding tags to the contextual person in `add_customer` & `update_customer`:
+```json
+{
+  "customer": {
+    "id": "a123",
+    ...
+    "highrise_tasks": {
+      "person": [
+        {
+          body: "This task will be associated with this person.",
+          due: "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
+          assigned_to: HIGHRISE_USER_ID
+        }
+      ]
+    }
+  }
+}
+```
+
+Example of adding contextual tasks to a deal and it's person in `add_order` & `update_order`:
+```json
+{
+  "order": {
+    "id": "R154085346",
+    ...
+    "highrise_tasks": {
+      "person": [
+        {
+          body: "This task will be associated with this deal's person.",
+          due: "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
+          assigned_to: HIGHRISE_USER_ID
+        }
+      ],
+      "deal": [
+        {
+          body: "This task will be associated with this deal.",
+          due: "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
+          assigned_to: HIGHRISE_USER_ID
+        }
+      ]
+    }
+  }
+}
+```
+
+Example of adding tags to the deal's person in `add_order` & `update_order`:
+```json
+{
+  "shipment": {
+    "id": "12836",
+    ...
+    "highrise_tasks": {
+      "person": [
+        {
+          body: "This task will be associated with the person of this shipment's deal.",
+          due: "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
+          assigned_to: HIGHRISE_USER_ID
+        }
+      ],
+      "deal": [
+        {
+          body: "This task will be associated with this shipment's deal.",
+          due: "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
+          assigned_to: HIGHRISE_USER_ID
+        }
+      ]
+    }
+  }
+}
+```
+
 ## Testing & Development
 While testing it is important to have two environment variables set. You can either manually set these with `export` or just create a `.env` file in the root of the project with the following format:
 
