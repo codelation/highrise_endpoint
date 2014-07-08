@@ -83,6 +83,11 @@ Example of adding contextual tasks on `add_customer` & `update_customer`:
           "body": "This task will be associated with this person.",
           "due": "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
           "assigned_to": "#{HIGHRISE_USER_ID}"
+        },
+        {
+          "body": "Example of multiple tasks",
+          "due": "today",
+          "assigned_to": "123456"
         }
       ]
     }
@@ -102,6 +107,11 @@ Example of adding contextual tasks on `add_order` & `update_order`:
           "body": "This task will be associated with this deal's person.",
           "due": "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
           "assigned_to": "#{HIGHRISE_USER_ID}"
+        },
+        {
+          "body": "Example of multiple tasks",
+          "due": "today",
+          "assigned_to": "123456"
         }
       ],
       "deal": [
@@ -109,6 +119,11 @@ Example of adding contextual tasks on `add_order` & `update_order`:
           "body": "This task will be associated with this deal.",
           "due": "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
           "assigned_to": "#{HIGHRISE_USER_ID}"
+        },
+        {
+          "body": "Example of multiple tasks",
+          "due": "tomorrow",
+          "assigned_to": "654321"
         }
       ]
     }
@@ -128,6 +143,11 @@ Example of adding contextual tasks on `add_shipment` & `update_shipment`:
           "body": "This task will be associated with the person of this shipment's deal.",
           "due": "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
           "assigned_to": "#{HIGHRISE_USER_ID}"
+        },
+        {
+          "body": "Example of multiple tasks",
+          "due": "today",
+          "assigned_to": "123456"
         }
       ],
       "deal": [
@@ -135,6 +155,11 @@ Example of adding contextual tasks on `add_shipment` & `update_shipment`:
           "body": "This task will be associated with this shipment's deal.",
           "due": "#{today|tomorrow|this_week|next_week|later|'2007-03-10T15:11:52Z'}",
           "assigned_to": "#{HIGHRISE_USER_ID}"
+        },
+        {
+          "body": "Example of multiple tasks",
+          "due": "next_week",
+          "assigned_to": "234567"
         }
       ]
     }

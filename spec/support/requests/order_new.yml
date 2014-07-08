@@ -1,96 +1,96 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '8054493146835694786241211'
+request_id: '4012050097029577501277209'
 order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '8459408774'
+  id: 0393814715
   status: :complete
   channel: :spree
-  email: benjamin@walkerbraun.net
+  email: alek@frami.org
   currency: USD
-  placed_on: 2014-07-07 15:24:04.601642000 -05:00
+  placed_on: 2014-07-08 10:16:57.233681000 -05:00
   totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    item: 0
-    adjustment: 6
-    tax: 0.0
-    shipping: 6
-    payment: 6.0
-    order: 6.0
+    item: 58338
+    adjustment: 4
+    tax: 37919.700000000004
+    shipping: 4
+    payment: 96261.70000000001
+    order: 96261.70000000001
   line_items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: fantastic-concrete-car
-    name: Fantastic Concrete Car
-    quantity: '0'
-    price: 5092
+    product_id: small-steel-shoes
+    name: Small Steel Shoes
+    quantity: '7'
+    price: 8334
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: fantastic-concrete-car
-    name: Fantastic Concrete Car
-    quantity: '0'
-    price: 5092
+    product_id: small-steel-shoes
+    name: Small Steel Shoes
+    quantity: '7'
+    price: 8334
   highrise_tags: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     deal:
-    - Rustic Wooden Table
-    - Rustic Granite Computer
+    - Awesome Concrete Shirt
+    - Practical Plastic Chair
     person:
-    - Rustic Wooden Table
-    - Rustic Granite Computer
+    - Awesome Concrete Shirt
+    - Practical Plastic Chair
   highrise_tasks: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     person:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Ex sunt eveniet exercitationem consequatur provident eos mollitia.
+      body: Reprehenderit veniam dignissimos cupiditate a itaque ut dolorem odit.
       due: tomorrow
-      assigned_to: 1044134
+      assigned_to: 1049651
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Alias autem laudantium qui repellendus consequuntur neque saepe.
+      body: Minima explicabo in nisi.
       due: next_week
-      assigned_to: 1044134
+      assigned_to: 1049651
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Expedita illo autem nihil consequuntur accusantium id eum.
+      body: Eius aliquam voluptatem sunt voluptatibus fuga itaque enim.
       due: '2007-03-10T15:11:52Z'
-      assigned_to: 1044134
+      assigned_to: 1049651
     deal:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Laborum quia autem reprehenderit quos rerum minima eligendi.
+      body: Fugiat quam sit voluptas non.
       due: today
-      assigned_to: 1044134
+      assigned_to: 1049651
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Enim eum soluta cupiditate id.
+      body: Quos nemo voluptas aut voluptates deserunt eius assumenda.
       due: this_week
-      assigned_to: 1044134
+      assigned_to: 1049651
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Est est est quidem et.
+      body: Voluptatem temporibus sint quo expedita nobis quae.
       due: later
-      assigned_to: 1044134
+      assigned_to: 1049651
   adjustments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Tax
-    value: 0.0
+    value: 37919.700000000004
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Shipping
-    value: 6
+    value: 4
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Lila
-    lastname: Kuvalis
-    address1: 8365 Hackett Plains
-    address2: Apt. 232
-    zipcode: '33177'
-    city: East Josiah
-    state: Washington
-    country: Malta
-    phone: '7320172257364731219043382'
+    firstname: Barrett
+    lastname: Swift
+    address1: 64080 Elisabeth Corners
+    address2: Suite 501
+    zipcode: 82891-4765
+    city: Destineybury
+    state: Utah
+    country: Russian Federation
+    phone: '6263882529841324809810516'
   billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Britney
-    lastname: Romaguera
-    address1: 5282 Ratke Cape
-    address2: Suite 391
-    zipcode: 99035-6589
-    city: Anahimouth
-    state: Florida
-    country: Trinidad and Tobago
-    phone: '3339476946728943731298480'
+    firstname: Kristian
+    lastname: Casper
+    address1: 9825 Lang Grove
+    address2: Suite 409
+    zipcode: '70765'
+    city: Dylanhaven
+    state: Texas
+    country: South Africa
+    phone: '2827715661511509266837570'
   payments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     number: 63
-    status: :in_progress
-    amount: 6.0
+    status: :complete
+    amount: 96261.70000000001
     payment_method: Credit Card
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123

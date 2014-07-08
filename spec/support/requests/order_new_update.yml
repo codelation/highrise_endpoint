@@ -1,96 +1,96 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '8273592205254909775605265'
+request_id: '3366783555107755741339678'
 order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '6877865732'
-  status: :pending
+  id: '7201914994'
+  status: :in_progress
   channel: :spree
-  email: benjamin@walkerbraun.net
+  email: alek@frami.org
   currency: USD
-  placed_on: 2014-07-07 15:25:00.186166000 -05:00
+  placed_on: 2014-07-08 10:17:23.388710000 -05:00
   totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    item: 30552
-    adjustment: 2
-    tax: 19858.8
-    shipping: 2
-    payment: 50412.8
-    order: 50412.8
+    item: 33336
+    adjustment: 3
+    tax: 21668.4
+    shipping: 3
+    payment: 55007.4
+    order: 55007.4
   line_items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: fantastic-concrete-car
-    name: Fantastic Concrete Car
-    quantity: '6'
-    price: 5092
+    product_id: small-steel-shoes
+    name: Small Steel Shoes
+    quantity: '4'
+    price: 8334
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: fantastic-concrete-car
-    name: Fantastic Concrete Car
-    quantity: '6'
-    price: 5092
+    product_id: small-steel-shoes
+    name: Small Steel Shoes
+    quantity: '4'
+    price: 8334
   highrise_tags: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     deal:
-    - Practical Plastic Shoes
-    - Intelligent Rubber Pants
+    - Awesome Cotton Chair
+    - Practical Wooden Computer
     person:
-    - Practical Plastic Shoes
-    - Intelligent Rubber Pants
+    - Awesome Cotton Chair
+    - Practical Wooden Computer
   highrise_tasks: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     person:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Necessitatibus soluta est reprehenderit illo repudiandae labore.
+      body: In necessitatibus molestiae rem.
       due: tomorrow
-      assigned_to: 1044134
+      assigned_to: 1049651
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Saepe cumque eum hic.
+      body: Esse reprehenderit vel earum pariatur.
       due: next_week
-      assigned_to: 1044134
+      assigned_to: 1049651
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Et distinctio assumenda in.
+      body: Consectetur facere asperiores omnis et quis et et.
       due: '2007-03-10T15:11:52Z'
-      assigned_to: 1044134
+      assigned_to: 1049651
     deal:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Cum rem porro omnis doloremque.
+      body: Placeat quaerat autem est.
       due: today
-      assigned_to: 1044134
+      assigned_to: 1049651
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Maxime aut sed consectetur tempore.
+      body: Enim sit perspiciatis modi officia deleniti aspernatur.
       due: this_week
-      assigned_to: 1044134
+      assigned_to: 1049651
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Et ea natus neque.
+      body: Eveniet non beatae dolores tenetur amet enim.
       due: later
-      assigned_to: 1044134
+      assigned_to: 1049651
   adjustments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Tax
-    value: 19858.8
+    value: 21668.4
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Shipping
-    value: 2
+    value: 3
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Lila
-    lastname: Kuvalis
-    address1: 8365 Hackett Plains
-    address2: Apt. 232
-    zipcode: '33177'
-    city: East Josiah
-    state: Washington
-    country: Malta
-    phone: '7320172257364731219043382'
+    firstname: Barrett
+    lastname: Swift
+    address1: 64080 Elisabeth Corners
+    address2: Suite 501
+    zipcode: 82891-4765
+    city: Destineybury
+    state: Utah
+    country: Russian Federation
+    phone: '6263882529841324809810516'
   billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Britney
-    lastname: Romaguera
-    address1: 5282 Ratke Cape
-    address2: Suite 391
-    zipcode: 99035-6589
-    city: Anahimouth
-    state: Florida
-    country: Trinidad and Tobago
-    phone: '3339476946728943731298480'
+    firstname: Kristian
+    lastname: Casper
+    address1: 9825 Lang Grove
+    address2: Suite 409
+    zipcode: '70765'
+    city: Dylanhaven
+    state: Texas
+    country: South Africa
+    phone: '2827715661511509266837570'
   payments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     number: 63
-    status: :complete
-    amount: 50412.8
+    status: :failed
+    amount: 55007.4
     payment_method: Credit Card
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123
