@@ -1,14 +1,14 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '9153226902767234582752599'
+request_id: '3923211657548142610758661'
 product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: small-steel-shoes
-  name: Small Steel Shoes
-  sku: small-steel-shoes
-  description: Suscipit saepe qui repellendus.
-  price: 8334
-  cost_price: 6103
-  available_on: 2014-07-08 10:16:50.446487000 -05:00
-  permalink: small-steel-shoes
+  id: fantastic-steel-pants
+  name: Fantastic Steel Pants
+  sku: fantastic-steel-pants
+  description: In officiis sunt ea.
+  price: 7332
+  cost_price: 1042
+  available_on: 2014-07-08 15:38:04.590548000 -05:00
+  permalink: fantastic-steel-pants
   meta_description: 
   meta_keywords: 
   shipping_category: Default
@@ -28,28 +28,28 @@ product: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     fit: smart fit
   images:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    url: http://dummyimage.com/600x400/000/fff.jpg&text=Small Steel Shoes
+    url: http://dummyimage.com/600x400/000/fff.jpg&text=Fantastic Steel Pants
     position: 1
-    title: Small Steel Shoes
+    title: Fantastic Steel Pants
     type: thumbnail
     dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       height: 220
       width: 100
   variants:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    sku: small-steel-shoes-Super-Special-Edition
-    price: 8339
-    cost_price: 8339
-    quantity: '3398195160548292712986737'
+    sku: fantastic-steel-pants-Super-Special-Edition
+    price: 7337
+    cost_price: 7337
+    quantity: '6916384901899944934565263'
     options: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
       color: GREY
       size: S
     images:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      url: http://dummyimage.com/600x400/000/fff.jpg&text=Small Steel Shoes Super
+      url: http://dummyimage.com/600x400/000/fff.jpg&text=Fantastic Steel Pants Super
         Special Edition
       position: 1
-      title: Small Steel Shoes Super Special Edition
+      title: Fantastic Steel Pants Super Special Edition
       type: thumbnail
       dimensions: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
         height: 220

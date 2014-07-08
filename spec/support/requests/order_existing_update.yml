@@ -1,96 +1,96 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '8289273083274494006123083'
+request_id: '2238305988351170484671571'
 order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '3998812823'
-  status: :pending
+  id: '1171092292'
+  status: :complete
   channel: :spree
-  email: alek@frami.org
+  email: cole.harvey@upton.org
   currency: USD
-  placed_on: 2014-07-08 10:17:15.887892000 -05:00
+  placed_on: 2014-07-08 15:38:39.946451000 -05:00
   totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    item: 41670
-    adjustment: 5
-    tax: 27085.5
-    shipping: 5
-    payment: 68760.5
-    order: 68760.5
+    item: 29328
+    adjustment: 7
+    tax: 19063.2
+    shipping: 7
+    payment: 48398.2
+    order: 48398.2
   line_items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: small-steel-shoes
-    name: Small Steel Shoes
-    quantity: '5'
-    price: 8334
+    product_id: fantastic-steel-pants
+    name: Fantastic Steel Pants
+    quantity: '4'
+    price: 7332
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: small-steel-shoes
-    name: Small Steel Shoes
-    quantity: '5'
-    price: 8334
+    product_id: fantastic-steel-pants
+    name: Fantastic Steel Pants
+    quantity: '4'
+    price: 7332
   highrise_tags: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     deal:
-    - Intelligent Granite Hat
-    - Ergonomic Cotton Pants
+    - Fantastic Rubber Car
+    - Rustic Cotton Hat
     person:
-    - Intelligent Granite Hat
-    - Ergonomic Cotton Pants
+    - Fantastic Rubber Car
+    - Rustic Cotton Hat
   highrise_tasks: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     person:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Maiores possimus eum expedita.
+      body: Reprehenderit similique a consectetur.
       due: tomorrow
       assigned_to: 1049651
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Quis vitae voluptatem beatae error cum est.
+      body: Et repellendus magnam saepe ut quis officia ex in.
       due: next_week
       assigned_to: 1049651
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Accusamus illo incidunt maiores porro necessitatibus.
+      body: Atque molestias minima eos nemo qui debitis in a.
       due: '2007-03-10T15:11:52Z'
       assigned_to: 1049651
     deal:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Quaerat ut praesentium aut.
+      body: Corrupti porro voluptatum qui mollitia sequi dolor debitis.
       due: today
       assigned_to: 1049651
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Nihil quod aperiam totam fugit et et.
+      body: Ratione pariatur qui qui.
       due: this_week
       assigned_to: 1049651
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Numquam nostrum nisi porro eius illum.
+      body: Assumenda natus sit voluptatum delectus.
       due: later
       assigned_to: 1049651
   adjustments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Tax
-    value: 27085.5
+    value: 19063.2
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Shipping
-    value: 5
+    value: 7
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Barrett
-    lastname: Swift
-    address1: 64080 Elisabeth Corners
-    address2: Suite 501
-    zipcode: 82891-4765
-    city: Destineybury
-    state: Utah
-    country: Russian Federation
-    phone: '6263882529841324809810516'
+    firstname: Theron
+    lastname: Raynor
+    address1: 9334 Vickie Drives
+    address2: Apt. 356
+    zipcode: '26821'
+    city: North Fernshire
+    state: Wisconsin
+    country: Cocos (Keeling) Islands
+    phone: '9898518439049889312789216'
   billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Kristian
-    lastname: Casper
-    address1: 9825 Lang Grove
-    address2: Suite 409
-    zipcode: '70765'
-    city: Dylanhaven
-    state: Texas
-    country: South Africa
-    phone: '2827715661511509266837570'
+    firstname: Rhianna
+    lastname: Willms
+    address1: 51606 Hodkiewicz Heights
+    address2: Apt. 534
+    zipcode: '27040'
+    city: Willmsshire
+    state: Oregon
+    country: Namibia
+    phone: '9425666348615947020308260'
   payments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     number: 63
-    status: :complete
-    amount: 68760.5
+    status: :in_progress
+    amount: 48398.2
     payment_method: Credit Card
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123
