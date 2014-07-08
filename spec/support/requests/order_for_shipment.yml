@@ -1,96 +1,96 @@
 --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-request_id: '2903687540618369507236493'
+request_id: 0930569626785571908654271
 order: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  id: '3975994927'
-  status: :in_progress
+  id: 0222239119
+  status: :complete
   channel: :spree
-  email: cole.harvey@upton.org
+  email: lucie@kubfisher.info
   currency: USD
-  placed_on: 2014-07-08 15:38:22.522785000 -05:00
+  placed_on: 2014-07-08 15:58:36.039792000 -05:00
   totals: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    item: 0
-    adjustment: 4
-    tax: 0.0
-    shipping: 4
-    payment: 4.0
-    order: 4.0
+    item: 176
+    adjustment: 1
+    tax: 114.4
+    shipping: 1
+    payment: 291.4
+    order: 291.4
   line_items:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: fantastic-steel-pants
-    name: Fantastic Steel Pants
-    quantity: '0'
-    price: 7332
+    product_id: gorgeous-plastic-car
+    name: Gorgeous Plastic Car
+    quantity: '2'
+    price: 88
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    product_id: fantastic-steel-pants
-    name: Fantastic Steel Pants
-    quantity: '0'
-    price: 7332
+    product_id: gorgeous-plastic-car
+    name: Gorgeous Plastic Car
+    quantity: '2'
+    price: 88
   highrise_tags: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     deal:
-    - Gorgeous Concrete Chair
-    - Small Wooden Shoes
+    - Rustic Concrete Pants
+    - Sleek Steel Computer
     person:
-    - Gorgeous Concrete Chair
-    - Small Wooden Shoes
+    - Rustic Concrete Pants
+    - Sleek Steel Computer
   highrise_tasks: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     person:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Et et et quia est autem aut.
+      body: Sit incidunt necessitatibus dolores illum et facilis odio.
       due: tomorrow
       assigned_to: 1049651
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Aut voluptate neque non labore qui magni explicabo.
+      body: Distinctio autem omnis iste accusamus quasi.
       due: next_week
       assigned_to: 1049651
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Inventore provident non est sequi rerum vitae.
+      body: Aliquam optio itaque veritatis alias non illo unde nostrum.
       due: '2007-03-10T15:11:52Z'
       assigned_to: 1049651
     deal:
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Alias explicabo harum saepe.
+      body: Veritatis minima expedita laborum ipsam velit voluptas illum fugit.
       due: today
       assigned_to: 1049651
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Dolorem voluptas in consectetur animi optio eligendi.
+      body: Amet ut natus sunt.
       due: this_week
       assigned_to: 1049651
     - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      body: Eius labore aut sit omnis nisi et et optio.
+      body: Cum consequuntur non rerum et vero asperiores consequatur doloribus.
       due: later
       assigned_to: 1049651
   adjustments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Tax
-    value: 0.0
+    value: 114.4
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     name: Shipping
-    value: 4
+    value: 1
   shipping_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Theron
-    lastname: Raynor
-    address1: 9334 Vickie Drives
-    address2: Apt. 356
-    zipcode: '26821'
-    city: North Fernshire
-    state: Wisconsin
-    country: Cocos (Keeling) Islands
-    phone: '9898518439049889312789216'
+    firstname: Diana
+    lastname: Murazik
+    address1: 4246 Runolfsson Spur
+    address2: Apt. 649
+    zipcode: '41527'
+    city: West Glenburgh
+    state: Rhode Island
+    country: Micronesia
+    phone: '9042175449271431569342282'
   billing_address: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-    firstname: Rhianna
-    lastname: Willms
-    address1: 51606 Hodkiewicz Heights
-    address2: Apt. 534
-    zipcode: '27040'
-    city: Willmsshire
-    state: Oregon
+    firstname: Dawson
+    lastname: Cartwright
+    address1: 12445 Daugherty Fort
+    address2: Suite 810
+    zipcode: '75507'
+    city: Mitchellshire
+    state: Arkansas
     country: Namibia
-    phone: '9425666348615947020308260'
+    phone: '6855798514138085903477053'
   payments:
   - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
     number: 63
-    status: :pending
-    amount: 4.0
+    status: :complete
+    amount: 291.4
     payment_method: Credit Card
 parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   highrise.api_token: thisIsAFakeKey123

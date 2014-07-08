@@ -61,8 +61,10 @@ SHIPMENT_BODY
     end
 
     it "should create tasks on Highrise" do
-      Highrise::Task.all.map{|task| task.body }.should include *@shipment[:highrise_tasks][:person].map{|task| task[:body] }
-      Highrise::Task.all.map{|task| task.body }.should include *@shipment[:highrise_tasks][:deal].map{|task| task[:body] }
+      VCR.use_cassette(:retrieve_created_update_shipment_with_tasks) do
+        Highrise::Task.all.map{|task| task.body }.should include *@shipment[:highrise_tasks][:person].map{|task| task[:body] }
+        Highrise::Task.all.map{|task| task.body }.should include *@shipment[:highrise_tasks][:deal].map{|task| task[:body] }
+      end
     end
 
     it "should return a nice summary" do
